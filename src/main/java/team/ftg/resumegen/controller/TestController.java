@@ -8,11 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.User;
 import team.ftg.resumegen.service.UserService;
-import team.ftg.resumegen.service.UserServiceImpl;
-import team.ftg.resumegen.util.ApplicationContextUtil;
 
 @Controller
-@RequestMapping("/TestController")
 public class TestController {
 
     @Autowired
@@ -55,11 +52,4 @@ public class TestController {
         return mv;
     }
 
-    /**
-     * html测试
-     */
-    @RequestMapping("/method4")
-    public String myMethod4() {
-        return "../../static/index.html";
-    }
 }
