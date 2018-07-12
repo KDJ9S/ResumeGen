@@ -1,17 +1,22 @@
 package team.ftg.resumegen.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.User;
+import team.ftg.resumegen.service.UserService;
 import team.ftg.resumegen.service.UserServiceImpl;
 import team.ftg.resumegen.util.ApplicationContextUtil;
 
 @Controller
 @RequestMapping("/TestController")
 public class TestController {
+
+    @Autowired
+    UserService userService;
 
     @RequestMapping("/method1")
     public String myMethod1() {
@@ -24,8 +29,6 @@ public class TestController {
     @RequestMapping("/method2")
     public ModelAndView myMethod2(String id) throws Exception {
         ModelAndView mv = new ModelAndView();
-        UserServiceImpl userService = (UserServiceImpl) ApplicationContextUtil.getApplicationContext()
-                .getBean("userService");
         // query by id
         User user = userService.getUserById(Integer.parseInt(id));
 
@@ -44,8 +47,6 @@ public class TestController {
     @RequestMapping("/method3")
     public ModelAndView myMethod3(@RequestParam String username, @RequestParam String password) throws Exception {
         ModelAndView mv = new ModelAndView();
-        UserServiceImpl userService = (UserServiceImpl) ApplicationContextUtil.getApplicationContext()
-                .getBean("userService");
         // query by info
         User user = userService.getUserByInfo(username,password);
 

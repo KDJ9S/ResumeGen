@@ -1,9 +1,12 @@
 package team.ftg.resumegen.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import team.ftg.resumegen.dao.UserDao;
 import team.ftg.resumegen.entity.User;
 
+
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
