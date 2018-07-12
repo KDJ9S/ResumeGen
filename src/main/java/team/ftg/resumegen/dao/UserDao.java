@@ -4,11 +4,23 @@ import org.apache.ibatis.annotations.Param;
 import team.ftg.resumegen.entity.User;
 
 /**
- * 用户实体类
+ * UserDao接口
  */
 public interface UserDao {
-    // 测试一下数据库连接性
-    User getUserById (int id) throws Exception;
 
-    User getUserByInfo(@Param("username") String username, @Param("password") String password) throws Exception;
+    /**
+     * 查找用户名和密码
+     * @param username  登录用户名
+     * @return
+     */
+    User findByUsername(String username);
+
+    /**
+     * 注册用户和密码
+     * @param username
+     * @param password
+     */
+    void registerByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+
 }

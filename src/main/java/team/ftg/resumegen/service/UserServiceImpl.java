@@ -12,13 +12,33 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    /**
+     * 检验登录账号是否存在
+     * @param username
+     * @param password
+     * @return
+     */
     @Override
-    public User getUserById(int id) throws Exception {
-        return userDao.getUserById(id);
+    public User checkLogin(String username, String password) {
+
+        User user = userDao.findByUsername(username);
+
+        if ( user != null && user.getPassword().equals(password)){
+
+            return user;
+        }
+
+        return null;
     }
 
+    /**
+     * 注册
+     * @param user
+     */
     @Override
-    public User getUserByInfo(String username, String password) throws Exception {
-        return userDao.getUserByInfo(username, password);
+    public void register(User user) {
+
+        userDao.registerByUsernameAndPassword(user.getUsername(), user.getPassword());
+
     }
 }

@@ -4,6 +4,8 @@ package team.ftg.resumegen.entity;
  * 用户实体类
  */
 public class User {
+    //id
+    private String id;
     //用户名
     private String username;
     //密码
@@ -15,6 +17,13 @@ public class User {
     //地址
     private String address;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
