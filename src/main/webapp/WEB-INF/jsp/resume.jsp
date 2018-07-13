@@ -1,22 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 
 <!doctype html>
 <html lang="en">
 <head>
-    <meta content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="/static/assets/img/favicon.png" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-icon.png"/>
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon.png"/>
     <title>Paper Bootstrap Wizard by Creative Tim</title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
 
     <!-- CSS Files -->
-    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/static/assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/assets/css/paper-bootstrap-wizard.css" rel="stylesheet"/>
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="/static/assets/css/demo.css" rel="stylesheet" />
+    <link href="/static/assets/css/demo.css" rel="stylesheet"/>
 
     <!-- Fonts and Icons -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
@@ -24,9 +26,15 @@
     <link href="/static/assets/css/themify-icons.css" rel="stylesheet">
 </head>
 <body>
-<div class="adcenter"><script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script></div>
+<div class="adcenter">
+    <script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script>
+</div>
 <div class="image-container set-full-height" style="background-image: url('/static/images/login.jpg')">
 
+    <div>
+        <label style="color: white">当前登录的账号是：${sessionScope.user.username}</label>
+        <a href="/main" style="color: white;">返回首页</a>
+    </div>
 
     <!--   Big container   -->
     <div class="container">
@@ -45,7 +53,8 @@
                             </div>
                             <div class="wizard-navigation">
                                 <div class="progress-with-circle">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                                         aria-valuemax="4" style="width: 15%;"></div>
                                 </div>
                                 <ul>
                                     <li>
@@ -91,7 +100,8 @@
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Where is your place located?">
+                                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                                       placeholder="Where is your place located?">
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
@@ -99,14 +109,14 @@
                                                 <label>Country</label><br>
                                                 <select name="country" class="form-control">
                                                     <option disabled="" selected="">- country -</option>
-                                                    <option value="Afghanistan"> Afghanistan </option>
-                                                    <option value="Albania"> Albania </option>
-                                                    <option value="Algeria"> Algeria </option>
-                                                    <option value="American Samoa"> American Samoa </option>
-                                                    <option value="Andorra"> Andorra </option>
-                                                    <option value="Angola"> Angola </option>
-                                                    <option value="Anguilla"> Anguilla </option>
-                                                    <option value="Antarctica"> Antarctica </option>
+                                                    <option value="Afghanistan"> Afghanistan</option>
+                                                    <option value="Albania"> Albania</option>
+                                                    <option value="Algeria"> Algeria</option>
+                                                    <option value="American Samoa"> American Samoa</option>
+                                                    <option value="Andorra"> Andorra</option>
+                                                    <option value="Angola"> Angola</option>
+                                                    <option value="Anguilla"> Anguilla</option>
+                                                    <option value="Antarctica"> Antarctica</option>
                                                     <option value="...">...</option>
                                                 </select>
                                             </div>
@@ -117,7 +127,7 @@
                                                 <select class="form-control">
                                                     <option disabled="" selected="">- persons -</option>
                                                     <option>1 Person</option>
-                                                    <option>2 Persons </option>
+                                                    <option>2 Persons</option>
                                                     <option>3 Persons</option>
                                                     <option>4 Persons</option>
                                                     <option>5 Persons</option>
@@ -129,7 +139,8 @@
                                             <div class="form-group">
                                                 <label>Rent price</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Rent price per day">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Rent price per day">
                                                     <span class="input-group-addon">$</span>
                                                 </div>
                                             </div>
@@ -170,7 +181,7 @@
                                                 <select class="form-control">
                                                     <option disabled="" selected="">- type -</option>
                                                     <option>Business</option>
-                                                    <option>Vacation </option>
+                                                    <option>Vacation</option>
                                                     <option>Work</option>
                                                 </select>
                                             </div>
@@ -181,7 +192,7 @@
                                                 <select class="form-control">
                                                     <option disabled="" selected="">- response -</option>
                                                     <option>Yes</option>
-                                                    <option>No </option>
+                                                    <option>No</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -191,7 +202,7 @@
                                                 <select class="form-control">
                                                     <option disabled="" selected="">- response -</option>
                                                     <option>Yes</option>
-                                                    <option>No </option>
+                                                    <option>No</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -201,7 +212,7 @@
                                                 <select class="form-control">
                                                     <option disabled="" selected="">- response -</option>
                                                     <option>Yes</option>
-                                                    <option>No </option>
+                                                    <option>No</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -219,7 +230,8 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
+                                                <p class="description">"The place is really nice. We use it every sunday
+                                                    when we go fishing. It is so awesome."</p>
                                             </div>
                                         </div>
                                     </div>
@@ -227,12 +239,15 @@
                             </div>
                             <div class="wizard-footer">
                                 <div class="pull-right">
-                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
+                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next'
+                                           value='Next'/>
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd'
+                                           name='finish' value='Finish'/>
                                 </div>
 
                                 <div class="pull-left">
-                                    <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' />
+                                    <input type='button' class='btn btn-previous btn-default btn-wd' name='previous'
+                                           value='Previous'/>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -243,11 +258,14 @@
         </div> <!-- row -->
     </div> <!--  big container -->
 
+    <!-- footer -->
     <div class="footer">
         <div class="container text-center">
-            <h3>2018. 生产生产</h3>
+            <p> 2018.&nbsp;&nbsp;&nbsp;生产生产</p>
         </div>
     </div>
+    <!-- //footer -->
+
 </div>
 
 </body>

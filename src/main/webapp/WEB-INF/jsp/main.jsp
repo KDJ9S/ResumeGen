@@ -86,21 +86,21 @@
 								</span>
                         </a>
 
-                        <a href="#staff" class="hover-effect scroll">
+                        <a href="/template" class="hover-effect scroll">
 								<span>
 									<span>简历模板</span>
 									<span>简历模板</span>
 									<span></span>
 								</span>
                         </a>
-                        <a href="#news" class="hover-effect scroll">
+                        <a href="/myresume" class="hover-effect scroll">
 								<span>
 									<span>我的简历</span>
 									<span>我的简历</span>
 									<span></span>
 								</span>
                         </a>
-                        <a href="#gallery" class="hover-effect scroll">
+                        <a href="/about" class="hover-effect scroll">
 								<span>
 									<span>关于网站</span>
 									<span>关于网站</span>
