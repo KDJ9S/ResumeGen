@@ -37,7 +37,7 @@ public class UserController {
             return "main.jsp";
         }
 
-        return "fail.jsp";
+        return "test.jsp";
 
     }
 
