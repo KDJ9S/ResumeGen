@@ -22,7 +22,7 @@
         <!--连接池的基本属性-->
         <property name="driverClass" value="${driver}"/>
         <property name="jdbcUrl" value="${url}"/>
-        <property name="user" value="${username}"/>
+        <property name="user" value="${useraccount}"/>
         <property name="password" value="${password}"/>
 
         <!--私有属性-->

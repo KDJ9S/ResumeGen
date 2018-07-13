@@ -70,7 +70,8 @@
             <div class="header-fixed">
                 <div class="header-box clearfix">
                     <div class="header-logo">
-                        <a href="http://www.capabcv.com/"><img src="../Images/LOGO.png" alt="领贤在线简历_在线简历"></a>
+                        <%--这一句进行扩展，放入自己的logo--%>
+                        <%--<a href="http://www.capabcv.com/"><img src="../Images/LOGO.png" alt="领贤在线简历_在线简历"></a>--%>
                     </div>
                     <div class="header-nav fl">
                         <ul class="head-nav-l fl">
@@ -78,7 +79,7 @@
                                 <div class="tpl_change_cue">
                                     <span class="cue_top"></span>
                                     <span class="cue_bot">×</span>
-                                    <p>点击<font style="color: #ff7561">“模板切换”</font>，可以选择喜欢的简历模板。</font></p>
+                                    <p>点击<font style="color: #ff7561">“模板切换”</font>，可以选择喜欢的简历模板。</p>
                                 </div>
                             </li>
                             <li class="tpl_style"><i class="icon-fenggeshezhi_2"></i>主题颜色
@@ -194,19 +195,19 @@
             <div id="hold_cue_txt">保存成功</div>
         </div>
         <!--模板主体内容-->
-        <div class="lxcv-container clearfix">
+        <div class="lxcv-container clearfix" style="font-size: 14px;">
             <div class="lxcvL-style">
                 <!--头部-->
                 <div class="lxcv-head clearfix">
-                    <div class="lxcv-photo" id="cv_photo">
+                    <div class="lxcv-photo" id="cv_photo" style="height: 162px;">
                         <div class="photo-edit  icon-shezhi ac" title="设置"></div>
-                        <div class="photo-selector">
+                        <div class="photo-selector" style="display: none;">
                             <span class="photo_title">头像风格</span>
                             <!--<span class="photo_option"></span>-->
-                            <span class="photo_option"></span>
+                            <span class="photo_option check"></span>
                             <span class="photo_option"></span>
                         </div>
-                        <div class="photo-cont">
+                        <div class="photo-cont" data-size="aquare">
                             <a class="photo-hover"></a>
                             <div class="photo-pre">
                                 <img src="../Images/ResumeV3/onlineCv/defaultphoto.png" alt="">
@@ -221,56 +222,56 @@
                             <span class="delete icon-shanchu ac" title="删除"></span>
                         </div>
                         <div class="info-cont">
-                            <div id="lxcvName">你的名字</div>
+                            <div id="lxcvName">你的名字</div>  <%--这里的ID  lxcvName会在之后进行改变内容--%>
                             <div id="lxcv_inShort"></div>
                             <div class="detail-info">
                                 <div class="detail-cont">
-                                    <div id="sRSex" class="info-list">
+                                    <div id="sRSex" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-xingbie01"></i>
                                         <span class="info-style">男</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sRBrith" class="info-list">
+                                    <div id="sRBrith" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-shengri01"></i>
                                         <span class="info-style">18岁</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sNationality" class="info-list">
+                                    <div id="sNationality" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-minzu"></i>
                                         <span class="info-style">汉族</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sHighestEdu" class="info-list">
+                                    <div id="sHighestEdu" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-xueli01" ></i>
                                         <span class="info-style">硕士</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sMarryed" class="info-list">
+                                    <div id="sMarryed" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-hunyin01" ></i>
                                         <span class="info-style">未婚</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sRParty" class="info-list">
+                                    <div id="sRParty" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-zhengzhimianmao01"></i>
                                         <span class="info-style">共产党员</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sInPosition" class="info-list">
+                                    <div id="sInPosition" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-suozaichengshi01"></i>
                                         <span class="info-style">浙江杭州</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sWorkYear" class="info-list">
+                                    <div id="sWorkYear" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-gongzuonianxian01"></i>
                                         <span class="info-style">2年工作经验</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sRTel" class="info-list">
+                                    <div id="sRTel" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-dianhua01"></i>
                                         <span class="info-style"></span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>
                                     </div>
-                                    <div id="sREmail" class="info-list">
+                                    <div id="sREmail" class="info-list" style="dispaly: none;">
                                         <i class="icon-i icon-youxiang01"></i>
                                         <span class="info-style">363552292@qq.com</span>
                                         <span class="lxcv-info-empty icon-jian_2" title="删除"></span>

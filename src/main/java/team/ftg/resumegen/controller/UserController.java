@@ -97,4 +97,9 @@ public class UserController {
         ModelAndView mav = new ModelAndView("redirect:/login");
         return mav;
     }
+
+    @RequestMapping("/jianli")
+    public String getjianli(){
+        return "test.jsp";
+    }
 }
