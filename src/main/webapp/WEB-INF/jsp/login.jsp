@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- stylesheets -->
     <link rel="stylesheet" href="/static/css/font-awesome.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/loginstyle.css">
     <!-- google fonts  -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">

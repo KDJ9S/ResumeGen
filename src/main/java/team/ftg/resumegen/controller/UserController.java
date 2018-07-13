@@ -34,7 +34,7 @@ public class UserController {
 
         if (user != null){
             model.addAttribute("user", user);
-            return "success.jsp";
+            return "main.jsp";
         }
 
         return "fail.jsp";
