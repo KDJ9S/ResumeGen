@@ -1,17 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 86265
-  Date: 2018/1/30
-  Time: 10:32
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <input id="username" type="text" name="username" placeholder="Username" required/>
                 <label>Password</label>
                 <input id="password" type="password" name="password" placeholder="Password" required />
+                <a href="/login" class="pass">已有账号？马上登录</a>
                 <input type="submit" id="register" value="注册"/>
             </form>
         </div>

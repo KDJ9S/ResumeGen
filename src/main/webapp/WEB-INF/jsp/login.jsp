@@ -1,12 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8"%>
 
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <input id="username" type="text" name="username" placeholder="Username" required/>
                 <label>Password</label>
                 <input id="password" type="password" name="password" placeholder="Password" required />
-                <a href="#" class="pass">Forgot Password ?</a>
+                <a class="pass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 <input type="submit" value="登录" />
                 <input type="button" value="注册" onclick="window.location.href='/register'">
             </form>
