@@ -66,14 +66,6 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
 
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
 
                 <div class="collapse navbar-collapse navbar-right" id="navbar">
                     <div class="top-nav">
@@ -118,8 +110,8 @@
 
                         <div class="more">
                             <label style="color: white" >当前登录的账号是：${sessionScope.user.username}</label>
+                            <a href="/outLogin" >退出登录</a>
                         </div>
-
 
                     </div>
                 </div>
