@@ -78,7 +78,7 @@
                 <div class="collapse navbar-collapse navbar-right" id="navbar">
                     <div class="top-nav">
 
-                        <a href="#about" class="hover-effect scroll">
+                        <a href="/main" class="hover-effect scroll">
 								<span>
 									<span>首页</span>
 									<span>首页</span>
@@ -86,7 +86,7 @@
 								</span>
                         </a>
 
-                        <a href="#service" class="hover-effect scroll">
+                        <a href="/resume" class="hover-effect scroll">
 								<span>
 									<span>在线简历</span>
 									<span>在线简历</span>
@@ -133,7 +133,7 @@
     <div class="clearfix"></div>
     <div class="banner-w3-info">
         <div class="logo">
-            <a class="link link--surinami" href="index.html"><span data-letters-l="制作您" data-letters-r="的简历">制作您的简历</span></a>
+            <a class="link link--surinami" href="/resume"><span data-letters-l="制作您" data-letters-r="的简历">制作您的简历</span></a>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <div class="more">
