@@ -40,7 +40,7 @@ public class UserController {
             return mav;
         }
 
-        mav = new ModelAndView("redirect:/test");
+        mav = new ModelAndView("redirect:/fail");
         return mav;
 
     }
@@ -53,11 +53,11 @@ public class UserController {
     public String main() { return "main.jsp";}
 
     /**
-     * 登录失败，访问测试页面
+     * 登录失败
      * @return
      */
-    @RequestMapping("/test")
-    public String test() { return "test.jsp";}
+    @RequestMapping("/fail")
+    public String test() { return "fail.jsp";}
 
 
     /**
