@@ -100,6 +100,6 @@ public class UserController {
 
     @RequestMapping("/jianli")
     public String getjianli(){
-        return "test.jsp";
+        return "test1.jsp";
     }
 }
