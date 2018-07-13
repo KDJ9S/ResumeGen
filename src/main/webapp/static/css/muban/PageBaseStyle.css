@@ -1,0 +1,347 @@
+/*css鏍峰紡鍒濆鍖�   2017-11-28*/
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin:0; padding:0;
+}
+
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;  /*澶栭潰鐜粫绾�*/
+}
+
+ul, ol {
+  list-style: none; /*鍘绘帀鍘熸牱寮忎腑鐨勫皬榛戠偣*/
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Microsoft YaHei", "SimSun";  /*瀛椾綋鐨勮嚜鍔ㄨ瘑鍒�*/
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+select:focus, input:focus, textarea:focus {
+  color: #ccc;
+}
+
+textarea {
+  resize: none;  /*涓嶅彲浠ラ殢鎰忔嫋鍔�*/
+}
+
+img {
+  border: 0;
+  vertical-align: middle; /*  鍘绘帀鍥剧墖搴曢儴榛樿鐨�3鍍忕礌绌虹櫧缂濋殭*/
+}
+
+table {
+  border-collapse: collapse; /*鍚堝苟澶栬繛绾�*/
+}
+
+body {
+  font: 14px/150%  Tahoma, Verdana, "\5FAE\8F6F\96C5\9ED1"; /*uniCode鐨勫啓娉曪紝寰蒋闆呴粦鐨勫啓娉�*/
+  color: #333333; /*150%鍩轰簬褰撳墠瀛椾綋灏哄鐨勭櫨鍒嗘瘮琛岄棿璺�*/
+  background: #fff;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";    /*娓呴櫎娴姩*/
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/  /*鍏煎IE6涓嬬殑鍐欐硶*/
+}
+
+a {
+  color: #333;   /*a 鏍囩鏄笉缁ф壙棰滆壊鐨�*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s, i, em {  /*涓€鑸槸璧疯楗颁綔鐢�*/
+  font-style: normal;  /*鍘绘帀鍘熸湁鐨勬牱寮�*/
+  text-decoration: none;  /*鍘绘帀涓嬪垝绾挎垨鏄垹闄ょ嚎*/
+}
+
+/*鍏叡鏍峰紡*/
+
+select, input, textarea {
+  border: none;   /*杈撳叆妗嗘牱寮�*/
+  border: 1px solid #e8e8e8;
+}
+
+select:focus,input:focus,textarea:focus {
+  color: #ccc;
+}
+
+.btn-cancel {   /*鍙栨秷鎸夐挳*/
+  display: block;
+  width: 94px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0;
+  background-color: #ffffff;
+  color: #666666;
+  border: 1px solid #999999;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius:4px;
+  border-radius: 4px;
+}
+
+.btn-cancel:hover {
+  background-color: #f7f7f7;
+}
+
+.btn-confirm {  /*纭鎸夐挳*/
+  display: block;
+  width: 94px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0;
+  background-color: #ff7561;
+  color: #fff;
+  border: transparent;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius:4px;
+  border-radius: 4px;
+}
+
+.btn-confirm:hover {
+  background-color: #fb5b45;
+}
+
+.lx-scrollbar::-webkit-scrollbar {
+  width: 8px;        /*婊氬姩鏉℃牱寮�*/
+  height: 4px;
+}
+
+.lx-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  -o-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.1);
+}
+
+.lx-scrollbar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  -o-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2);
+}
+
+.br4 {        /*4px鍦嗚*/
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+/*---渚ц竟鏍忔牱寮�---*/
+
+.side-box {
+  width: 67px;
+  height: 240px;
+  position: fixed;
+  bottom: 74px;
+  right: 10px;
+  z-index: 999;
+}
+
+.side-box>div {
+  width: 67px;
+  height: auto;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.side-box .side-btn {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: #9497A2 url("../Images/cvSideBtn.png") no-repeat -7px -9px;
+  box-shadow: 1px 2px 2px rgba(0,0,0,.2);
+  margin-top: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.side-wechat .side-btn {
+  background-position: -166px -9px;
+}
+
+.side-help .side-btn {
+  background-position: -45px -9px;
+}
+
+.side-gotop .side-btn {
+  background-position: -202px -5px;
+}
+
+.side-feedback .side-btn {
+  background-position: -85px -9px;
+}
+
+.side-box .side-btn:hover {
+  background-color: #696e78;
+}
+
+.side-gotop {
+  display: none;
+}
+
+.side-box>div:hover div {
+  display: block;
+  opacity: 1;
+  transition: linear .2s;
+  animation-name: fade-in;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.side-box .side-cont {
+  display: none;
+  opacity: 0;
+  width: 110px;
+  line-height: 42px;
+  text-align: center;
+  position: absolute;
+  right: 60px;
+  bottom: 0px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 4px;
+  letter-spacing: 1.8px;
+}
+
+.side-box .side-cont:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -11px;
+  bottom: 12px;
+  border-left: 20px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.side-box .side-wechat .side-cont {
+  width: 262px;
+  height: 328px;
+  position: absolute;
+}
+
+.side-box .side-wechat .side-member {
+  width: 100%;
+  height: 92px;
+  display: block;
+  background: url("../Images/side-member.png");
+  border-radius: 8px 8px 0 0;
+}
+
+.side-box .side-wechat .wechat-box {
+  width: 100%;
+  height: 146px;
+  border: 1px solid #ddd;
+}
+
+.side-wechat .wechat-box img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 7px auto;
+}
+
+.side-wechat .wechat-box p {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.side-box .side-cont .side-kefu {
+  padding: 13px 0;
+  cursor: default;
+}
+
+.side-box .side-cont .side-kefu span {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: .4;
+    right: 82px;
+  }
+  100% {
+    opacity: 1;
+    right: 60px;
+  }
+}
