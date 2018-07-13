@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.User;
 import team.ftg.resumegen.service.UserService;
 
@@ -25,21 +26,39 @@ public class UserController {
     public String login() { return "login.jsp";}
 
     /**
-     * 登录
+     * 登录处理
      */
     @RequestMapping("/checkLogin")
-    public String checkLogin(User user, Model model){
-
+    public ModelAndView checkLogin(User user, Model model){
+        ModelAndView mav;
         user = userService.checkLogin(user.getUsername(), user.getPassword());
 
+        //客户端跳转，防止返回时需要重新提交表单
         if (user != null){
+            mav = new ModelAndView("redirect:/main");
             model.addAttribute("user", user);
-            return "main.jsp";
+            return mav;
         }
 
-        return "test.jsp";
+        mav = new ModelAndView("redirect:/test");
+        return mav;
 
     }
+
+    /**
+     * 登录成功，访问 主页
+     * @return
+     */
+    @RequestMapping("/main")
+    public String main() { return "main.jsp";}
+
+    /**
+     * 登录失败，访问测试页面
+     * @return
+     */
+    @RequestMapping("/test")
+    public String test() { return "test.jsp";}
+
 
     /**
      * 访问 注册 页面
@@ -50,17 +69,18 @@ public class UserController {
 
 
     /**
-     * 注册
+     * 注册处理
      * @param user
-     * @param model
      * @return
      */
     @RequestMapping("/doRegister")
-    public String doRegister(User user, Model model){
-        System.out.println(user.getUsername());
+    public ModelAndView doRegister(User user){
+
         userService.register(user);
 
-        return "success.jsp";
+        //客户端跳转，防止返回时需要重新提交表单
+        ModelAndView mav = new ModelAndView("redirect:/main");
+        return mav;
 
     }
 
@@ -70,10 +90,11 @@ public class UserController {
      * @return
      */
     @RequestMapping("/outLogin")
-    public String outLogin(HttpSession session){
+    public ModelAndView outLogin(HttpSession session){
         //注销当前的Session
         session.invalidate();
 
-        return "login.jsp";
+        ModelAndView mav = new ModelAndView("redirect:/login");
+        return mav;
     }
 }
