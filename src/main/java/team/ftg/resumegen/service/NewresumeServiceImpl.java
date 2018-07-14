@@ -9,6 +9,8 @@ import team.ftg.resumegen.entity.Exp_Info;
 import team.ftg.resumegen.entity.Intent_Info;
 import team.ftg.resumegen.entity.Intro_Info;
 
+import java.util.List;
+
 
 @Service
 @Transactional
@@ -58,5 +60,50 @@ public class NewresumeServiceImpl implements NewresumeService {
 
         newresumeDao.insertIntroduceInfo(intro_info);
     }
+
+    /**
+     * 从数据库获取 基本信息
+     * @param user_id
+     * @return
+     */
+    @Override
+    public List<Basic_Info> getBasicInfo(int user_id) {
+
+        return newresumeDao.getBasicInfo(user_id);
+    }
+
+    /**
+     * 从数据库获取 求职信息
+     * @param user_id
+     * @return
+     */
+    @Override
+    public List<Intent_Info> getIntentInfo(int user_id) {
+
+        return newresumeDao.getIntentInfo(user_id);
+    }
+
+    /**
+     * 从数据库获取 教育/项目经历
+     * @param user_id
+     * @return
+     */
+    @Override
+    public List<Exp_Info> getExperienceInfo(int user_id) {
+
+        return newresumeDao.getExperienceInfo(user_id);
+    }
+
+    /**
+     * 从数据库获取 自我评价
+     * @param user_id
+     * @return
+     */
+    @Override
+    public List<Intro_Info> getIntroduceInfo(int user_id) {
+
+        return newresumeDao.getIntroduceInfo(user_id);
+    }
+
 
 }

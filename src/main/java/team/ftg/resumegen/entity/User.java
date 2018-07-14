@@ -5,17 +5,18 @@ package team.ftg.resumegen.entity;
  */
 public class User {
     //id
-    private String id;
+    private int id;
     //用户名
     private String username;
     //密码
     private String password;
 
-    public String getId() {
+    public int getId() {
+
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -40,6 +41,6 @@ public class User {
         return "User{" +
                 "id='" + id + '\'' +
                 "，username='" + username + '\'' +
-                ", password='" + password ;
+                ", password='" + password;
     }
 }

@@ -6,10 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
-import team.ftg.resumegen.entity.Basic_Info;
-import team.ftg.resumegen.entity.Exp_Info;
-import team.ftg.resumegen.entity.Intent_Info;
-import team.ftg.resumegen.entity.Intro_Info;
+import team.ftg.resumegen.entity.*;
 import team.ftg.resumegen.service.NewresumeService;
 
 @Controller
@@ -25,7 +22,8 @@ public class NewResumeController {
 
     @RequestMapping("/submit")
     public String submit(Basic_Info basic_info, Intent_Info intent_info,
-                         Exp_Info exp_info, Intro_Info intro_info){
+                         Exp_Info exp_info, Intro_Info intro_info,
+                         User user){
 
         String ret;
 
@@ -34,6 +32,14 @@ public class NewResumeController {
             newresumeService.insertIntentInfo(intent_info);
             newresumeService.insertExperienceInfo(exp_info);
             newresumeService.insertIntroduceInfo(intro_info);
+
+            newresumeService.getBasicInfo(user.getId());
+            newresumeService.getIntentInfo(user.getId());
+            newresumeService.getExperienceInfo(user.getId());
+            newresumeService.getIntroduceInfo(user.getId());
+            System.out.println("打印一下" + newresumeService.getBasicInfo(user.getId()).toString()
+                                + "\n" +newresumeService.getIntentInfo(user.getId()).toString() );
+
 
             ret = "selectTemplate.jsp";
         }catch (Exception e){
