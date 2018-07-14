@@ -27,43 +27,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header -->
-<div class="header-top">
-    <div class="container">
-        <div class="bottom_header_left">
-            <p>
-                <span></span>China，Beijing
-            </p>
-        </div>
-        <div class="bottom_header_right">
-            <%--<div class="bottom-social-icons">--%>
-                <%--<a class="facebook" href="#">--%>
-                    <%--<span class="fa fa-facebook"></span>--%>
-                <%--</a>--%>
-                <%--<a class="twitter" href="#">--%>
-                    <%--<span class="fa fa-twitter"></span>--%>
-                <%--</a>--%>
-                <%--<a class="pinterest" href="#">--%>
-                    <%--<span class="fa fa-pinterest-p"></span>--%>
-                <%--</a>--%>
-                <%--<a class="linkedin" href="#">--%>
-                    <%--<span class="fa fa-linkedin"></span>--%>
-                <%--</a>--%>
-            <%--</div>--%>
-            <div class="header-top-righ bottom_header_right">
+<%--<div class="header-top">--%>
+    <%--<div class="container">--%>
 
-                <a href="/login"><span ></span>登录</a>
-                <span>| |</span>
-                <a href="/register"><span></span>注册</a>
+        <%--&lt;%&ndash;<div class="bottom_header_left">&ndash;%&gt;--%>
+          <%--&lt;%&ndash;&ndash;%&gt;--%>
+        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+        <%--&lt;%&ndash;<div class="bottom_header_right">&ndash;%&gt;--%>
+            <%--&lt;%&ndash;&lt;%&ndash;<div class="header-top-righ bottom_header_right">&ndash;%&gt;&ndash;%&gt;--%>
 
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<div class="header">
-    <div class="content white">
-        <nav class="navbar navbar-default">
+                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<a href="/login"><span ></span>登录</a>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
+                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<span>| |</span>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
+                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<a href="/register"><span></span>注册</a>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
+
+            <%--&lt;%&ndash;&lt;%&ndash;</div>&ndash;%&gt;&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<div class="clearfix"> </div>&ndash;%&gt;--%>
+        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+        <%--<div class="clearfix">--%>
+
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</div>--%>
+
+
+<div class="services-breadcrumb"><%--header --%>
+    <div class="content white"><%----%>
+        <nav class="navbar navbar-default"><%----%>
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -72,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <h1>
                             <span class="fa fa-leanpub" aria-hidden="true"></span>Best Study
                             <label>Education & Courses</label>
@@ -95,23 +84,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <a href="#" class="effect-3">扩展</a>
                             </li>
-
-
-                            <%--<li class="dropdown">--%>
-                                <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages--%>
-                                    <%--<span class="caret"></span>--%>
-                                <%--</a>--%>
-                                <%--<ul class="dropdown-menu" role="menu">--%>
-                                    <%--<li>--%>
-                                        <%--<a href="icons.html">Web Icons</a>--%>
-                                    <%--</li>--%>
-                                    <%--<li>--%>
-                                        <%--<a href="codes.html">Short Codes</a>--%>
-                                    <%--</li>--%>
-                                <%--</ul>--%>
-                            <%--</li>--%>
-
-
                             <li>
                                 <a href="#" class="effect-3">扩展</a>
                             </li>
@@ -130,6 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </nav>
     </div>
 </div>
+
 <!-- banner -->
 
 <%--<div class="inner_page_agile">--%>
@@ -138,20 +111,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--//banner -->
 <!-- short -->
-<div class="services-breadcrumb">
-    <div class="inner_breadcrumb">
-        <ul class="short_ls">
-            <li>
-                <%--<a href="/main">Home</a>--%>
-                <%--<span>| |</span>--%>
-            </li>
-            <li></li>
-        </ul>
-    </div>
-</div>
+<%--<div class="services-breadcrumb">--%>
+    <%--<div class="inner_breadcrumb">--%>
+        <%--<ul class="short_ls">--%>
+            <%--<li>--%>
+                <%--&lt;%&ndash;<a href="/main">Home</a>&ndash;%&gt;--%>
+                <%--&lt;%&ndash;<span>| |</span>&ndash;%&gt;--%>
+            <%--</li>--%>
+            <%--<li></li>--%>
+        <%--</ul>--%>
+    <%--</div>--%>
+<%--</div>--%>
 <!-- //short-->
 <!-- about -->
-<div class="about-sec" id="about"><%--style="background-image: url('/static/images/aboutUs/beijing3.jpg');"--%>
+<div class="about-sec" id="about">
     <div class="container">
         <div class="title-div">
             <h3 class="tittle">
@@ -171,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p>面临求职的你是否还在为写不出一份匠心独具的简历而发愁？</p>
                 <p>我们的团队致力于打造一流的简历生成网站。您可以注册终生账号，免费寻找模板，在线免费制作，免费下载。</p>
                 <p>简历网将竭诚为您服务！</p>
-                <a class="button-style" href="/main">加入我们</a>
+                <%--<a class="button-style" href="/main">加入我们</a>--%>
             </div>
             <!-- Stats-->
             <div class="col-md-6 about2-info">
@@ -184,71 +157,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //about -->
 
-
-<!-- Achievements -->
-<%--<div class="aitsresumethree">--%>
-
-    <%--&lt;%&ndash;<div class="container">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;<div class="title-div">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<h3 class="tittle">&ndash;%&gt;--%>
-                <%--&lt;%&ndash;<span>O</span>ur&ndash;%&gt;--%>
-                <%--&lt;%&ndash;<span>A</span>chievements&ndash;%&gt;--%>
-            <%--&lt;%&ndash;</h3>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<div class="tittle-style">&ndash;%&gt;--%>
-
-            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;<div class="load_more">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<ul id="myList">&ndash;%&gt;--%>
-                <%--&lt;%&ndash;<li class="aitsaitsresumewthreeli-1">&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;<div class="l_g">&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;<div class="l_g_r g_r">&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;<div class="work">&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;<div class="work-info">&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-left">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h4>2000-2017</h4>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-right">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h5>Ranked Top 1st</h5>&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,&ndash;%&gt;--%>
-                                            <%--&lt;%&ndash;eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="clearfix"> </div>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;<div class="work-info">&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-right work-right2">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h4>2011 - 2012</h4>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-left work-left2">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h5>Queen's Anniversary Prize</h5>&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,&ndash;%&gt;--%>
-                                            <%--&lt;%&ndash;eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="clearfix"> </div>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;<div class="work-info">&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-left">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h4>2004 - 2017</h4>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="col-xs-6 work-grid work-right">&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<h5 class="comp">Excellent University Guide</h5>&ndash;%&gt;--%>
-                                        <%--&lt;%&ndash;<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,&ndash;%&gt;--%>
-                                            <%--&lt;%&ndash;eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;<div class="clearfix"> </div>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                <%--&lt;%&ndash;</li>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;</ul>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-
-
-
-<%--</div>--%>
 <!-- //Achievements -->
 
 
@@ -350,215 +258,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 <!-- //about-team -->
-
-
-
-<!-- middle section -->
-<%--<div class="middle-sec-agile">--%>
-    <%--<div class="container">--%>
-        <%--<h4>Our--%>
-            <%--<span>Best Study</span> Institute</h4>--%>
-        <%--<ul>--%>
-            <%--<li>--%>
-                <%--<div class="midle-left-w3l">--%>
-                    <%--<span class="fa fa-check" aria-hidden="true"></span>--%>
-                <%--</div>--%>
-                <%--<div class="middle-right">--%>
-                    <%--<h5>Select A Course You Like And Explore It!</h5>--%>
-                    <%--<p>Integer eu facilisis nunc, a iaculis felis.</p>--%>
-                <%--</div>--%>
-                <%--<div class="clearfix"></div>--%>
-            <%--</li>--%>
-            <%--<li>--%>
-                <%--<div class="midle-left-w3l">--%>
-                    <%--<span class="fa fa-check" aria-hidden="true"></span>--%>
-                <%--</div>--%>
-                <%--<div class="middle-right">--%>
-                    <%--<h5>Join A Seminar To Know More About It!</h5>--%>
-                    <%--<p>Integer eu facilisis nunc, a iaculis felis.</p>--%>
-                <%--</div>--%>
-                <%--<div class="clearfix"></div>--%>
-            <%--</li>--%>
-            <%--<li>--%>
-                <%--<div class="midle-left-w3l">--%>
-                    <%--<span class="fa fa-check" aria-hidden="true"></span>--%>
-                <%--</div>--%>
-                <%--<div class="middle-right">--%>
-                    <%--<h5>Get Enrolled And Start Better Future With Us!</h5>--%>
-                    <%--<p>Integer eu facilisis nunc, a iaculis felis.</p>--%>
-                <%--</div>--%>
-                <%--<div class="clearfix"></div>--%>
-            <%--</li>--%>
-        <%--</ul>--%>
-        <%--<a class="button-style" href="join.html">Join Now</a>--%>
-    <%--</div>--%>
-    <%--<div class="pencil-img">--%>
-        <%--<img src="/static/images/aboutUs/bg5.png" alt="" />--%>
-    <%--</div>--%>
-<%--</div>--%>
-<!-- //middle section -->
-
-
-
-
-<!-- news -->
-<%--<div class="news" id="news">--%>
-    <%--<div class="container">--%>
-        <%--<div class="title-div">--%>
-            <%--<h3 class="tittle">--%>
-                <%--<span>O</span>ur--%>
-                <%--<span> E</span>vents--%>
-            <%--</h3>--%>
-            <%--<div class="tittle-style">--%>
-
-            <%--</div>--%>
-        <%--</div>--%>
-        <%--<div class="yaallahaa-news-grids-agile">--%>
-            <%--<div class="yaallahaa-news-grid">--%>
-                <%--<div class="col-md-6 yaallahaa-news-left">--%>
-                    <%--<div class="col-xs-6 news-left-img">--%>
-                        <%--<div class="news-left-text color-event1">--%>
-                            <%--<h5>20 Dec</h5>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-xs-6 news-grid-info-bottom-w3ls">--%>
-                        <%--<div class="news-left-top-text text-color1">--%>
-                            <%--<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>--%>
-                        <%--</div>--%>
-                        <%--<div class="date-grid">--%>
-                            <%--<div class="admin">--%>
-                                <%--<a href="#">--%>
-                                    <%--<span class="fa fa-clock-o" aria-hidden="true"></span> 7:00 pm - 9:00 pm</a>--%>
-                            <%--</div>--%>
-                            <%--<div class="time">--%>
-                                <%--<p>--%>
-                                    <%--<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 2589</p>--%>
-                            <%--</div>--%>
-                            <%--<div class="clearfix"> </div>--%>
-                        <%--</div>--%>
-                        <%--<div class="news-grid-info-bottom-w3ls-text">--%>
-                            <%--<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                <%--</div>--%>
-                <%--<div class="col-md-6 yaallahaa-news-left">--%>
-                    <%--<div class="col-xs-6 news-left-img news-left-img1">--%>
-                        <%--<div class="news-left-text color-event2">--%>
-                            <%--<h5>27 Dec</h5>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-xs-6 news-grid-info-bottom-w3ls">--%>
-                        <%--<div class="news-left-top-text text-color2">--%>
-                            <%--<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>--%>
-                        <%--</div>--%>
-                        <%--<div class="date-grid">--%>
-                            <%--<div class="admin">--%>
-                                <%--<a href="#">--%>
-                                    <%--<span class="fa fa-clock-o" aria-hidden="true"></span> 6:00 am - 8:00 am</a>--%>
-                            <%--</div>--%>
-                            <%--<div class="time">--%>
-                                <%--<p>--%>
-                                    <%--<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 1452</p>--%>
-                            <%--</div>--%>
-                            <%--<div class="clearfix"> </div>--%>
-                        <%--</div>--%>
-                        <%--<div class="news-grid-info-bottom-w3ls-text">--%>
-                            <%--<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                <%--</div>--%>
-                <%--<div class="clearfix"> </div>--%>
-            <%--</div>--%>
-            <%--<div class="yaallahaa-news-grid">--%>
-                <%--<div class="col-md-6 yaallahaa-news-left">--%>
-                    <%--<div class="col-xs-6 news-left-img news-left-img2">--%>
-                        <%--<div class="news-left-text color-event3">--%>
-                            <%--<h5>28 Dec</h5>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-xs-6 news-grid-info-bottom-w3ls">--%>
-                        <%--<div class="news-left-top-text text-color3">--%>
-                            <%--<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>--%>
-                        <%--</div>--%>
-                        <%--<div class="date-grid">--%>
-                            <%--<div class="admin">--%>
-                                <%--<a href="#">--%>
-                                    <%--<span class="fa fa-clock-o" aria-hidden="true"></span> 10:00 am - 1:00 pm</a>--%>
-                            <%--</div>--%>
-                            <%--<div class="time">--%>
-                                <%--<p>--%>
-                                    <%--<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 7458</p>--%>
-                            <%--</div>--%>
-                            <%--<div class="clearfix"> </div>--%>
-                        <%--</div>--%>
-                        <%--<div class="news-grid-info-bottom-w3ls-text">--%>
-                            <%--<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                <%--</div>--%>
-                <%--<div class="col-md-6 yaallahaa-news-left">--%>
-                    <%--<div class="col-xs-6 news-left-img news-left-img3">--%>
-                        <%--<div class="news-left-text color-event4">--%>
-                            <%--<h5>30 Dec</h5>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-xs-6 news-grid-info-bottom-w3ls">--%>
-                        <%--<div class="news-left-top-text text-color4">--%>
-                            <%--<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>--%>
-                        <%--</div>--%>
-                        <%--<div class="date-grid">--%>
-                            <%--<div class="admin">--%>
-                                <%--<a href="#">--%>
-                                    <%--<span class="fa fa-clock-o" aria-hidden="true"></span> 7:00 pm - 9:00 pm</a>--%>
-                            <%--</div>--%>
-                            <%--<div class="time">--%>
-                                <%--<p>--%>
-                                    <%--<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 786.</p>--%>
-                            <%--</div>--%>
-                            <%--<div class="clearfix"> </div>--%>
-                        <%--</div>--%>
-                        <%--<div class="news-grid-info-bottom-w3ls-text">--%>
-                            <%--<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                <%--</div>--%>
-                <%--<div class="clearfix"> </div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
-<!-- modal -->
-<%--<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">--%>
-    <%--<div class="modal-dialog" role="document">--%>
-        <%--<div class="modal-content">--%>
-            <%--<div class="modal-header">--%>
-                <%--<button type="button" class="close" data-dismiss="modal" aria-label="Close">--%>
-                    <%--<span aria-hidden="true">&times;</span>--%>
-                <%--</button>--%>
-                <%--<h4 class="modal-title">Best--%>
-                    <%--<span>Study</span>--%>
-                <%--</h4>--%>
-            <%--</div>--%>
-            <%--<div class="modal-body">--%>
-                <%--<div class="model-img-info">--%>
-                    <%--<img src="/static/images/aboutUs/e1.jpg" alt="" />--%>
-                    <%--<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque--%>
-                        <%--ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis--%>
-                        <%--porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa--%>
-                        <%--luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem--%>
-                    <%--</p>--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
-<!-- //modal -->
-<!-- //news -->
-
 
 <!-- footer -->
 <div class="mkl_footer" id="contact">
