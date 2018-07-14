@@ -35,7 +35,7 @@ public class NewResumeController {
             newresumeService.insertExperienceInfo(exp_info);
             newresumeService.insertIntroduceInfo(intro_info);
 
-            ret = "main.jsp";
+            ret = "selectTemplate.jsp";
         }catch (Exception e){
             e.printStackTrace();
             ret = "fail.jsp";

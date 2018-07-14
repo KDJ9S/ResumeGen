@@ -11,4 +11,8 @@ public class TemplateController {
 
     @RequestMapping("/template")
     public String template() { return "template.jsp";}
+
+
+    @RequestMapping("/selectTemplate")
+    public String selectTemplate() { return "selectTemplate.jsp";}
 }
