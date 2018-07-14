@@ -98,8 +98,8 @@ public class UserController {
         return mav;
     }
 
-    @RequestMapping("/jianli")
-    public String getjianli(){
-        return "test1.jsp";
+    @RequestMapping("/aboutUs")
+    public String getaboutUs(){
+        return "aboutUs.jsp";
     }
 }
