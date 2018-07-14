@@ -33,9 +33,6 @@ transparent = true;
         		    lastname: {
         		      required: true,
         		      minlength: 3
-        		    },
-        		    email: {
-        		      required: true
         		    }
                 },
         	});
