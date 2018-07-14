@@ -10,12 +10,6 @@ public class User {
     private String username;
     //密码
     private String password;
-    //手机号
-    private String phoneNumber;
-    //年龄
-    private int age;
-    //地址
-    private String address;
 
     public String getId() {
         return id;
@@ -41,38 +35,11 @@ public class User {
         this.password = password;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                '}';
+                "id='" + id + '\'' +
+                "，username='" + username + '\'' +
+                ", password='" + password ;
     }
 }

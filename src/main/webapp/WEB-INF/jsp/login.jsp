@@ -29,7 +29,7 @@
                 <input id="username" type="text" name="username" placeholder="Username" required/>
                 <label>Password</label>
                 <input id="password" type="password" name="password" placeholder="Password" required />
-                <a class="pass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <br>
                 <input type="submit" value="登录" />
                 <input type="button" value="注册" onclick="window.location.href='/register'">
             </form>

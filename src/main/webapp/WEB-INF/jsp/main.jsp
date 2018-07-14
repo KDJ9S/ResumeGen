@@ -109,7 +109,7 @@
                         </a>
 
                         <div class="more">
-                            <label style="color: white" >当前登录的账号是：${sessionScope.user.username}</label>
+                            <label style="color: white" >当前登录的账号是：${sessionScope.user.username} , id是：${sessionScope.user.id}</label>
                             <a href="/outLogin" >退出登录</a>
                         </div>
 
