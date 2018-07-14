@@ -100,7 +100,7 @@
 									<span></span>
 								</span>
                         </a>
-                        <a href="/about" class="hover-effect scroll">
+                        <a href="/aboutUs" class="hover-effect scroll">
 								<span>
 									<span>关于网站</span>
 									<span>关于网站</span>

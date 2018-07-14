@@ -97,4 +97,11 @@ public class UserController {
         ModelAndView mav = new ModelAndView("redirect:/login");
         return mav;
     }
+
+    /*跳转到关于我们*/
+    @RequestMapping("/aboutUs")
+    public String getToUs(){
+        return "aboutUs.jsp";
+    }
+
 }
