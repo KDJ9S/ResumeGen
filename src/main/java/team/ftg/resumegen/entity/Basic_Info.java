@@ -13,6 +13,7 @@ public class Basic_Info {
     private String introduce;
     private int user_id;
 
+    public int getId() {
         return basic_id;
     }
 
