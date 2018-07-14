@@ -245,8 +245,7 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description">"The place is really nice. We use it every sunday
-                                                    when we go fishing. It is so awesome."</p>
+                                                <p class="description"> 2015-2019.  北京科技大学 <br> 2019-2022.  北京科技大学</p>
                                             </div>
                                         </div>
 
@@ -260,8 +259,7 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description">"The place is really nice. We use it every sunday
-                                                    when we go fishing. It is so awesome."</p>
+                                                <p class="description"> 2018.3-2018.7 Android项目 <br> 2018.7 Java Web项目</p>
                                             </div>
                                         </div>
                                     </div>
@@ -280,8 +278,7 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description">"The place is really nice. We use it every sunday
-                                                    when we go fishing. It is so awesome."</p>
+                                                <p class="description">技能： <br>Java：熟练 <br>html：一般 <br><br>兴趣爱好： <br>打游戏</p>
                                             </div>
                                         </div>
                                     </div>
