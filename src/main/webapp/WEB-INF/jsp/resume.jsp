@@ -1,3 +1,4 @@
+<%@ page import="org.springframework.web.context.request.SessionScope" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 
@@ -44,12 +45,12 @@
                 <!--      Wizard container        -->
                 <div class="wizard-container">
                     <div class="card wizard-card" data-color="green" id="wizard">
-                        <form action="" method="">
+                        <form action="/submit" method="">
                             <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
 
                             <div class="wizard-header">
-                                <h3 class="wizard-title">List your place</h3>
-                                <p class="category">This information will let us know more about your place.</p>
+                                <h3 class="wizard-title">Fill in your information</h3>
+                                <p class="category">This information will let us know more about you.</p>
                             </div>
                             <div class="wizard-navigation">
                                 <div class="progress-with-circle">
@@ -62,7 +63,7 @@
                                             <div class="icon-circle">
                                                 <i class="ti-map"></i>
                                             </div>
-                                            Location
+                                            Basic
                                         </a>
                                     </li>
                                     <li>
@@ -70,7 +71,7 @@
                                             <div class="icon-circle">
                                                 <i class="ti-direction-alt"></i>
                                             </div>
-                                            Type
+                                            Intent
                                         </a>
                                     </li>
                                     <li>
@@ -78,7 +79,7 @@
                                             <div class="icon-circle">
                                                 <i class="ti-panel"></i>
                                             </div>
-                                            Facilities
+                                            Experience
                                         </a>
                                     </li>
                                     <li>
@@ -86,11 +87,16 @@
                                             <div class="icon-circle">
                                                 <i class="ti-comments"></i>
                                             </div>
-                                            Comments
+                                            Introduce
                                         </a>
                                     </li>
                                 </ul>
                             </div>
+
+                            <%--user id--%>
+                            <input type="hidden" name="user_id" value="${sessionScope.user.id}">
+
+                            <%--Basic Info 基本信息--%>
                             <div class="tab-content">
                                 <div class="tab-pane" id="location">
                                     <div class="row">
@@ -99,132 +105,176 @@
                                         </div>
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
-                                                <label>City</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                                       placeholder="Where is your place located?">
+                                                <label>姓名</label>
+                                                <input type="text" class="form-control" name="name"
+                                                       placeholder="Your name?" >
                                             </div>
                                         </div>
+
                                         <div class="col-sm-5">
                                             <div class="form-group">
-                                                <label>Country</label><br>
-                                                <select name="country" class="form-control">
-                                                    <option disabled="" selected="">- country -</option>
-                                                    <option value="Afghanistan"> Afghanistan</option>
-                                                    <option value="Albania"> Albania</option>
-                                                    <option value="Algeria"> Algeria</option>
-                                                    <option value="American Samoa"> American Samoa</option>
-                                                    <option value="Andorra"> Andorra</option>
-                                                    <option value="Angola"> Angola</option>
-                                                    <option value="Anguilla"> Anguilla</option>
-                                                    <option value="Antarctica"> Antarctica</option>
-                                                    <option value="...">...</option>
+                                                <label>性别</label><br>
+                                                <select  class="form-control"  name="gender" >
+                                                    <option disabled="" selected="">- gender -</option>
+                                                    <option value="男"> 男</option>
+                                                    <option value="女"> 女</option>
+                                                    <option value="其他"> 其他</option>
                                                 </select>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
-                                                <label>Accommodates</label>
-                                                <select class="form-control">
-                                                    <option disabled="" selected="">- persons -</option>
-                                                    <option>1 Person</option>
-                                                    <option>2 Persons</option>
-                                                    <option>3 Persons</option>
-                                                    <option>4 Persons</option>
-                                                    <option>5 Persons</option>
-                                                    <option>6+ Persons</option>
-                                                </select>
+                                                <label>年龄</label>
+                                                <input type="text" class="form-control" name="age"
+                                                       placeholder="Your age?" >
                                             </div>
                                         </div>
+
                                         <div class="col-sm-5">
                                             <div class="form-group">
-                                                <label>Rent price</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="Rent price per day">
-                                                    <span class="input-group-addon">$</span>
-                                                </div>
+                                                <label>民族</label>
+                                                <input type="text" class="form-control" name="nation"
+                                                       placeholder="Your nation?" >
                                             </div>
                                         </div>
+
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>所在城市</label>
+                                                <input type="text" class="form-control" name="city"
+                                                       placeholder="Your city?">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>电话</label>
+                                                <input type="text" class="form-control" name="tel"
+                                                       placeholder="Your tel?" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>电子邮箱</label>
+                                                <input type="text" class="form-control" name="email"
+                                                       placeholder="Your email?">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>学校</label>
+                                                <input type="text" class="form-control" name="school"
+                                                       placeholder="Your school?" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>专业</label>
+                                                <input type="text" class="form-control" name="major"
+                                                       placeholder="Your major?" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>学历</label>
+                                                <input type="text" class="form-control" name="education"
+                                                       placeholder="Your education?" >
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
+
+                                <%--Intent info 求职意向--%>
                                 <div class="tab-pane" id="type">
-                                    <h5 class="info-text">What type of location do you have? </h5>
+                                    <h5 class="info-text">What is your intent? </h5>
                                     <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            <div class="col-sm-4 col-sm-offset-2">
-                                                <div class="choice" data-toggle="wizard-checkbox">
-                                                    <input type="checkbox" name="jobb" value="Design">
-                                                    <div class="card card-checkboxes card-hover-effect">
-                                                        <i class="ti-home"></i>
-                                                        <p>Home</p>
-                                                    </div>
-                                                </div>
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>意向岗位</label>
+                                                <input type="text" class="form-control" name="position"
+                                                       placeholder="输入求职岗位" >
                                             </div>
-                                            <div class="col-sm-4">
-                                                <div class="choice" data-toggle="wizard-checkbox">
-                                                    <input type="checkbox" name="jobb" value="Design">
-                                                    <div class="card card-checkboxes card-hover-effect">
-                                                        <i class="ti-package"></i>
-                                                        <p>Apartment</p>
-                                                    </div>
-                                                </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>职业类型</label><br>
+                                                <select  class="form-control"  name="job_type" >
+                                                    <option disabled="" selected="">- 选择职业类型 -</option>
+                                                    <option value="全职"> 全职</option>
+                                                    <option value="兼职"> 兼职</option>
+                                                    <option value="实习"> 实习</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>意向城市</label>
+                                                <input type="text" class="form-control" name="work_city"
+                                                       placeholder="输入意向城市" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>薪资要求</label>
+                                                <input type="text" class="form-control" name="salary"
+                                                       placeholder="输入薪资要求" >
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <%--Experience info 教育经历 项目经历--%>
                                 <div class="tab-pane" id="facilities">
-                                    <h5 class="info-text">Tell us more about facilities. </h5>
+                                    <h5 class="info-text">Tell us more about your experience. </h5>
                                     <div class="row">
-                                        <div class="col-sm-5 col-sm-offset-1">
-                                            <div class="form-group">
-                                                <label>Your place is good for</label>
-                                                <select class="form-control">
-                                                    <option disabled="" selected="">- type -</option>
-                                                    <option>Business</option>
-                                                    <option>Vacation</option>
-                                                    <option>Work</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <label>Is air conditioning included ?</label>
-                                                <select class="form-control">
-                                                    <option disabled="" selected="">- response -</option>
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5 col-sm-offset-1">
-                                            <div class="form-group">
-                                                <label>Does your place have wi-fi?</label>
-                                                <select class="form-control">
-                                                    <option disabled="" selected="">- response -</option>
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <label>Is breakfast included?</label>
-                                                <select class="form-control">
-                                                    <option disabled="" selected="">- response -</option>
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="description">
-                                    <div class="row">
-                                        <h5 class="info-text"> Drop us a small description. </h5>
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
-                                                <label>Place description</label>
-                                                <textarea class="form-control" placeholder="" rows="9"></textarea>
+                                                <label>教育经历</label>
+                                                <textarea class="form-control" placeholder="" rows="9" name="edu_exp"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Example</label>
+                                                <p class="description">"The place is really nice. We use it every sunday
+                                                    when we go fishing. It is so awesome."</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>项目经历</label>
+                                                <textarea class="form-control" placeholder="" rows="9" name="project_exp"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Example</label>
+                                                <p class="description">"The place is really nice. We use it every sunday
+                                                    when we go fishing. It is so awesome."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <%--Introduce 自我评价--%>
+                                <div class="tab-pane" id="description">
+                                    <div class="row">
+                                        <h5 class="info-text"> Introduce yourself. </h5>
+                                        <div class="col-sm-6 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>请做一下自我评价，例如技能，业余爱好等</label>
+                                                <textarea class="form-control" placeholder="" rows="9" name="introduce"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -237,11 +287,13 @@
                                     </div>
                                 </div>
                             </div>
+
+
                             <div class="wizard-footer">
                                 <div class="pull-right">
                                     <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next'
                                            value='Next'/>
-                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd'
+                                    <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd'
                                            name='finish' value='Finish'/>
                                 </div>
 

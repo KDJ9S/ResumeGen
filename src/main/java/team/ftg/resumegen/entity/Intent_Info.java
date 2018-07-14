@@ -8,7 +8,7 @@ public class Intent_Info {
 
     private String job_type;
 
-    private String work_position;
+    private String work_city;
 
     private String salary;
 
@@ -26,8 +26,9 @@ public class Intent_Info {
         return job_type;
     }
 
-    public String getWork_position() {
-        return work_position;
+    public String getWork_city() {
+
+        return work_city;
     }
 
     public String getSalary() {
@@ -50,8 +51,8 @@ public class Intent_Info {
         this.job_type = job_type;
     }
 
-    public void setWork_position(String work_position) {
-        this.work_position = work_position;
+    public void setWork_city(String work_city) {
+        this.work_city = work_city;
     }
 
     public void setSalary(String salary) {
