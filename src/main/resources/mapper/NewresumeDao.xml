@@ -8,25 +8,25 @@
     <insert id="insertBasicInfo" parameterType="Basic_Info"  useGeneratedKeys="true" keyProperty="basic_id">
        insert
         into basic_info(name,gender,age,nation,city,tel,email,school,major,education,user_id)
-        values(#{name},#{gender},#{age},#{nation},#{city},#{tel},#{email},#{school},#{major},#{education},#{user_id})
+        values(#{name},#{gender},#{age},#{nation},#{city},#{tel},#{email},#{school},#{major},#{education},#{userId})
     </insert>
     <!-- 插入求职意向信息 -->
     <insert id="insertIntentInfo" parameterType="Intent_Info"  useGeneratedKeys="true" keyProperty="intent_id">
        insert
         into intent_info(position,job_type,work_city,salary,user_id)
-        values(#{position},#{job_type},#{work_city},#{salary},#{user_id})
+        values(#{position},#{jobType},#{workCity},#{salary},#{userId})
     </insert>
     <!-- 插入教育/项目经历信息 -->
     <insert id="insertExperienceInfo" parameterType="Exp_Info"  useGeneratedKeys="true" keyProperty="exp_id">
        insert
         into exp_info(edu_exp,project_exp,user_id)
-        values(#{edu_exp},#{project_exp},#{user_id})
+        values(#{eduExp},#{projectExp},#{userId})
     </insert>
     <!-- 插入自我介绍 -->
     <insert id="insertIntroduceInfo" parameterType="Intro_Info"  >
        insert
         into intro_info(introduce,user_id)
-        values(#{introduce},#{user_id})
+        values(#{introduce},#{userId})
     </insert>
 
     <!-- 查询基础信息 -->

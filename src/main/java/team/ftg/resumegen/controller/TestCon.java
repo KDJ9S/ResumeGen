@@ -49,7 +49,7 @@ public class TestCon {
     @RequestMapping("/method8")
     public ModelAndView myMethod8(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("template/resume5/resume5.jsp");
+        mv.setViewName("template/resume4/resume4.jsp");
 
         return mv;
     }
