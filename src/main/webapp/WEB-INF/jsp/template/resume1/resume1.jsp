@@ -38,7 +38,7 @@
                 <dd>${intentInfo.position}</dd>
             </li>
             <li class="someRight">
-                <dt><i class="icon-bookmark"></i>Application&nbsp;-&nbsp;个人介绍</dt>
+                <dt><i class="icon-bookmark"></i>Introduction&nbsp;-&nbsp;个人介绍</dt>
                 <dd>${introInfo.introduce}</dd>
             </li>
         </ul>
@@ -51,7 +51,7 @@
                 <dd><span>民族:</span> ${basicInfo.nation}</dd>
                 <dd><span>专业:</span> ${basicInfo.major}</dd>
                 <dd><span>城市:</span> ${basicInfo.city}</dd>
-                <dt><i class="icon-bookmark"></i>Basic info&nbsp;-&nbsp;教育信息</dt>
+                <dt><i class="icon-bookmark"></i>Education&nbsp;-&nbsp;教育信息</dt>
                 <dd><span>毕业院校:</span>${basicInfo.school}</dd>
                 <dd><span>学历:</span>${basicInfo.education}</dd>
                 <dt><i class="icon-bookmark"></i>Basic info&nbsp;-&nbsp;工作期望</dt>
@@ -59,7 +59,7 @@
                 <dd><span>期望工作地:</span>${intentInfo.workCity}</dd>
             </li>
             <li>
-                <dt><i class="icon-bookmark"></i>Education&nbsp;-&nbsp;教育经历</dt>
+                <dt><i class="icon-bookmark"></i>Education Experience&nbsp;-&nbsp;教育经历</dt>
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
@@ -68,21 +68,20 @@
 
                 </ul>
             </li>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
             <li>
-                <dt><i class="icon-bookmark"></i>Experience&nbsp;-&nbsp;项目与工作经验</dt>
+                <dt><i class="icon-bookmark"></i>Project Experience&nbsp;-&nbsp;项目经历</dt>
                 <h3>描述</h3>
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
-                        <h4>项目描述</h4>
                         <p>${expInfo.projectExp}</p>
                     </li>
                 </ul>
             </li>
         </ul>
         <p>&nbsp;</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
     </div>
 </div>
 <footer>
