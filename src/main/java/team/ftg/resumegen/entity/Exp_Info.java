@@ -41,4 +41,14 @@ public class Exp_Info {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
+
+    @Override
+    public String toString() {
+        return "Exp_Info{" +
+                "exp_id=" + exp_id +
+                ", edu_exp='" + edu_exp + '\'' +
+                ", project_exp='" + project_exp + '\'' +
+                ", user_id=" + user_id +
+                '}';
+    }
 }

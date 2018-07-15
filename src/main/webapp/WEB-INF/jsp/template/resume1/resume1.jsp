@@ -39,8 +39,8 @@
 <div class="container">
     <div class="sidebar">
         <div class="title">
-            <img src="img/head.jpg">
-            <h1>姓名</h1>
+            <img src="../../../../static/template/resume1/img/head.jpg">
+            <h1>${basicInfo.name}</h1>
             <h1>"个性签名"</h1>
         </div>
         <ul class="side-info">
@@ -49,10 +49,10 @@
                     <i class="icon-bookmark"></i>Contact&nbsp;-&nbsp;联系方式
                 </dt>
                 <dd>
-                    <i class="icon-phone"></i>&nbsp;手机: XXX-XXXX-XXXX
+                    <i class="icon-phone"></i>&nbsp;手机: ${basicInfoList.get(0).tel}
                 </dd>
                 <dd>
-                    <i class="icon-mail"></i>&nbsp;邮箱: XXX@XXX.com
+                    <i class="icon-mail"></i>&nbsp;邮箱: ${basicInfoList.get(0).email}
                 </dd>
                 <dd>
                     <i class="icon-wechat"></i>&nbsp;微信: 二维码
@@ -69,7 +69,7 @@
             </li>
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Application&nbsp;-&nbsp;应聘岗位</dt>
-                <dd>写上你的应聘岗位</dd>
+                <dd>${intentInfoList.get(0).position}</dd>
             </li>
             <li class="skill">
                 <dt><i class="icon-bookmark"></i>Tech&nbsp;-&nbsp;专业知识</dt>
@@ -126,8 +126,8 @@
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Basic info&nbsp;-&nbsp;基本信息</dt>
                 <dd><span>个人信息:</span> 姓名 / 性别 / 出生日期</dd>
-                <dd><span>教育经历:</span> 学历 / 学校 / 毕业时间</dd>
-                <dd><span>专业:</span> 你的专业</dd>
+                <dd><span>教育经历:</span> ${expInfoList.get(0).edu_exp}</dd>
+                <dd><span>专业:</span> ${basicInfoList.get(0).major}</dd>
                 <dd><span>常用ID:</span> <a href="https://github.com/AiotCEO" target="_blank">XXXX</a></dd>
                 <dd><span>个人网站:</span> <a href="https://github.com/AiotCEO" target="_blank">http://XXX.com</a> </dd>
                 <dd><span>GitHub:</span>
@@ -200,7 +200,7 @@
                     <li>
                         <div class="circle"></div>
                         <h4>项目描述</h4>
-                        <p>你的工作</p>
+                        <p>${intentInfoList.get(0).position}</p>
                         <img src="img/grwz.jpg">
                     </li>
                 </ul>
