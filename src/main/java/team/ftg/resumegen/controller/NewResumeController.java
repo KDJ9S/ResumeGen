@@ -23,7 +23,7 @@ public class NewResumeController {
     public String resume(User user) {
         // 如果之前已经填写过简历信息，直接选择模版（晚点再加上一步验证信息的页面）
         // 如果没有填写过，就到填写信息的页面
-        if (newresumeService.checkStatus(user.getId())){
+        if (newresumeService.checkStatus(user.getId())) {
             return "selectTemplateOnline.jsp";
         }
         return "resume.jsp";
@@ -60,7 +60,7 @@ public class NewResumeController {
     }
 
 
-    /*****************************返回对应简历页面*****************************************/
+    /**********************************返回对应简历页面*****************************************/
     @RequestMapping("/resume/resume1")
     public ModelAndView resumeTemplate1(User user) {
 
@@ -71,24 +71,30 @@ public class NewResumeController {
     }
 
     @RequestMapping("/resume/resume2")
-    public String resumeTemplate2() {
-        return "/template/resume2/resume2.jsp";
+    public ModelAndView resumeTemplate2(User user) {
+        ModelAndView mv = setUpModelAndView(user);
+
+        mv.setViewName("/template/resume2/resume2.jsp");
+        return mv;
     }
 
     @RequestMapping("/resume/resume3")
-    public String resumeTemplate3() {
-        return "/template/resume3/resume3.jsp";
+    public ModelAndView resumeTemplate3(User user) {
+        ModelAndView mv = setUpModelAndView(user);
+
+        mv.setViewName("/template/resume3/resume3.jsp");
+        return mv;
     }
 
     @RequestMapping("/resume/resume4")
-    public String resumeTemplate4() {
-        return "/template/resume4/resume4.jsp";
+    public ModelAndView resumeTemplate4(User user) {
+        ModelAndView mv = setUpModelAndView(user);
+
+        mv.setViewName("/template/resume4/resume4.jsp");
+        return mv;
     }
 
     @RequestMapping("/resume/resume5")
-//    public String resumeTemplate5() {
-//        return "/template/resume5/resume5.jsp";
-//    }
     public ModelAndView resumeTemplate5(User user) {
 
         ModelAndView mv = setUpModelAndView(user);
@@ -97,45 +103,24 @@ public class NewResumeController {
         return mv;
     }
 
-    @RequestMapping("/resume/resume6")
-    public String resumeTemplate6() {
-        return "/template/resume6/resume6.jsp";
-    }
 
-    @RequestMapping("/resume/resume7")
-    public String resumeTemplate7() {
-        return "/template/resume7/resume7.jsp";
-    }
-
-    @RequestMapping("/resume/resume8")
-    public String resumeTemplate8() {
-        return "/template/resume8/resume8.jsp";
-    }
-
-    @RequestMapping("/resume/resume9")
-    public String resumeTemplate9() {
-        return "/template/resume9/resume9.jsp";
-    }
-
-    @RequestMapping("/resume/resume10")
-    public String resumeTemplate10() {
-        return "/template/resume10/resume10.jsp";
-    }
-
-
-    private ModelAndView setUpModelAndView(User user){
+    /**
+     * 获取简历信息并添加到modelAndView中返回
+     * @param user session中用户的信息
+     * @return 添加好简历信息的modelAndView
+     */
+    private ModelAndView setUpModelAndView(User user) {
         ModelAndView mv = new ModelAndView();
-        Basic_Info basicInfo =  newresumeService.getBasicInfo(user.getId());
-        Intent_Info intentInfo =  newresumeService.getIntentInfo(user.getId());
-        Exp_Info expInfo =  newresumeService.getExperienceInfo(user.getId());
-        Intro_Info introInfo =  newresumeService.getIntroduceInfo(user.getId());
-        mv.addObject("basicInfo",basicInfo);
-        mv.addObject("intentInfo",intentInfo);
-        mv.addObject("expInfo",expInfo);
-        mv.addObject("introInfo",introInfo);
+        Basic_Info basicInfo = newresumeService.getBasicInfo(user.getId());
+        Intent_Info intentInfo = newresumeService.getIntentInfo(user.getId());
+        Exp_Info expInfo = newresumeService.getExperienceInfo(user.getId());
+        Intro_Info introInfo = newresumeService.getIntroduceInfo(user.getId());
+        mv.addObject("basicInfo", basicInfo);
+        mv.addObject("intentInfo", intentInfo);
+        mv.addObject("expInfo", expInfo);
+        mv.addObject("introInfo", introInfo);
         return mv;
     }
-
 
 
 }
