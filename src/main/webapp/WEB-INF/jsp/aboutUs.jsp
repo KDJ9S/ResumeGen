@@ -26,28 +26,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
 <body>
-<!-- header -->
-<%--<div class="header-top">--%>
-    <%--<div class="container">--%>
-
-        <%--&lt;%&ndash;<div class="bottom_header_left">&ndash;%&gt;--%>
-          <%--&lt;%&ndash;&ndash;%&gt;--%>
-        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;<div class="bottom_header_right">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;&lt;%&ndash;<div class="header-top-righ bottom_header_right">&ndash;%&gt;&ndash;%&gt;--%>
-
-                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<a href="/login"><span ></span>登录</a>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
-                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<span>| |</span>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
-                <%--&lt;%&ndash;&lt;%&ndash;&lt;%&ndash;<a href="/register"><span></span>注册</a>&ndash;%&gt;&ndash;%&gt;&ndash;%&gt;--%>
-
-            <%--&lt;%&ndash;&lt;%&ndash;</div>&ndash;%&gt;&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<div class="clearfix"> </div>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-        <%--<div class="clearfix">--%>
-
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
 
 
 <div class="services-breadcrumb"><%--header --%>
@@ -79,15 +57,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href="/aboutUs" class="effect-3">关于我们</a>
                             </li>
                             <li>
-                                <a href="#" class="effect-3">扩展</a>
-                            </li>
-                            <li>
-                                <a href="#" class="effect-3">扩展</a>
-                            </li>
-                            <li>
-                                <a href="#" class="effect-3">扩展</a>
-                            </li>
-                            <li>
                                 <a href="#introUs" class="effect-3">团队成员</a>
                             </li>
                             <li>
@@ -103,27 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 
-<!-- banner -->
 
-<%--<div class="inner_page_agile">--%>
-
-<%--</div>--%>
-
-<!--//banner -->
-<!-- short -->
-<%--<div class="services-breadcrumb">--%>
-    <%--<div class="inner_breadcrumb">--%>
-        <%--<ul class="short_ls">--%>
-            <%--<li>--%>
-                <%--&lt;%&ndash;<a href="/main">Home</a>&ndash;%&gt;--%>
-                <%--&lt;%&ndash;<span>| |</span>&ndash;%&gt;--%>
-            <%--</li>--%>
-            <%--<li></li>--%>
-        <%--</ul>--%>
-    <%--</div>--%>
-<%--</div>--%>
-<!-- //short-->
-<!-- about -->
 <div class="about-sec" id="about">
     <div class="container">
         <div class="title-div">
@@ -233,26 +182,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-                <div class="thumbnail team-agileits">
-                    <img src="/static/images/aboutUs/t4.jpg" class="img-responsive" alt="" />
-                    <div class="effectd-caption">
-                        <h4>Goes Mehak</h4>
-                        <p>Teacher Science</p>
-                        <div class="social-lsicon">
-                            <a href="#" class="social-button twitter">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                            <a href="#" class="social-button facebook">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                            <a href="#" class="social-button google">
-                                <span class="fa fa-google-plus"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -301,12 +230,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <a href="/aboutUs">关于我们</a>
                     </li>
                     <li>
-                        <a href="#">扩展</a>
-                    </li>
-                    <li>
-                        <a href="#">扩展</a>
-                    </li>
-                    <li>
                         <a href="#contact">联系我们</a>
                     </li>
                 </ul>
@@ -323,33 +246,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer-copy-right">
         <div class="container">
             <div class="allah-copy">
-                <p>© 2018 ResumeGen. All rights reserved | Design by
-                    <a href="http://www.mobanwang.com/">MoBanWang</a>
+                <p>© 2018 ResumeGen. All rights reserved
                 </p>
-            </div>
-            <div class="footercopy-social">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-facebook"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-rss"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-vk"></span>
-                        </a>
-                    </li>
-                </ul>
             </div>
             <div class="clearfix"></div>
         </div>
