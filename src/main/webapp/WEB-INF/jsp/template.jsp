@@ -63,7 +63,7 @@
     <div class="row fh5co-post-entry">
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_1.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template01.docx"><img src="/static/images/template/pic_1.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Food &amp; Drink</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">We Eat and Drink All Night</a></h2>
@@ -72,7 +72,7 @@
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_2.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template02.doc"><img src="/static/images/template/pic_2.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Food &amp; Drink</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">Beef Steak at Guatian Restaurant</a></h2>
@@ -82,7 +82,7 @@
         <div class="clearfix visible-xs-block"></div>
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_3.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template03.docx"><img src="/static/images/template/pic_3.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Travel</a>, <a href="single.html">Style</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">An Overlooking River at the East Cost</a></h2>
@@ -91,7 +91,7 @@
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_4.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template04.doc"><img src="/static/images/template/pic_4.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Travel</a>, <a href="single.html">Style</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">A Wildlife In The Mountain of India</a></h2>
@@ -101,7 +101,7 @@
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_5.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template05.docx"><img src="/static/images/template/pic_5.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Photography</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">We Took A Photo</a></h2>
@@ -110,7 +110,7 @@
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_6.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template06.docx"><img src="/static/images/template/pic_6.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Travel</a>, <a href="single.html">Style</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">A Modernize Huge and Beautiful Building</a></h2>
@@ -120,7 +120,7 @@
         <div class="clearfix visible-xs-block"></div>
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_7.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template07.docx"><img src="/static/images/template/pic_7.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Food &amp; Drinks</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">Enjoying the Native Juice Drink in Brazil</a></h2>
@@ -129,7 +129,7 @@
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_8.jpg" alt="Image" class="img-responsive"></a>
+                <a href="/download?filename=template08.docx"><img src="/static/images/template/pic_8.jpg" alt="Image" class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta"><a href="single.html">Travel</a>, <a href="single.html">Style</a></span>
             <h2 class="fh5co-article-title"><a href="single.html">Boat Travel in The Vietnam River</a></h2>
