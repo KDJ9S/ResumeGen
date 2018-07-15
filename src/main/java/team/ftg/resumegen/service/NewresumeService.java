@@ -22,16 +22,19 @@ public interface NewresumeService {
     void insertIntroduceInfo(Intro_Info intro_info);
 
     //从数据库获取 基础信息
-    List<Basic_Info> getBasicInfo(int user_id);
+    Basic_Info getBasicInfo(int user_id);
 
     //从数据库获取 求职意向
-    List<Intent_Info> getIntentInfo(int user_id);
+    Intent_Info getIntentInfo(int user_id);
 
     //从数据库获取 教育/项目经历
-    List<Exp_Info> getExperienceInfo(int user_id);
+    Exp_Info getExperienceInfo(int user_id);
 
     //从数据库获取 自我评价
-    List<Intro_Info> getIntroduceInfo(int user_id);
+    Intro_Info getIntroduceInfo(int user_id);
+
+    // 查询一下用户是否已经填写过简历需要填写的信息
+    boolean checkStatus(int user_id);
 
 
 }

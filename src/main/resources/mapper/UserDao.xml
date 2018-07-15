@@ -10,8 +10,9 @@
     </select>
 
     <!--用户注册-->
-    <select id="registerByUsernameAndPassword">
+    <insert id="registerByUsernameAndPassword">
         insert into User (username,password) values (#{username}, #{password})
-    </select>
+    </insert>
+
 
 </mapper>

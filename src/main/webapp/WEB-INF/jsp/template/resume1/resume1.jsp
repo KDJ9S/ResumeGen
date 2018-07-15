@@ -39,37 +39,27 @@
 <div class="container">
     <div class="sidebar">
         <div class="title">
-            <img src="img/head.jpg">
-            <h1>姓名</h1>
-            <h1>"个性签名"</h1>
+            <img src="../../../../static/template/resume1/img/head.jpg">
+            <h1>${basicInfo.name}</h1>
+            <h1>${basicInfo.gender}</h1>
         </div>
         <ul class="side-info">
             <li class="someRight">
-                <dt>
-                    <i class="icon-bookmark"></i>Contact&nbsp;-&nbsp;联系方式
-                </dt>
-                <dd>
-                    <i class="icon-phone"></i>&nbsp;手机: XXX-XXXX-XXXX
-                </dd>
-                <dd>
-                    <i class="icon-mail"></i>&nbsp;邮箱: XXX@XXX.com
-                </dd>
-                <dd>
-                    <i class="icon-wechat"></i>&nbsp;微信: 二维码
-                    <div class="title">
-                        <img src="img/mmqrcode.png">
-                    </div>
-                </dd>
-                <dd>
-                    <i class="icon-qq"></i>&nbsp;QQ:XXXXX
-                </dd>
-                <dd>
-                    <i class="icon-weibo"></i>&nbsp;<a href="https://github.com/AiotCEO" target="_blank">http://weibo.com/XXXXX</a>
-                </dd>
+
+                <i class="icon-bookmark">Contact&nbsp;-&nbsp;联系方式</i><br>
+
+                <i class="icon-phone">&nbsp;手机: ${basicInfo.tel}</i><br>
+
+                <i class="icon-mail">&nbsp;邮箱: ${basicInfo.email}</i><br>
+
+                <i class="icon-mail">&nbsp;国籍: ${basicInfo.nation}</i><br>
+
+                <i class="icon-mail">&nbsp;城市: ${basicInfo.city}</i><br>
+
             </li>
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Application&nbsp;-&nbsp;应聘岗位</dt>
-                <dd>写上你的应聘岗位</dd>
+                <dd>${intentInfo.position}</dd>
             </li>
             <li class="skill">
                 <dt><i class="icon-bookmark"></i>Tech&nbsp;-&nbsp;专业知识</dt>
@@ -125,11 +115,10 @@
         <ul class="main-info">
             <li class="someRight">
                 <dt><i class="icon-bookmark"></i>Basic info&nbsp;-&nbsp;基本信息</dt>
-                <dd><span>个人信息:</span> 姓名 / 性别 / 出生日期</dd>
-                <dd><span>教育经历:</span> 学历 / 学校 / 毕业时间</dd>
-                <dd><span>专业:</span> 你的专业</dd>
-                <dd><span>常用ID:</span> <a href="https://github.com/AiotCEO" target="_blank">XXXX</a></dd>
-                <dd><span>个人网站:</span> <a href="https://github.com/AiotCEO" target="_blank">http://XXX.com</a> </dd>
+                <dd><span>姓名:</span> ${basicInfo.name}</dd>
+                <dd><span>教育经历:</span> ${expInfo.edu_exp}</dd>
+                <dd><span>专业:</span> ${basicInfo.major}</dd>
+                <dd><span>毕业院校:</span>${basicInfo.school}</dd>
                 <dd><span>GitHub:</span>
                     <a href="https://github.com/AiotCEO" target="_blank">https://github.com/AiotCEO</a></dd>
             </li>
@@ -200,7 +189,7 @@
                     <li>
                         <div class="circle"></div>
                         <h4>项目描述</h4>
-                        <p>你的工作</p>
+                        <p>${intentInfoList.get(0).position}</p>
                         <img src="img/grwz.jpg">
                     </li>
                 </ul>

@@ -67,7 +67,7 @@ public class NewresumeServiceImpl implements NewresumeService {
      * @return
      */
     @Override
-    public List<Basic_Info> getBasicInfo(int user_id) {
+    public Basic_Info getBasicInfo(int user_id) {
 
         return newresumeDao.getBasicInfo(user_id);
     }
@@ -78,7 +78,7 @@ public class NewresumeServiceImpl implements NewresumeService {
      * @return
      */
     @Override
-    public List<Intent_Info> getIntentInfo(int user_id) {
+    public Intent_Info getIntentInfo(int user_id) {
 
         return newresumeDao.getIntentInfo(user_id);
     }
@@ -89,7 +89,7 @@ public class NewresumeServiceImpl implements NewresumeService {
      * @return
      */
     @Override
-    public List<Exp_Info> getExperienceInfo(int user_id) {
+    public Exp_Info getExperienceInfo(int user_id) {
 
         return newresumeDao.getExperienceInfo(user_id);
     }
@@ -100,9 +100,20 @@ public class NewresumeServiceImpl implements NewresumeService {
      * @return
      */
     @Override
-    public List<Intro_Info> getIntroduceInfo(int user_id) {
+    public Intro_Info getIntroduceInfo(int user_id) {
 
         return newresumeDao.getIntroduceInfo(user_id);
+    }
+
+    /**
+     * 查询是否已经填写过简历需要的信息
+     * @param user_id
+     * @return true:填写过了  false:还没填写过
+     */
+    @Override
+    public boolean checkStatus(int user_id) {
+        Basic_Info bi = newresumeDao.checkStatus(user_id);
+        return bi != null;
     }
 
 
