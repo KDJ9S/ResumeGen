@@ -2,42 +2,42 @@ package team.ftg.resumegen.entity;
 
 public class Intro_Info {
 
-    private int intro_id;
+    private int introId;
     //个人介绍
     private String introduce;
 
-    private int user_id;
+    private int userId;
 
-    public int getIntro_id() {
-        return intro_id;
+    public int getIntroId() {
+        return introId;
+    }
+
+    public void setIntroId(int introId) {
+        this.introId = introId;
     }
 
     public String getIntroduce() {
         return introduce;
     }
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setIntro_id(int intro_id) {
-        this.intro_id = intro_id;
-    }
-
     public void setIntroduce(String introduce) {
         this.introduce = introduce;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Override
     public String toString() {
         return "Intro_Info{" +
-                "intro_id=" + intro_id +
+                "introId=" + introId +
                 ", introduce='" + introduce + '\'' +
-                ", user_id=" + user_id +
+                ", userId=" + userId +
                 '}';
     }
 }

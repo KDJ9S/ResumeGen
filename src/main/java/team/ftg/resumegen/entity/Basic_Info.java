@@ -2,7 +2,7 @@ package team.ftg.resumegen.entity;
 
 public class Basic_Info {
 
-    private int basic_id;
+    private int basicId;
 
     // 姓名
     private String name;
@@ -25,108 +25,108 @@ public class Basic_Info {
     // 教育。。？？
     private String education;
 
-    private int user_id;
+    private int userId;
 
-    public void setBasic_id(int basic_id) {
-        this.basic_id = basic_id;
+    public int getBasicId() {
+        return basicId;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setNation(String nation) {
-        this.nation = nation;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setSchool(String school) {
-        this.school = school;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
-    }
-
-    public void setEducation(String education) {
-        this.education = education;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
-
-    public int getBasic_id() {
-        return basic_id;
+    public void setBasicId(int basicId) {
+        this.basicId = basicId;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getGender() {
         return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public int getAge() {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public String getNation() {
         return nation;
+    }
+
+    public void setNation(String nation) {
+        this.nation = nation;
     }
 
     public String getCity() {
         return city;
     }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public String getTel() {
         return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public String getEmail() {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getSchool() {
         return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
     }
 
     public String getMajor() {
         return major;
     }
 
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
     public String getEducation() {
         return education;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Override
     public String toString() {
         return "Basic_Info{" +
-                "basic_id=" + basic_id +
+                "basicId=" + basicId +
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
@@ -137,7 +137,7 @@ public class Basic_Info {
                 ", school='" + school + '\'' +
                 ", major='" + major + '\'' +
                 ", education='" + education + '\'' +
-                ", user_id=" + user_id +
+                ", userId=" + userId +
                 '}';
     }
 }

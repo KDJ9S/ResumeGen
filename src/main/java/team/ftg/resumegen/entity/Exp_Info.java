@@ -2,53 +2,53 @@ package team.ftg.resumegen.entity;
 
 public class Exp_Info {
 
-    private int exp_id;
+    private int expId;
     //教育经历
-    private String edu_exp;
+    private String eduExp;
     //项目经历
-    private String project_exp;
+    private String projectExp;
 
-    private int user_id;
+    private int userId;
 
-    public int getExp_id() {
-        return exp_id;
+    public int getExpId() {
+        return expId;
     }
 
-    public String getEdu_exp() {
-        return edu_exp;
+    public void setExpId(int expId) {
+        this.expId = expId;
     }
 
-    public String getProject_exp() {
-        return project_exp;
+    public String getEduExp() {
+        return eduExp;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public void setEduExp(String eduExp) {
+        this.eduExp = eduExp;
     }
 
-    public void setExp_id(int exp_id) {
-        this.exp_id = exp_id;
+    public String getProjectExp() {
+        return projectExp;
     }
 
-    public void setEdu_exp(String edu_exp) {
-        this.edu_exp = edu_exp;
+    public void setProjectExp(String projectExp) {
+        this.projectExp = projectExp;
     }
 
-    public void setProject_exp(String project_exp) {
-        this.project_exp = project_exp;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Override
     public String toString() {
         return "Exp_Info{" +
-                "exp_id=" + exp_id +
-                ", edu_exp='" + edu_exp + '\'' +
-                ", project_exp='" + project_exp + '\'' +
-                ", user_id=" + user_id +
+                "expId=" + expId +
+                ", eduExp='" + eduExp + '\'' +
+                ", projectExp='" + projectExp + '\'' +
+                ", userId=" + userId +
                 '}';
     }
 }
