@@ -1,0 +1,121 @@
+			body {
+				background: gainsboro;
+			}
+			#con {
+				margin: 10px auto;
+				background: azure;
+				width: 70%;
+			}
+			
+			#left {
+				width: 30%;
+				height: 800px;
+				background: steelblue;
+				float: left;
+				position: relative;
+				color: #FFF;
+			}
+			
+			#left img {
+				width: 120px;
+				height: 120px;
+				border: 2px solid #FFFFFF;
+				border-radius: 60px;
+				position: absolute;
+				left: 50%;
+				margin-left: -60px;
+				margin-top: 20px;
+			}
+			
+			#left dl {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-top: 160px;
+				margin-left: 15px;
+			}
+			
+			#left h3 {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-left: 12px;
+			}
+			
+			#left h4 {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-left: 12px;
+			}
+			
+			#left #html1 {
+				height: 13px;
+				width: 80px;
+				background: cornflowerblue;
+				margin-left: 15px;
+			}
+			
+			#left #html2 {
+				height: 13px;
+				width: 80px;
+				background: #fff;
+				margin-left: 95px;
+				margin-top: -13px;
+			}
+			
+			#left #js1 {
+				height: 13px;
+				width: 40px;
+				background: cornflowerblue;
+				margin-left: 15px;
+			}
+			
+			#left #js2 {
+				height: 13px;
+				width: 120px;
+				background: #fff;
+				margin-left: 55px;
+				margin-top: -13px;
+			}
+			
+			#left span {
+				margin-left: 16px;
+				font-size: 19px;
+			}
+			#left i.fa {
+				font-size: 20px;
+				color: darkturquoise;
+			}
+			
+			#right {
+				width: 70%;
+				height: 800px;
+				background: #fff;
+				float: right;
+			}
+			
+			#right h3,p {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-left: 12px;
+			}
+			#right h3{
+				color: #6495ED;
+				font-weight: 500;
+			}
+			
+			#right span {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-left: 12px;
+				border: 1px solid black;
+				border-radius: 10px;
+				font-size: 13px;
+			}
+			#right HR{
+				margin-top: -21px;
+			}
+			#right i.fa {
+				font-size: 20px;
+				color: #6495ED;
+			}
+			#right .span2 {
+				font-family: Arial, Verdana, Sans-serif;
+				margin-left: 15px;
+				border: 1px solid black;
+				border-radius: 5px;
+				font-size: 16px;
+			}
