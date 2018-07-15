@@ -85,7 +85,6 @@
     </div>
 </div>
 <footer>
-    <p>Created by XXXX - 2016 - 更新于 时间XXXXXX</p>
 </footer>
 </body>
 </html>

@@ -78,30 +78,30 @@ public class NewResumeController {
         return mv;
     }
 
-    @RequestMapping("/resume/resume3")
-    public ModelAndView resumeTemplate3(User user) {
-        ModelAndView mv = setUpModelAndView(user);
-
-        mv.setViewName("/template/resume3/resume3.jsp");
-        return mv;
-    }
-
-    @RequestMapping("/resume/resume4")
-    public ModelAndView resumeTemplate4(User user) {
-        ModelAndView mv = setUpModelAndView(user);
-
-        mv.setViewName("/template/resume4/resume4.jsp");
-        return mv;
-    }
-
-    @RequestMapping("/resume/resume5")
-    public ModelAndView resumeTemplate5(User user) {
-
-        ModelAndView mv = setUpModelAndView(user);
-
-        mv.setViewName("/template/resume5/resume5.jsp");
-        return mv;
-    }
+//    @RequestMapping("/resume/resume3")
+//    public ModelAndView resumeTemplate3(User user) {
+//        ModelAndView mv = setUpModelAndView(user);
+//
+//        mv.setViewName("/template/resume3/resume3.jsp");
+//        return mv;
+//    }
+//
+//    @RequestMapping("/resume/resume4")
+//    public ModelAndView resumeTemplate4(User user) {
+//        ModelAndView mv = setUpModelAndView(user);
+//
+//        mv.setViewName("/template/resume4/resume4.jsp");
+//        return mv;
+//    }
+//
+//    @RequestMapping("/resume/resume5")
+//    public ModelAndView resumeTemplate5(User user) {
+//
+//        ModelAndView mv = setUpModelAndView(user);
+//
+//        mv.setViewName("/template/resume5/resume5.jsp");
+//        return mv;
+//    }
 
 
     /**
