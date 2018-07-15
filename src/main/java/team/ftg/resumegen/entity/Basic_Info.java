@@ -4,24 +4,25 @@ public class Basic_Info {
 
     private int basic_id;
 
+    // 姓名
     private String name;
-
+    // 性别
     private String gender;
-
+    // 年龄
     private int age;
-
+    // 国籍
     private String nation;
-
+    // 城市
     private String city;
-
+    // 电话
     private String tel;
-
+    // 邮箱
     private String email;
-
+    // 毕业院校
     private String school;
-
+    // 专业
     private String major;
-
+    // 教育。。？？
     private String education;
 
     private int user_id;
@@ -120,5 +121,23 @@ public class Basic_Info {
 
     public int getUser_id() {
         return user_id;
+    }
+
+    @Override
+    public String toString() {
+        return "Basic_Info{" +
+                "basic_id=" + basic_id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", nation='" + nation + '\'' +
+                ", city='" + city + '\'' +
+                ", tel='" + tel + '\'' +
+                ", email='" + email + '\'' +
+                ", school='" + school + '\'' +
+                ", major='" + major + '\'' +
+                ", education='" + education + '\'' +
+                ", user_id=" + user_id +
+                '}';
     }
 }

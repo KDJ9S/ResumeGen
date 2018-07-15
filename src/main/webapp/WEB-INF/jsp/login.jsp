@@ -24,7 +24,7 @@
     <div class="wrapper">
         <h2>Sign In</h2>
         <div class="w3ls-form">
-            <form action="/checkLogin" method="post">
+            <form action="${pageContext.request.contextPath}/checkLogin" method="post">
                 <label>Username</label>
                 <input id="username" type="text" name="username" placeholder="Username" required/>
                 <label>Password</label>

@@ -31,4 +31,13 @@ public class Intro_Info {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
+
+    @Override
+    public String toString() {
+        return "Intro_Info{" +
+                "intro_id=" + intro_id +
+                ", introduce='" + introduce + '\'' +
+                ", user_id=" + user_id +
+                '}';
+    }
 }

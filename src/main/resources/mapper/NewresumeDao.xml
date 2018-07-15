@@ -4,37 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="team.ftg.resumegen.dao.NewresumeDao">
 
-    <!-- 自定义结果集 -->
-    <resultMap type="Basic_Info" id="basicResultMap">
-        <id property="basic_id" column="basic_id" />
-        <result property="name" column="name" />
-        <result property="gender" column="gender" />
-        <result property="age" column="age" />
-        <result property="nation" column="nation" />
-        <result property="city" column="city" />
-        <result property="tel" column="tel" />
-        <result property="email" column="email" />
-        <result property="school" column="school" />
-        <result property="major" column="major" />
-        <result property="education" column="education" />
-    </resultMap>
-    <resultMap type="Intent_Info" id="intentResultMap">
-        <id property="intent_id" column="intent_id" />
-        <result property="position" column="position" />
-        <result property="job_type" column="job_type" />
-        <result property="work_city" column="work_city" />
-        <result property="salary" column="salary" />
-    </resultMap>
-    <resultMap type="Exp_Info" id="expResultMap">
-        <id property="exp_id" column="exp_id" />
-        <result property="edu_exp" column="edu_exp" />
-        <result property="project_exp" column="project_exp" />
-    </resultMap>
-    <resultMap type="Intro_Info" id="introResultMap">
-        <id property="intro_id" column="intro_id" />
-        <result property="introduce" column="introduce" />
-    </resultMap>
-
     <!--插入基本信息-->
     <insert id="insertBasicInfo" parameterType="Basic_Info"  useGeneratedKeys="true" keyProperty="basic_id">
        insert
@@ -61,24 +30,30 @@
     </insert>
 
     <!-- 查询基础信息 -->
-    <select id="getBasicInfo" parameterType="Basic_Info" resultMap="basicResultMap">
+    <select id="getBasicInfo" parameterType="int" resultType="Basic_info">
         select *
         from basic_info where user_id=#{user_id}
     </select>
     <!-- 查询求职意向信息 -->
-    <select id="getIntentInfo" parameterType="Intent_Info" resultMap="intentResultMap">
+    <select id="getIntentInfo" parameterType="int" resultType="Intent_info">
         select *
         from intent_info where user_id=#{user_id}
     </select>
     <!-- 查询教育/项目经历信息 -->
-    <select id="getExperienceInfo" parameterType="Exp_Info" resultMap="expResultMap">
+    <select id="getExperienceInfo" parameterType="int" resultType="Exp_Info">
         select *
         from exp_info where user_id=#{user_id}
     </select>
     <!-- 查询自我评价 -->
-    <select id="getIntroduceInfo" parameterType="Intro_Info" resultMap="introResultMap">
+    <select id="getIntroduceInfo" parameterType="int" resultType="Intro_Info">
         select *
         from intro_info where user_id=#{user_id}
+    </select>
+
+    <!-- 查询基本信息是否已经填写过 -->
+    <select id="checkStatus" parameterType="int" resultType="Basic_info">
+        select *
+        from basic_info where user_id=#{user_id}
     </select>
 
 
