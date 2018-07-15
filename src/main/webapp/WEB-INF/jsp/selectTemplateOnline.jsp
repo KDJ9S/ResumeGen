@@ -62,17 +62,17 @@
             <figure>
                 <a href="${pageContext.request.contextPath}/resume/resume1"><img src="/static/images/template/pic_1.jpg" alt="Image" class="img-responsive"></a>
             </figure>
-            <span class="fh5co-meta"><a href="single.html">Food &amp; Drink</a></span>
-            <h2 class="fh5co-article-title"><a href="single.html">We Eat and Drink All Night</a></h2>
+            <span class="fh5co-meta">can you hear me</span>
+            <h2 class="fh5co-article-title">简历一号，准备就绪！</h2>
             <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
             <figure>
-                <a href="single.html"><img src="/static/images/template/pic_2.jpg" alt="Image" class="img-responsive"></a>
+                <a href="${pageContext.request.contextPath}/resume/resume2"><img src="/static/images/template/pic_2.jpg" alt="Image" class="img-responsive"></a>
             </figure>
-            <span class="fh5co-meta"><a href="single.html">Food &amp; Drink</a></span>
-            <h2 class="fh5co-article-title"><a href="single.html">Beef Steak at Guatian Restaurant</a></h2>
+            <span class="fh5co-meta">Absolutely</span>
+            <h2 class="fh5co-article-title">简历二号，准备中</h2>
             <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
         </article>
 
