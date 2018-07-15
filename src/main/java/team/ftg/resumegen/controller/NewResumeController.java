@@ -86,8 +86,15 @@ public class NewResumeController {
     }
 
     @RequestMapping("/resume/resume5")
-    public String resumeTemplate5() {
-        return "/template/resume5/resume5.jsp";
+//    public String resumeTemplate5() {
+//        return "/template/resume5/resume5.jsp";
+//    }
+    public ModelAndView resumeTemplate5(User user) {
+
+        ModelAndView mv = setUpModelAndView(user);
+
+        mv.setViewName("/template/resume5/resume5.jsp");
+        return mv;
     }
 
     @RequestMapping("/resume/resume6")

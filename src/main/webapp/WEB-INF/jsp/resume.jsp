@@ -94,7 +94,7 @@
                             </div>
 
                             <%--user id--%>
-                            <input type="hidden" name="user_id" value="${sessionScope.user.id}">
+                            <input type="hidden" name="userId" value="${sessionScope.user.id}">
 
                             <%--Basic Info 基本信息--%>
                             <div class="tab-content">
@@ -205,7 +205,7 @@
                                         <div class="col-sm-5">
                                             <div class="form-group">
                                                 <label>职业类型</label><br>
-                                                <select  class="form-control"  name="job_type" >
+                                                <select  class="form-control"  name="jobType" >
                                                     <option disabled="" selected="">- 选择职业类型 -</option>
                                                     <option value="全职"> 全职</option>
                                                     <option value="兼职"> 兼职</option>
@@ -217,7 +217,7 @@
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>意向城市</label>
-                                                <input type="text" class="form-control" name="work_city"
+                                                <input type="text" class="form-control" name="workCity"
                                                        placeholder="输入意向城市" >
                                             </div>
                                         </div>
@@ -239,7 +239,7 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>教育经历</label>
-                                                <textarea class="form-control" placeholder="" rows="9" name="edu_exp"></textarea>
+                                                <textarea id="textarea1" class="form-control" placeholder="" rows="9" name="eduExp"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -253,7 +253,7 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>项目经历</label>
-                                                <textarea class="form-control" placeholder="" rows="9" name="project_exp"></textarea>
+                                                <textarea id="textarea2" class="form-control" placeholder="" rows="9" name="projectExp"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -272,7 +272,7 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>请做一下自我评价，例如技能，业余爱好等</label>
-                                                <textarea class="form-control" placeholder="" rows="9" name="introduce"></textarea>
+                                                <textarea id="textarea3" class="form-control" placeholder="" rows="9" name="introduce"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -291,7 +291,7 @@
                                     <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next'
                                            value='Next'/>
                                     <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd'
-                                           name='finish' value='Finish'/>
+                                           name='finish' value='Finish' id="form"/>
                                 </div>
 
                                 <div class="pull-left">
@@ -318,6 +318,25 @@
 </div>
 
 </body>
+
+<%--textarea换行问题--%>
+<script type="text/javascript">
+    $("#form").submit(function(){
+        var descrip1 = $("#textarea1").val();
+        descrip1=descrip1.replace(/\n/g,'<br />');
+        $("#textarea1").val(descrip1);
+
+
+        var descrip2 = $("#textarea2").val();
+        descrip2=descrip2.replace(/\n/g,'<br />');
+        $("#textarea2").val(descrip2);
+
+
+        var descrip3 = $("#textarea3").val();
+        descrip3=descrip3.replace(/\n/g,'<br />');
+        $("#textarea3").val(descrip3);
+    })
+</script>
 
 <!--   Core JS Files   -->
 <script src="/static/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
