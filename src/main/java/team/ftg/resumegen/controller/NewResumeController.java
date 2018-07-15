@@ -14,7 +14,7 @@ import team.ftg.resumegen.service.NewresumeService;
 public class NewResumeController {
 
     @Autowired
-    NewresumeService newresumeService;
+    private NewresumeService newresumeService;
 
     @RequestMapping("/resume")
     public String resume() { return "resume.jsp";}
@@ -49,5 +49,7 @@ public class NewResumeController {
 
         return  ret;
     }
+
+
 
 }

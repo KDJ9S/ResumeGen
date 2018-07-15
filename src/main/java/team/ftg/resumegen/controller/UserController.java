@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 public class UserController {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     /**
      * 访问 登录 页面
