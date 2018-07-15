@@ -10,7 +10,7 @@ public class Basic_Info {
     private String gender;
     // 年龄
     private int age;
-    // 国籍
+    // 民族
     private String nation;
     // 城市
     private String city;
@@ -22,7 +22,7 @@ public class Basic_Info {
     private String school;
     // 专业
     private String major;
-    // 教育。。？？
+    // 学历
     private String education;
 
     private int userId;
