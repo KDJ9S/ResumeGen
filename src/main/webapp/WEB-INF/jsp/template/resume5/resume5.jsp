@@ -15,6 +15,13 @@
     <link href="../../../../static/template/resume5/css/resume.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<aside>
+    <ul>
+        <li>
+            <a href="#" target="_blank">保存</a>
+        </li>
+    </ul>
+</aside>
 <div id="con">
     <div id="left">
         <img src="../../../../static/template/resume5/img/9B449370E66A440100F7DB5194767540.jpg"/>

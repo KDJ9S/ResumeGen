@@ -119,6 +119,7 @@ public class NewResumeController {
         mv.addObject("intentInfo", intentInfo);
         mv.addObject("expInfo", expInfo);
         mv.addObject("introInfo", introInfo);
+        mv.addObject("user",user);
         return mv;
     }
 

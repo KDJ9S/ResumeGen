@@ -400,6 +400,13 @@
         width: 270px
     }
 </style>
+<aside>
+    <ul>
+        <li>
+            <a href="#" target="_blank">保存</a>
+        </li>
+    </ul>
+</aside>
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
     <tbody>
     <tr>

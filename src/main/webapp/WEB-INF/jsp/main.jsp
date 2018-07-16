@@ -93,7 +93,7 @@
 									<span></span>
 								</span>
                         </a>
-                        <a href="/myresume" class="hover-effect scroll">
+                        <a href="${pageContext.request.contextPath}/myResume" class="hover-effect scroll">
 								<span>
 									<span>我的简历</span>
 									<span>我的简历</span>

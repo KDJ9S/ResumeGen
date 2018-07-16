@@ -20,21 +20,24 @@ public class UserController {
 
     /**
      * 访问 登录 页面
+     *
      * @return
      */
     @RequestMapping("/login")
-    public String login() { return "login.jsp";}
+    public String login() {
+        return "login.jsp";
+    }
 
     /**
      * 登录处理
      */
     @RequestMapping("/checkLogin")
-    public ModelAndView checkLogin(User user, Model model){
+    public ModelAndView checkLogin(User user, Model model) {
         ModelAndView mav;
         user = userService.checkLogin(user.getUsername(), user.getPassword());
 
         //客户端跳转，防止返回时需要重新提交表单
-        if (user != null){
+        if (user != null) {
             mav = new ModelAndView("redirect:/main");
             model.addAttribute("user", user);
             return mav;
@@ -47,42 +50,47 @@ public class UserController {
 
     /**
      * 登录成功，访问 主页
+     *
      * @return
      */
     @RequestMapping("/main")
-    public String main() { return "main.jsp";}
+    public String main() {
+        return "main.jsp";
+    }
 
     /**
      * 登录失败
+     *
      * @return
      */
     @RequestMapping("/fail")
-    public String test() { return "fail.jsp";}
+    public String test() {
+        return "fail.jsp";
+    }
 
 
     /**
      * 访问 注册 页面
+     *
      * @return
      */
     @RequestMapping("/register")
-    public String register() { return "register.jsp";}
-
+    public String register() {
+        return "register.jsp";
+    }
 
     /**
      * 注册处理
+     *
      * @param user
      * @return
      */
     @RequestMapping("/doRegister")
-    public ModelAndView doRegister(User user,Model model){
+    public ModelAndView doRegister(User user, Model model) {
 
-        User registerUser = user;
+        int flag = userService.register(user);
 
-        user = userService.checkExistence(user.getUsername());
-
-        if (user == null){
-            userService.register(registerUser);
-
+        if (flag != 0) {
             //客户端跳转，防止返回时需要重新提交表单
             ModelAndView mav = new ModelAndView("redirect:/main");
             //更新Session中的user对象，修复id的问题
@@ -91,19 +99,20 @@ public class UserController {
 
             return mav;
         }
-
         ModelAndView mav = new ModelAndView("redirect:/fail");
         return mav;
 
     }
 
+
     /**
      * 注销账号
+     *
      * @param session
      * @return
      */
     @RequestMapping("/outLogin")
-    public ModelAndView outLogin(HttpSession session){
+    public ModelAndView outLogin(HttpSession session) {
         //注销当前的Session
         session.invalidate();
 
@@ -113,7 +122,7 @@ public class UserController {
 
     /*跳转到关于我们*/
     @RequestMapping("/aboutUs")
-    public String getToUs(){
+    public String getToUs() {
         return "aboutUs.jsp";
     }
 

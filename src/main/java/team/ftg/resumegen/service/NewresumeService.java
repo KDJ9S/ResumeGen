@@ -37,4 +37,6 @@ public interface NewresumeService {
     boolean checkStatus(int user_id);
 
 
+
+
 }

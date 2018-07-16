@@ -18,8 +18,43 @@
     <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-ie7.css">
     <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-ie7-codes.css">
     <link rel="stylesheet" href="../../../../static/template/resume1/css/style.css">
+    <%-- jquery --%>
+    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
+    <script>
+        function myAjax() {
+            $.ajax({
+                    type: 'POST',
+
+                    contentType: 'application/json; charset=utf-8',
+
+                    url: '/saveMyResume',
+
+                    dataType: 'json',
+
+                    data: '{"userId":"${user.id}","resumeId":"1"}',
+
+                    success: function (data) {
+                        alert("suc!!!");
+
+                    },
+
+                    error: function (data) {
+                        alert("fail!");
+                    }
+
+                }
+            )
+        }
+    </script>
 </head>
 <body>
+<aside>
+    <ul>
+        <li>
+            <a href="####" onclick="myAjax()" target="_blank">保存</a>
+        </li>
+    </ul>
+</aside>
 <div class="container">
     <div class="sidebar">
         <div class="title">

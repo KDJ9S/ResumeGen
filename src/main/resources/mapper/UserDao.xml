@@ -4,15 +4,27 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="team.ftg.resumegen.dao.UserDao">
 
-    <!--查询用户名和密码进行登录-->
+    <!-- 查询用户名和密码进行登录 -->
     <select id="findByUsername" resultType="User" parameterType="String">
         select * from User where username = #{username}
     </select>
 
-    <!--用户注册-->
+    <!-- 用户注册 -->
     <insert id="registerByUsernameAndPassword">
-        insert into User (username,password) values (#{username}, #{password})
+        insert into User (username,password) select #{username},#{password}
+        from dual where not exists (select * from User where username=#{username})
     </insert>
 
+    <!-- 查询 我的简历 -->
+    <select id="getMyResume" parameterType="int" resultType="Resume_id">
+        select resume_id from user_resume where user_id = #{user_id}
+    </select>
+
+    <!-- 保存至 我的简历 -->
+    <insert id="insertMyResume">
+      INSERT INTO user_resume (user_id,resume_id)
+      select #{user_id},#{resume_id} FROM DUAL
+      WHERE NOT EXISTS (SELECT * FROM user_resume AS u WHERE u.resume_id = #{resume_id})
+    </insert>
 
 </mapper>
