@@ -30,34 +30,29 @@ public class NewResumeController {
     }
 
     @RequestMapping("/submit")
-    public String submit(Basic_Info basic_info, Intent_Info intent_info,
-                         Exp_Info exp_info, Intro_Info intro_info,
-                         User user) {
+    public ModelAndView submit(Basic_Info basic_info, Intent_Info intent_info,
+                         Exp_Info exp_info, Intro_Info intro_info) {
 
-        String ret;
+
 
         try {
+            ModelAndView mav = new ModelAndView("redirect:/selectTemplateOnline");
+
             newresumeService.insertBasicInfo(basic_info);
             newresumeService.insertIntentInfo(intent_info);
             newresumeService.insertExperienceInfo(exp_info);
             newresumeService.insertIntroduceInfo(intro_info);
 
-            newresumeService.getBasicInfo(user.getId());
-            newresumeService.getIntentInfo(user.getId());
-            newresumeService.getExperienceInfo(user.getId());
-            newresumeService.getIntroduceInfo(user.getId());
-            System.out.println("打印一下" + newresumeService.getBasicInfo(user.getId()).toString()
-                    + "\n" + newresumeService.getIntentInfo(user.getId()).toString());
-
-
-            ret = "selectTemplateOnline.jsp";
+            return mav;
         } catch (Exception e) {
-            e.printStackTrace();
-            ret = "fail.jsp";
-        }
 
-        return ret;
+            ModelAndView mav = new ModelAndView("redirect:/fail");
+            return mav;
+        }
     }
+
+    @RequestMapping("/selectTemplateOnline")
+    public String selectTemplateOnline() { return "selectTemplateOnline.jsp";}
 
 
     /**********************************返回对应简历页面*****************************************/
