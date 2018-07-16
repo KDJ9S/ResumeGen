@@ -9,8 +9,9 @@
 </head>
 <body>
 
-<h1>账号或密码错误!</h1>
+<h1 style="text-align: center">登录：账号或密码错误!</h1>
+<h1 style="text-align: center">注册：账号已存在！</h1>
 <br>
-<a href="/outLogin" >返回登录界面</a>
+<h1 style="text-align: center"><a  href="/outLogin" >返回登录界面</a></h1>
 </body>
 </html>

@@ -33,8 +33,8 @@
 <div class="image-container set-full-height" style="background-image: url('/static/images/login.jpg')">
 
     <div>
-        <label style="color: white">当前登录的账号是：${sessionScope.user.username}</label>
-        <a href="/main" style="color: white;">返回首页</a>
+        <h3 style="text-align: center"><label style="color: white;">当前登录的账号是：${sessionScope.user.username}</label></h3>
+        <h3 style="text-align: center"><a href="/main" style="color: white;">返回首页</a></h3>
     </div>
 
     <!--   Big container   -->

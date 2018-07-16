@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     /**
-     * 检验登录账号是否存在
+     * 检验账号密码是否正确
      * @param username
      * @param password
      * @return
@@ -32,6 +32,24 @@ public class UserServiceImpl implements UserService {
 
         return null;
     }
+
+    /**
+     * 检验账号是否存在
+     * @param username
+     * @return
+     */
+    @Override
+    public User checkExistence(String username) {
+
+        User user = userDao.findByUsername(username);
+
+        if ( user != null){
+            return user;
+        }
+
+        return null;
+    }
+
 
     /**
      * 注册

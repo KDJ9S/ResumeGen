@@ -76,14 +76,23 @@ public class UserController {
     @RequestMapping("/doRegister")
     public ModelAndView doRegister(User user,Model model){
 
-        userService.register(user);
+        User registerUser = user;
 
-        //客户端跳转，防止返回时需要重新提交表单
-        ModelAndView mav = new ModelAndView("redirect:/main");
-        //更新Session中的user对象，修复id的问题
-        user = userService.checkLogin(user.getUsername(), user.getPassword());
-        model.addAttribute("user", user);
-        
+        user = userService.checkExistence(user.getUsername());
+
+        if (user == null){
+            userService.register(registerUser);
+
+            //客户端跳转，防止返回时需要重新提交表单
+            ModelAndView mav = new ModelAndView("redirect:/main");
+            //更新Session中的user对象，修复id的问题
+            user = userService.checkLogin(user.getUsername(), user.getPassword());
+            model.addAttribute("user", user);
+
+            return mav;
+        }
+
+        ModelAndView mav = new ModelAndView("redirect:/fail");
         return mav;
 
     }

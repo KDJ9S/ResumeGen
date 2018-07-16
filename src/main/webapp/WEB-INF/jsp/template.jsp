@@ -46,7 +46,7 @@
 
         <div class="row">
             <ul class="fh5co-social">
-                <li><a href="/main"><p>返回首页</p></a></li>
+                <li style="text-align: center"><a href="/main"><p>返回首页</p></a></li>
             </ul>
             <div class="col-lg-12 col-md-12 text-center">
                 <h1 id="fh5co-logo">简历模板 </h1>
