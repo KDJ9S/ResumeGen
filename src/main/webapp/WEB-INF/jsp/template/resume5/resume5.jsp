@@ -13,12 +13,14 @@
     <title></title>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../../../../static/template/resume5/css/resume.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
 </head>
 <body>
 <aside>
     <ul>
         <li>
-            <a href="#" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},5)" target="_blank">保存</a>
         </li>
     </ul>
 </aside>

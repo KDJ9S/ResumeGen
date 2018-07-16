@@ -20,43 +20,14 @@
     <link rel="stylesheet" href="../../../../static/template/resume1/css/style.css">
     <%-- jquery --%>
     <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
-    <script>
-        function myAjax() {
-            $.ajax({
-                    type: 'POST',
+    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
 
-                    contentType: 'application/json; charset=utf-8',
-
-                    url: '/saveMyResume',
-
-                    dataType: 'json',
-
-                    data: '{"userId":"${user.id}","resumeId":"1"}',
-
-                    success: function (data) {
-                        //var json = eval(data);
-                        if (data.flag==="success"){
-                            alert("保存成功！");
-                        } else if (data.flag==="failure"){
-                            alert("模版已保存过！")
-                        }
-
-                    },
-
-                    error: function (data) {
-                        alert("保存模版失败!");
-                    }
-
-                }
-            )
-        }
-    </script>
 </head>
 <body>
 <aside>
     <ul>
         <li>
-            <a href="javascript:void(0)" onclick="myAjax()" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},1)" target="_blank">保存</a>
         </li>
     </ul>
 </aside>

@@ -67,7 +67,7 @@
                             src="${pageContext.request.contextPath}/static/template/image_preview/${ri.resumeId}.png" alt="Image"
                             class="img-responsive"></a>
                 </figure>
-                <span class="fh5co-meta">???曾庆峰</span>
+                <span class="fh5co-meta">拳打脚踢曾庆峰</span>
                 <h2 class="fh5co-article-title">简历${ri.resumeId}号，准备就绪！</h2>
             </article>
         </c:forEach>

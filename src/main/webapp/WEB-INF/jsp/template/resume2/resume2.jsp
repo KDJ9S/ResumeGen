@@ -11,6 +11,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="../../../../static/template/resume2/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
     <title>个人简历-${basicInfo.name}</title>
 </head>
 
@@ -18,7 +20,7 @@
 <aside>
     <ul>
         <li>
-            <a href="#" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},2)" target="_blank">保存</a>
         </li>
     </ul>
 </aside>
