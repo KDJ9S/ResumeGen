@@ -34,12 +34,17 @@
                     data: '{"userId":"${user.id}","resumeId":"1"}',
 
                     success: function (data) {
-                        alert("suc!!!");
+                        //var json = eval(data);
+                        if (data.flag==="success"){
+                            alert("保存成功！");
+                        } else if (data.flag==="failure"){
+                            alert("模版已保存过！")
+                        }
 
                     },
 
                     error: function (data) {
-                        alert("fail!");
+                        alert("保存模版失败!");
                     }
 
                 }
@@ -51,7 +56,7 @@
 <aside>
     <ul>
         <li>
-            <a href="####" onclick="myAjax()" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax()" target="_blank">保存</a>
         </li>
     </ul>
 </aside>

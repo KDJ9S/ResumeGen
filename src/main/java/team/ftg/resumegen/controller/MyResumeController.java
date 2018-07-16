@@ -11,6 +11,7 @@ import team.ftg.resumegen.entity.Resume_id;
 import team.ftg.resumegen.entity.User;
 import team.ftg.resumegen.service.UserService;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,8 +40,13 @@ public class MyResumeController {
     public @ResponseBody
     Map<String,String> saveMyResume(@RequestBody Resume_id resumeId) throws Exception{
 
+        Map<String,String> map = new HashMap<>();
         int i = userService.saveMyResume(resumeId);
-        System.out.println("look!!!!!" + i);
-        return null;
+        if (i > 0){ // 保存成功
+            map.put("flag","success");
+        } else { // 保存失败，因为已经保存过了
+            map.put("flag","failure");
+        }
+        return map;
     }
 }
