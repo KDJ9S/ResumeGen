@@ -24,7 +24,7 @@
     <insert id="insertMyResume">
       INSERT INTO user_resume (user_id,resume_id)
       select #{user_id},#{resume_id} FROM DUAL
-      WHERE NOT EXISTS (SELECT * FROM user_resume AS u WHERE u.resume_id = #{resume_id})
+      WHERE NOT EXISTS (SELECT * FROM user_resume AS u WHERE u.user_id = #{user_id} and u.resume_id = #{resume_id})
     </insert>
 
 </mapper>

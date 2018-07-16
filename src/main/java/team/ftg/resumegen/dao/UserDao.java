@@ -35,6 +35,6 @@ public interface UserDao {
     /**
      * 保存至 我的简历
      */
-    int insertMyResume(int user_id, int resume_id);
+    int insertMyResume(@Param("user_id") int user_id, @Param("resume_id") int resume_id);
 
 }
