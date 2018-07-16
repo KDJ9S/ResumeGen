@@ -22,12 +22,6 @@ public class TemplateController {
         return "template.jsp";
     }
 
-
-    @RequestMapping("/selectTemplate")
-    public String selectTemplate() {
-        return "selectTemplate.jsp";
-    }
-
     /**
      * 模板下载
      * @throws IOException
