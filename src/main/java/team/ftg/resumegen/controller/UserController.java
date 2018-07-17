@@ -3,13 +3,17 @@ package team.ftg.resumegen.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.User;
 import team.ftg.resumegen.service.UserService;
 
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @SessionAttributes("user")
@@ -31,7 +35,7 @@ public class UserController {
     /**
      * 登录处理
      */
-    @RequestMapping("/checkLogin")
+ /*   @RequestMapping("/checkLogin")
     public ModelAndView checkLogin(User user, Model model) {
         ModelAndView mav;
         user = userService.checkLogin(user.getUsername(), user.getPassword());
@@ -46,6 +50,26 @@ public class UserController {
         mav = new ModelAndView("redirect:/fail");
         return mav;
 
+    }*/
+    @RequestMapping("/checkLogin")
+    public @ResponseBody
+    Map<String, String> checkLogin(@RequestBody User user,Model model) {
+        // 待转换成JSon格式的响应Map
+        Map<String, String> map = new HashMap<>();
+        // 查询是否存在该用户
+        user = userService.checkLogin(user.getUsername(), user.getPassword());
+        // 成功与否的标志
+        String flag;
+        if (user == null) { //失败
+            flag = "failure";
+        } else { //成功
+            // 把user对象加入到session
+            model.addAttribute("user",user);
+            flag = "success";
+        }
+        // 将FLag标志为放入map
+        map.put("flag", flag);
+        return map;
     }
 
     /**

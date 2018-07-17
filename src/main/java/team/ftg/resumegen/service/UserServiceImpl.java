@@ -65,9 +65,6 @@ public class UserServiceImpl implements UserService {
     public int saveMyResume(Resume_id resumeId) {
         int user_id = Integer.parseInt(resumeId.getUserId());
         int resume_id = Integer.parseInt(resumeId.getResumeId());
-        System.out.println("saveMyResumeServiceImpl:");
-        System.out.println("user_id:" + user_id);
-        System.out.println("resume_id:" + resume_id);
         return userDao.insertMyResume(user_id,resume_id);
     }
 }
