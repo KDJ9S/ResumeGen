@@ -28,7 +28,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         request.setCharacterEncoding("UTF-8");
         String url = request.getServletPath();
         System.out.println("post URL："+url);
-        if(!url.equals("")){
+        if(!url.equals("") &&!url.equals("/checkExistence")){
             //判斷是否已登录
             User loginUser = (User)request.getSession().getAttribute("user");
             if(loginUser == null){

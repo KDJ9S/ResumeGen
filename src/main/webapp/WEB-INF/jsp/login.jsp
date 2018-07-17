@@ -64,12 +64,13 @@
     <div class="wrapper">
         <h2>Sign In</h2>
         <div class="w3ls-form">
-            <%--<form action="${pageContext.request.contextPath}/checkLogin" method="post">--%>
-            <form id="formm" action="javascript:login()" method="post">
+            <%-- 让form表单提交时执行js函数，而不是直接提交到一个url --%>
+            <form action="javascript:login()" method="post">
                 <label>Username</label>
                 <input id="username" type="text" name="username" placeholder="Username" required/>
                 <label>Password</label>
                 <input id="password" type="password" name="password" placeholder="Password" required/>
+                <%-- 输入错误提示占位 --%>
                 <div id="errorMessageDiv"></div>
                 <input type="submit" value="登录"/>
                 <input type="button" value="注册" onclick="window.location.href='/register'">

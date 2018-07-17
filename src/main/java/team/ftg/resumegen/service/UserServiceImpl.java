@@ -37,6 +37,17 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
+     * 注册时的用户名查重
+     * @param username
+     * @return
+     */
+    @Override
+    public User checkExistence(String username) {
+        return userDao.findByUsername(username);
+    }
+
+
+    /**
      * 注册
      * @param user
      */

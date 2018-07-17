@@ -10,6 +10,9 @@ public interface UserService {
     //检验登录账号是否存在
     User checkLogin(String username, String password);
 
+    // 注册时的用户名查重
+    User checkExistence(String username);
+
     //注册
     int register(User user);
 

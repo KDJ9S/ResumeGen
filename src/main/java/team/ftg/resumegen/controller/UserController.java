@@ -35,25 +35,9 @@ public class UserController {
     /**
      * 登录处理
      */
- /*   @RequestMapping("/checkLogin")
-    public ModelAndView checkLogin(User user, Model model) {
-        ModelAndView mav;
-        user = userService.checkLogin(user.getUsername(), user.getPassword());
-
-        //客户端跳转，防止返回时需要重新提交表单
-        if (user != null) {
-            mav = new ModelAndView("redirect:/main");
-            model.addAttribute("user", user);
-            return mav;
-        }
-
-        mav = new ModelAndView("redirect:/fail");
-        return mav;
-
-    }*/
     @RequestMapping("/checkLogin")
     public @ResponseBody
-    Map<String, String> checkLogin(@RequestBody User user,Model model) {
+    Map<String, String> checkLogin(@RequestBody User user, Model model) {
         // 待转换成JSon格式的响应Map
         Map<String, String> map = new HashMap<>();
         // 查询是否存在该用户
@@ -64,7 +48,7 @@ public class UserController {
             flag = "failure";
         } else { //成功
             // 把user对象加入到session
-            model.addAttribute("user",user);
+            model.addAttribute("user", user);
             flag = "success";
         }
         // 将FLag标志为放入map
@@ -104,12 +88,35 @@ public class UserController {
     }
 
     /**
-     * 注册处理
+     * 注册时的username查重
      *
-     * @param user
      * @return
      */
-    @RequestMapping("/doRegister")
+    @RequestMapping("/checkExistence")
+    public @ResponseBody
+    Map<String, String> checkExistence(@RequestBody User user) {
+
+        // 待转换成JSon格式的响应Map
+        Map<String, String> map = new HashMap<>();
+        // 成功与否的标志
+        String flag;
+
+        // 查询是否存在该用户
+        User us = userService.checkExistence(user.getUsername());
+        if (us == null) { // 不存在，该用户名可以被注册
+            flag = "false";
+        } else { // 存在，该用户名已被注册
+            flag = "true";
+        }
+        // 将FLag标志为放入map
+        map.put("flag", flag);
+        System.out.println("!!!!!!!!!" + user.getUsername());
+        System.out.println("!!!!!!!!!" + map.toString());
+        return map;
+    }
+
+
+/*    @RequestMapping("/doRegister")
     public ModelAndView doRegister(User user, Model model) {
 
         int flag = userService.register(user);
@@ -126,6 +133,35 @@ public class UserController {
         ModelAndView mav = new ModelAndView("redirect:/fail");
         return mav;
 
+    }*/
+
+    /**
+     * 注册处理
+     *
+     * @return map-->json格式
+     */
+    @RequestMapping("/doRegister")
+    public @ResponseBody
+    Map<String, String> doRegister(@RequestBody User user, Model model) {
+
+        // 待转换成JSon格式的响应Map
+        Map<String, String> map = new HashMap<>();
+        // 响应标志位
+        String flag;
+
+        if (userService.register(user) > 0) { // 注册成功
+            // 更新Session中的user对象，修复id的问题
+            user = userService.checkLogin(user.getUsername(), user.getPassword());
+            model.addAttribute("user", user);
+
+            flag = "success";
+        } else {
+            flag = "failure";
+        }
+        // 置入标志位
+        map.put("flag", flag);
+
+        return map;
     }
 
 
