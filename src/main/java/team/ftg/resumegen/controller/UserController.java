@@ -110,30 +110,9 @@ public class UserController {
         }
         // 将FLag标志为放入map
         map.put("flag", flag);
-        System.out.println("!!!!!!!!!" + user.getUsername());
-        System.out.println("!!!!!!!!!" + map.toString());
         return map;
     }
 
-
-/*    @RequestMapping("/doRegister")
-    public ModelAndView doRegister(User user, Model model) {
-
-        int flag = userService.register(user);
-
-        if (flag != 0) {
-            //客户端跳转，防止返回时需要重新提交表单
-            ModelAndView mav = new ModelAndView("redirect:/main");
-            //更新Session中的user对象，修复id的问题
-            user = userService.checkLogin(user.getUsername(), user.getPassword());
-            model.addAttribute("user", user);
-
-            return mav;
-        }
-        ModelAndView mav = new ModelAndView("redirect:/fail");
-        return mav;
-
-    }*/
 
     /**
      * 注册处理
