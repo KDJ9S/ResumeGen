@@ -21,6 +21,10 @@ public interface NewresumeService {
     //将 自我评价 存入数据库
     void insertIntroduceInfo(Intro_Info intro_info);
 
+    // 更新简历所有信息
+    // 用于已经填过简历信息的用户的再次确认和更新信息
+    int updateAllResumeInfo(Basic_Info basicInfo,Intent_Info intentInfo,Exp_Info expInfo,Intro_Info introInfo);
+
     //从数据库获取 基础信息
     Basic_Info getBasicInfo(int user_id);
 
@@ -35,8 +39,6 @@ public interface NewresumeService {
 
     // 查询一下用户是否已经填写过简历需要填写的信息
     boolean checkStatus(int user_id);
-
-
 
 
 }

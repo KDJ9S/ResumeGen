@@ -5,29 +5,57 @@
 <mapper namespace="team.ftg.resumegen.dao.NewresumeDao">
 
     <!--插入基本信息-->
-    <insert id="insertBasicInfo" parameterType="Basic_Info"  useGeneratedKeys="true" keyProperty="basic_id">
+    <insert id="insertBasicInfo" parameterType="Basic_Info" useGeneratedKeys="true" keyProperty="basic_id">
        insert
         into basic_info(name,gender,age,nation,city,tel,email,school,major,education,user_id)
         values(#{name},#{gender},#{age},#{nation},#{city},#{tel},#{email},#{school},#{major},#{education},#{userId})
     </insert>
     <!-- 插入求职意向信息 -->
-    <insert id="insertIntentInfo" parameterType="Intent_Info"  useGeneratedKeys="true" keyProperty="intent_id">
+    <insert id="insertIntentInfo" parameterType="Intent_Info" useGeneratedKeys="true" keyProperty="intent_id">
        insert
         into intent_info(position,job_type,work_city,salary,user_id)
         values(#{position},#{jobType},#{workCity},#{salary},#{userId})
     </insert>
     <!-- 插入教育/项目经历信息 -->
-    <insert id="insertExperienceInfo" parameterType="Exp_Info"  useGeneratedKeys="true" keyProperty="exp_id">
+    <insert id="insertExperienceInfo" parameterType="Exp_Info" useGeneratedKeys="true" keyProperty="exp_id">
        insert
         into exp_info(edu_exp,project_exp,user_id)
         values(#{eduExp},#{projectExp},#{userId})
     </insert>
     <!-- 插入自我介绍 -->
-    <insert id="insertIntroduceInfo" parameterType="Intro_Info"  >
+    <insert id="insertIntroduceInfo" parameterType="Intro_Info">
        insert
         into intro_info(introduce,user_id)
         values(#{introduce},#{userId})
     </insert>
+
+    <!--************************用于已经填过简历信息的用户的再次确认和更新信息***************************-->
+    <!-- 更新基本信息 -->
+    <update id="updateBasicInfo" parameterType="Basic_Info">
+        update basic_info
+        set name = #{name},gender = #{gender},age = #{age},nation = #{nation},city = #{city},
+        tel = #{tel},email = #{email},school=#{school},major=#{major},education = #{education}
+        where user_id=#{userId}
+    </update>
+    <!-- 更新经历 -->
+    <update id="updateExperienceInfo" parameterType="Exp_info">
+        update exp_info
+        set edu_exp = #{eduExp},project_exp = #{projectExp}
+        where user_id = #{userId}
+    </update>
+    <!-- 更新求职意向 -->
+    <update id="updateIntentInfo" parameterType="Intent_info">
+        update intent_info
+        set position = #{position},salary = #{salary}
+        where user_id = #{userId}
+    </update>
+    <!-- 更新个人评价 -->
+    <update id="updateIntroduceInfo" parameterType="Intro_info">
+        update intro_info
+        set introduce = #{introduce}
+        where user_id = #{userId}
+    </update>
+
 
     <!-- 查询基础信息 -->
     <select id="getBasicInfo" parameterType="int" resultType="Basic_info">
@@ -45,6 +73,14 @@
         from exp_info where user_id=#{user_id}
     </select>
     <!-- 查询自我评价 -->
+
+
+    <!--来自郑州，我是一名信息工程大学印刷工程专业应届本科即将毕业的学员。
+我的性格偏于内向，为人坦率、热情、讲求原则；处事乐观、专心、细致、头脑清醒；富有责任心、乐于助人。
+我还是一个正直忠诚、勤奋求实的人，会不断追求人格的自我完善；明显的特点是乐观自信、温和开朗、稳重宽厚，因此，我人际关系和谐s-->
+    <!--教育经历，包括时间和地点。如果你还是学生，可以从小学开始填起，如果你是社会人员，填写简历之类的文档时，可以从中专/大专/本科开始填起。另外，教育经历还包括职业教育经历，比如在哪里进修等等。
+拓展资料：
+教育过程开始于一个人的出生并持续终身，对人产生持久而深刻的变化。有些人甚至认为教育可以开始得更早，一些父母通过外部的言语和音乐来影响子宫里成长着的胎儿，进行胎教，希望给孩子以积极的健康的发展srrrr-->
     <select id="getIntroduceInfo" parameterType="int" resultType="Intro_Info">
         select *
         from intro_info where user_id=#{user_id}

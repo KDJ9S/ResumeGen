@@ -27,9 +27,9 @@
     <link href="/static/assets/css/themify-icons.css" rel="stylesheet">
 </head>
 <body>
-<div class="adcenter">
+<%--<div class="adcenter">
     <script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script>
-</div>
+</div>--%>
 <div class="image-container set-full-height" style="background-image: url('/static/images/login.jpg')">
 
     <div>
@@ -45,7 +45,7 @@
                 <!--      Wizard container        -->
                 <div class="wizard-container">
                     <div class="card wizard-card" data-color="green" id="wizard">
-                        <form action="/submit" method="">
+                        <form action="/submit" method="post">
                             <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
 
                             <div class="wizard-header">

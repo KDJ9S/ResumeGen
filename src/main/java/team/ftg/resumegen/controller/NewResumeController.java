@@ -20,20 +20,23 @@ public class NewResumeController {
     private NewresumeService newresumeService;
 
     @RequestMapping("/resume")
-    public String resume(User user) {
+    public ModelAndView resume(User user) {
+        ModelAndView mv = new ModelAndView();
         // 如果之前已经填写过简历信息，直接选择模版（晚点再加上一步验证信息的页面）
         // 如果没有填写过，就到填写信息的页面
         if (newresumeService.checkStatus(user.getId())) {
-            return "selectTemplateOnline.jsp";
+
+            mv = setUpModelAndView(user);
+            mv.setViewName("infoConfirm.jsp");
+            return mv;
         }
-        return "resume.jsp";
+        mv.setViewName("resume.jsp");
+        return mv;
     }
 
     @RequestMapping("/submit")
     public ModelAndView submit(Basic_Info basic_info, Intent_Info intent_info,
-                         Exp_Info exp_info, Intro_Info intro_info) {
-
-
+                               Exp_Info exp_info, Intro_Info intro_info) {
 
         try {
             ModelAndView mav = new ModelAndView("redirect:/selectTemplateOnline");
@@ -51,8 +54,27 @@ public class NewResumeController {
         }
     }
 
+    @RequestMapping("/confirmInfo")
+    public ModelAndView confirmInfo(Basic_Info basicInfo, Exp_Info expInfo,
+                                    Intent_Info intentInfo, Intro_Info introInfo) {
+        ModelAndView mv = new ModelAndView();
+
+        // 执行更新，i为影响的行数，成功应为4，因为执行了4个表的更新
+        int i = newresumeService.updateAllResumeInfo(basicInfo, intentInfo, expInfo, introInfo);
+
+        if (i >= 4) { //全部更新成功，进入选择模版页
+            mv.setViewName("selectTemplateOnline.jsp");
+        } else { //有失败，则返回首页
+            mv.setViewName("main.jsp");
+        }
+
+        return mv;
+    }
+
     @RequestMapping("/selectTemplateOnline")
-    public String selectTemplateOnline() { return "selectTemplateOnline.jsp";}
+    public String selectTemplateOnline() {
+        return "selectTemplateOnline.jsp";
+    }
 
 
     /**********************************返回对应简历页面*****************************************/
@@ -98,9 +120,9 @@ public class NewResumeController {
         return mv;
     }
 
-
     /**
      * 获取简历信息并添加到modelAndView中返回
+     *
      * @param user session中用户的信息
      * @return 添加好简历信息的modelAndView
      */
@@ -114,7 +136,7 @@ public class NewResumeController {
         mv.addObject("intentInfo", intentInfo);
         mv.addObject("expInfo", expInfo);
         mv.addObject("introInfo", introInfo);
-        mv.addObject("user",user);
+        mv.addObject("user", user);
         return mv;
     }
 

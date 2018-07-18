@@ -22,6 +22,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 将 基础信息 存入数据库
+     *
      * @param basic_info
      */
     @Override
@@ -33,6 +34,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 将 求职意向 存入数据库
+     *
      * @param intent_info
      */
     @Override
@@ -43,6 +45,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 将 教育/项目经历 存入数据库
+     *
      * @param exp_info
      */
     @Override
@@ -53,6 +56,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 将 自我评价 存入数据库
+     *
      * @param intro_info
      */
     @Override
@@ -62,7 +66,33 @@ public class NewresumeServiceImpl implements NewresumeService {
     }
 
     /**
+     * 用于已经填过简历信息的用户的再次确认和更新信息
+     * @return 影响的行数
+     */
+    @Override
+    public int updateAllResumeInfo(Basic_Info basicInfo, Intent_Info intentInfo,
+                                   Exp_Info expInfo, Intro_Info introInfo) {
+        int i = 0;
+        // 更新简历信息
+        if (newresumeDao.updateBasicInfo(basicInfo) > 0) {
+            i++;
+        }
+        if (newresumeDao.updateExperienceInfo(expInfo) > 0) {
+            i++;
+        }
+        if (newresumeDao.updateIntentInfo(intentInfo) > 0) {
+            i++;
+        }
+        if (newresumeDao.updateIntroduceInfo(introInfo) > 0) {
+            i++;
+        }
+        return i;
+    }
+
+
+    /**
      * 从数据库获取 基本信息
+     *
      * @param user_id
      * @return
      */
@@ -74,6 +104,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 从数据库获取 求职信息
+     *
      * @param user_id
      * @return
      */
@@ -85,6 +116,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 从数据库获取 教育/项目经历
+     *
      * @param user_id
      * @return
      */
@@ -96,6 +128,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 从数据库获取 自我评价
+     *
      * @param user_id
      * @return
      */
@@ -107,6 +140,7 @@ public class NewresumeServiceImpl implements NewresumeService {
 
     /**
      * 查询是否已经填写过简历需要的信息
+     *
      * @param user_id
      * @return true:填写过了  false:还没填写过
      */

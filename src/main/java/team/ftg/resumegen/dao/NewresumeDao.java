@@ -24,6 +24,18 @@ public interface NewresumeDao {
     //将 自我评价 存入数据库
     void insertIntroduceInfo(Intro_Info intro_info);
 
+    // 更新基本信息
+    int updateBasicInfo(Basic_Info basicInfo);
+
+    // 更新求职意向
+    int updateIntentInfo(Intent_Info intentInfo);
+
+    // 更新经历
+    int updateExperienceInfo(Exp_Info expInfo);
+
+    // 更新自我评价
+    int updateIntroduceInfo(Intro_Info introInfo);
+
     //从数据库获取 基础信息
     Basic_Info getBasicInfo(int user_id);
 

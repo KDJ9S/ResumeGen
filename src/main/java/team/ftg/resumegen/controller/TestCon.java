@@ -1,8 +1,14 @@
 package team.ftg.resumegen.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import team.ftg.resumegen.entity.Basic_Info;
+import team.ftg.resumegen.entity.Exp_Info;
+import team.ftg.resumegen.entity.Intent_Info;
+import team.ftg.resumegen.entity.Intro_Info;
+import team.ftg.resumegen.service.NewresumeService;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +22,10 @@ import java.util.Map;
 
 @Controller()
 public class TestCon {
+
+    @Autowired
+    private NewresumeService newresumeService;
+
     @RequestMapping("/testt")
     public String login() {
         return "../../static/template/moban1/resume.ftl";
@@ -42,16 +52,30 @@ public class TestCon {
 */
 
     @RequestMapping("/method7")
-    public String myMethod7(){
-        return "template/resume4/resume4.jsp";
+    public String myMethod7() {
+        return "infoConfirm.jsp";
     }
 
     @RequestMapping("/method8")
-    public ModelAndView myMethod8(){
+    public ModelAndView myMethod8() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("template/resume3/resume3.jsp");
 
         return mv;
+    }
+
+    @RequestMapping("/method9")
+    public ModelAndView myMethod9(Basic_Info basicInfo, Exp_Info expInfo,
+                                  Intent_Info intentInfo, Intro_Info introInfo) {
+//        ModelAndView mv = new ModelAndView();
+//        mv.setViewName("template/resume3/resume3.jsp");
+        System.out.println("!!!!!!!!!!!!!!!!!!");
+        System.out.println("basicInfo:" + basicInfo);
+        System.out.println("expInfo:" + expInfo);
+        System.out.println("intentInfo:" + intentInfo);
+        System.out.println("introInfo:" + introInfo);
+
+        return null;
     }
 
 }

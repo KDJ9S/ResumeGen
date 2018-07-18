@@ -43,7 +43,7 @@
                                 var newNode = document.createElement("p");
                                 // newNode.id = "errMessage";
                                 newNode.innerHTML = "账号或密码错误!";
-                                newNode.style.color = "#87CEFA";
+                                newNode.style.color = "#FF6347";
                                 errorMessageDiv.appendChild(newNode);
                             }
                         }
