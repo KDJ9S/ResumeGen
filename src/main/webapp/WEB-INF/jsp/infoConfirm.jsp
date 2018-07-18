@@ -18,14 +18,9 @@
 <body>
 <div class="main">
     <!-----start-main---->
-    <div class="inset">
-        <div class="social-icons">
-            <div class="span"><a href="#"><img src="../../static/images/infoConfirm/fb.png" alt=""/><i>Connect with Facebook </i><div class="clear"></div></a></div>
-            <div class="span1"><a href="#"><img src="../../static/images/infoConfirm/t-bird.png" alt=""/><i>Connect with Twitter</i><div class="clear"></div></a></div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    <h2>Or sign up with</h2>
+    <%-- 标题 --%>
+    <div style="text-align: center;font-size: xx-large;color: #FFFFFF">确认您的信息</div>
+    <%-- form表单 --%>
     <form action="${pageContext.request.contextPath}/confirmInfo" method="post">
         <%--user id--%>
         <input type="hidden" name="userId" value="${sessionScope.user.id}">

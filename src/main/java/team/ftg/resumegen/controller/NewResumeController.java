@@ -34,6 +34,10 @@ public class NewResumeController {
         return mv;
     }
 
+    /**
+     * 初次选择模版时填写的简历信息
+     * @return
+     */
     @RequestMapping("/submit")
     public ModelAndView submit(Basic_Info basic_info, Intent_Info intent_info,
                                Exp_Info exp_info, Intro_Info intro_info) {
@@ -54,6 +58,10 @@ public class NewResumeController {
         }
     }
 
+    /**
+     * 用于已经填过简历信息的用户的再次确认和更新信息
+     * @return 对应视图
+     */
     @RequestMapping("/confirmInfo")
     public ModelAndView confirmInfo(Basic_Info basicInfo, Exp_Info expInfo,
                                     Intent_Info intentInfo, Intro_Info introInfo) {
@@ -77,7 +85,7 @@ public class NewResumeController {
     }
 
 
-    /**********************************返回对应简历页面*****************************************/
+    /**********************************返回对应简历页面**************************************/
     @RequestMapping("/resume/resume1")
     public ModelAndView resumeTemplate1(User user) {
 

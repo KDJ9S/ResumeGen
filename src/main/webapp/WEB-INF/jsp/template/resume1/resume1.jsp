@@ -65,7 +65,7 @@
                 <dt><i class="icon-bookmark"></i>Education&nbsp;-&nbsp;教育信息</dt>
                 <dd><span>毕业院校:</span>${basicInfo.school}</dd>
                 <dd><span>学历:</span>${basicInfo.education}</dd>
-                <dt><i class="icon-bookmark"></i>Basic info&nbsp;-&nbsp;工作期望</dt>
+                <dt><i class="icon-bookmark"></i>Woking Expectation&nbsp;-&nbsp;工作期望</dt>
                 <dd><span>期望薪水:</span>${intentInfo.salary}</dd>
                 <dd><span>期望工作地:</span>${intentInfo.workCity}</dd>
             </li>
