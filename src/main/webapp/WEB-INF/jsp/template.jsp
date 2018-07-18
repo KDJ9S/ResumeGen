@@ -68,7 +68,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：市场营销 &amp; 专业：产品运营 </span>
             <h2 class="fh5co-article-title">简洁大方蓝色简历模板</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
@@ -77,7 +77,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：投资银行 &amp; 专业：财务管理（会计） </span>
             <h2 class="fh5co-article-title">个人简历 </h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <div class="clearfix visible-xs-block"></div>
@@ -87,7 +87,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：电子商务 &amp; 专业：不限 </span>
             <h2 class="fh5co-article-title">个人求职简历</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
@@ -96,7 +96,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限</span>
             <h2 class="fh5co-article-title">标准个人简历</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
@@ -106,7 +106,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限</span>
             <h2 class="fh5co-article-title">清晰明了个人简历模板</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
@@ -115,7 +115,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限 </span>
             <h2 class="fh5co-article-title">左右结构有头像应届生个人简历模板</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <div class="clearfix visible-xs-block"></div>
@@ -125,7 +125,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：行政内勤 &amp; 专业：不限 </span>
             <h2 class="fh5co-article-title">应届生行政类岗位彩色带头像简历模板 </h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
@@ -134,7 +134,7 @@
             </figure>
             <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限</span>
             <h2 class="fh5co-article-title">应届毕业生求职简历</h2>
-            <span class="fh5co-meta fh5co-date">March 6th, 2016</span>
+            <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
         </article>
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
 
