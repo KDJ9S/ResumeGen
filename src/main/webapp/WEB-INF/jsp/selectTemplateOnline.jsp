@@ -100,7 +100,7 @@
                         class="img-responsive"></a>
             </figure>
             <span class="fh5co-meta">诵经逼疯曾庆峰</span>
-            <h2 class="fh5co-article-title">简历五号，准备就绪！</h2>
+            <h2 class="fh5co-article-title">简历四号，准备就绪！</h2>
             <%--<span class="fh5co-meta fh5co-date">March 6th, 2016</span>--%>
         </article>
 
