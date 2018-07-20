@@ -10,7 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.*;
 import team.ftg.resumegen.service.NewresumeService;
 
+import java.io.File;
 import java.util.List;
+import java.util.UUID;
 
 @Controller
 @SessionAttributes("user")
@@ -43,12 +45,35 @@ public class NewResumeController {
                                Exp_Info exp_info, Intro_Info intro_info) {
 
         try {
-            ModelAndView mav = new ModelAndView("redirect:/selectTemplateOnline");
+            String sqlPath = null;
+            //定义文件保存的本地路径
+            String localPath="/Users/sugar/Documents/GitHub/ResumeGen/src/main/webapp/images/";
+            //定义 文件名
+            String filename=null;
+
+            if(!basic_info.getPhoto().isEmpty()){
+                //生成uuid作为文件名称
+                String uuid = UUID.randomUUID().toString().replaceAll("-","");
+                //获得文件类型（可以判断如果不是图片，禁止上传）
+                String contentType=basic_info.getPhoto().getContentType();
+                //获得文件后缀名
+                String suffixName=contentType.substring(contentType.indexOf("/")+1);
+                //得到 文件名
+                filename=uuid+"."+suffixName;
+                //文件保存路径
+                basic_info.getPhoto().transferTo(new File(localPath+filename));
+            }
+            //把图片的相对路径保存至数据库
+            sqlPath = "/images/"+filename;
+            basic_info.setImage(sqlPath);
 
             newresumeService.insertBasicInfo(basic_info);
             newresumeService.insertIntentInfo(intent_info);
             newresumeService.insertExperienceInfo(exp_info);
             newresumeService.insertIntroduceInfo(intro_info);
+
+            ModelAndView mav = new ModelAndView("redirect:/selectTemplateOnline");
+
 
             return mav;
         } catch (Exception e) {

@@ -1,5 +1,7 @@
 package team.ftg.resumegen.entity;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class Basic_Info {
 
     private int basicId;
@@ -24,8 +26,14 @@ public class Basic_Info {
     private String major;
     // 学历
     private String education;
+    // 照片
+    private MultipartFile photo;
+    // 照片路径
+    private String image;
 
     private int userId;
+
+
 
     public int getBasicId() {
         return basicId;
@@ -121,6 +129,22 @@ public class Basic_Info {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public void setPhoto(MultipartFile photo) {
+        this.photo = photo;
+    }
+
+    public MultipartFile getPhoto() {
+        return photo;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
     }
 
     @Override

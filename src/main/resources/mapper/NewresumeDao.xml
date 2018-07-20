@@ -7,8 +7,8 @@
     <!--插入基本信息-->
     <insert id="insertBasicInfo" parameterType="Basic_Info" useGeneratedKeys="true" keyProperty="basic_id">
        insert
-        into basic_info(name,gender,age,nation,city,tel,email,school,major,education,user_id)
-        values(#{name},#{gender},#{age},#{nation},#{city},#{tel},#{email},#{school},#{major},#{education},#{userId})
+        into basic_info(name,gender,age,nation,city,tel,email,school,major,education,image,user_id)
+        values(#{name},#{gender},#{age},#{nation},#{city},#{tel},#{email},#{school},#{major},#{education},#{image},#{userId})
     </insert>
     <!-- 插入求职意向信息 -->
     <insert id="insertIntentInfo" parameterType="Intent_Info" useGeneratedKeys="true" keyProperty="intent_id">

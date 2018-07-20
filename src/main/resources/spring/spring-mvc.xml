@@ -32,6 +32,8 @@
     -->
     <mvc:resources mapping="/static/**" location="/static/"/>
 
+    <!--<mvc:default-servlet-handler />-->
+
     <!--自动扫描该包，使SpringMVC认为该包下用了@controller注解的类是控制器
         这样就无需再在配置文件中配置controller的bean了
     -->
@@ -50,6 +52,8 @@
         <property name="defaultEncoding" value="utf-8"></property>
         <!-- 上传图片最大大小5M-->
         <property name="maxUploadSize" value="5242440"></property>
+        <!-- 最大内存大小 -->
+        <property name="maxInMemorySize" value="10240"/>
     </bean>
 
     <!--spring mvc 登录 拦截器-->

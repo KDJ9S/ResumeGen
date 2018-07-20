@@ -31,10 +31,11 @@
         </li>
     </ul>
 </aside>
+
 <div class="container">
     <div class="sidebar">
         <div class="title">
-            <img src="../../../../static/template/resume1/img/head.jpg">
+            <img src="${basicInfo.image}">
             <h1>${basicInfo.name}</h1>
             <h1>${basicInfo.gender}</h1>
         </div>
