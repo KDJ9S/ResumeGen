@@ -97,9 +97,9 @@ public class NewResumeController {
         int i = newresumeService.updateAllResumeInfo(basicInfo, intentInfo, expInfo, introInfo);
 
         if (i >= 4) { //全部更新成功，进入选择模版页
-            mv.setViewName("selectTemplateOnline.jsp");
+            mv.setViewName("redirect:/selectTemplateOnline");
         } else { //有失败，则返回首页
-            mv.setViewName("main.jsp");
+            mv.setViewName("redirect:/main");
         }
 
         return mv;
