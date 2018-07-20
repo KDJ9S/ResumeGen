@@ -27,7 +27,7 @@
 <div class="header">
     <div class="header-content">
         <div class="touxiang">
-            <img src="../../../../static/template/resume2/img/tx.png" />
+            <img src="${basicInfo.image}" width="180px" height="200px">
         </div>
         <div class="contact">
             <ul>

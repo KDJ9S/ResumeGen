@@ -417,9 +417,7 @@
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1">
                 <tbody>
                 <tr>
-                    <td class="hbox" align="middle"><img
-                            src="http://i.51job.com/resume/ajax/image.php?type=avatar&amp;userid=370152171&amp;key=5ac1c09ebab60a09ce4fff74754e3f7b"
-                            width="85" height="104" class="head" alt="头像"></td>
+                    <td class="hbox" align="middle"><img src="${basicInfo.image}" width="180px" height="200px"></td>
                     <td>
                         <table cellspacing="0" cellpadding="0" border="0" class="infr">
                             <tbody>

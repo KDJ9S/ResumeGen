@@ -26,7 +26,7 @@
 </aside>
 <div id="con">
     <div id="left">
-        <img src="../../../../static/template/resume5/img/9B449370E66A440100F7DB5194767540.jpg"/>
+        <img src="${basicInfo.image}" width="180px" height="200px">
         <dl>
             <dt><i class="fa fa-mars" aria-hidden="true"></i>&nbsp;性别：${basicInfo.gender}</dt>
             </br>
