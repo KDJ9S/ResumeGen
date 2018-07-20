@@ -30,9 +30,9 @@
         还要在urlMapping里加，不好用。所以这里直接用Spring3.0.4后提供的专门为静态资源处理
         提供的比较便捷的设置了
     -->
-    <mvc:resources mapping="/static/**" location="/static/"/>
+    <!--<mvc:resources mapping="/static/**" location="/static/"/>-->
 
-    <!--<mvc:default-servlet-handler />-->
+    <mvc:default-servlet-handler />
 
     <!--自动扫描该包，使SpringMVC认为该包下用了@controller注解的类是控制器
         这样就无需再在配置文件中配置controller的bean了
