@@ -7,6 +7,12 @@
     <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
 
     <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
+
+
+    <%--bootstrap--%>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <body>
 <style>
@@ -403,13 +409,21 @@
         width: 270px
     }
 </style>
+
 <aside>
     <ul>
         <li>
-            <a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>
+        </li>
+        <li>
+            <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
         </li>
     </ul>
 </aside>
+
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
     <tbody>
     <tr>
@@ -560,22 +574,59 @@
                 </tr>
                 </tbody>
             </table>
+
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
                     <td class="plate1">自我介绍</td>
                 </tr>
-
-                <p>${introInfo.introduce}</p>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="txt2"><span class="tag">${introInfo.introduce}</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
                 </tbody>
             </table>
+
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
                     <td class="plate1">教育经历</td>
                 </tr>
 
-                <p>${expInfo.eduExp}</p>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="txt2"><span class="tag">${expInfo.eduExp}</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
                 </tbody>
             </table>
             <table xmlns="" class="box">
@@ -583,7 +634,26 @@
                 <tr>
                     <td class="plate1">项目经历</td>
                 </tr>
-                <p>${expInfo.projectExp}</p>
+
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="txt2"><span class="tag">${expInfo.projectExp}</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
                 </tbody>
             </table>
 
@@ -591,5 +661,10 @@
     </tr>
     </tbody>
 </table>
+
+
+<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
+<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
+<script type="text/javascript" src="../../../../static/js/main.js" ></script>
 </body>
 </html>

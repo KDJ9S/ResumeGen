@@ -33,11 +33,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <nav class="navbar navbar-default"><%----%>
             <div class="container">
                 <!--/.navbar-header-->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div align="center" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-2" id="link-effect-2">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="/main" class="effect-3">主页</a>
+                                <a href="/main" class="effect-3">首页</a>
                             </li>
                             <li class="active">
                                 <a href="/aboutUs" class="effect-3">关于我们</a>

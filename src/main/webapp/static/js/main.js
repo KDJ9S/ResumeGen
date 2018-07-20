@@ -1,20 +1,23 @@
-document.getElementById("btn-html2canvas").onclick = function(){
+var downPdf = document.getElementById("btn-htmltopdf");
 
-    html2canvas(document.getElementById("content"), {
-        onrendered: function(canvas) {
+downPdf.onclick = function() {
+    html2canvas(document.body, {
+        onrendered:function(canvas) {
 
-            //通过html2canvas将html渲染成canvas，然后获取图片数据
-            var imgData = canvas.toDataURL('image/jpeg');
+            allowTaint : true ;
 
-            //初始化pdf，设置相应格式
-            var doc = new jsPDF("p", "mm", "a4");
 
-            //这里设置的是a4纸张尺寸
-            doc.addImage(imgData, 'JPEG', 0, 0,210,297);
+            //返回图片URL，参数：图片格式和清晰度(0-1)
+            var pageData = canvas.toDataURL('image/jpeg', 1.0);
 
-            //输出保存命名为content的pdf
-            doc.save('content.pdf');
+            //方向默认竖直，尺寸ponits，格式a4【595.28,841.89]
+            var pdf = new jsPDF('', 'pt', 'a4');
+
+            //需要dataUrl格式
+            pdf.addImage(pageData, 'JPEG', 0, 0, 595.28, 592.28/canvas.width * canvas.height );
+
+            pdf.save('content.pdf');
+
         }
-    });
-
+    })
 }

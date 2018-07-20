@@ -6,6 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--弃用了--%>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +20,16 @@
 
 </head>
 <body>
+
+<button id="btn-htmltopdf">export PDF by using jspdf + html2canvas</button>
+<aside>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},5)" target="_blank">保存</a>
+        </li>
+    </ul>
+</aside>
+
 <div id="index"><h1>个人简历</h1></div>
 <div id="person">
     <h3 class="heading">个人信息</h3>
@@ -71,5 +86,11 @@
     <h3 class="heading">项目经历</h3>
     <p>${expInfo.projectExp}</p>
 </div>
+
+
+<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
+<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
+<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+
 </body>
 </html>

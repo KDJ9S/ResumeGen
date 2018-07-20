@@ -35,20 +35,31 @@
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="/static/js/template/respond.min.js"></script>
+    <%--bootstrap--%>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <![endif]-->
 
 </head>
 <body>
+<style>
+    body{
+        background: url('/static/images/back.jpg');
+        background-size: cover;
+        min-height: 100vh;
+    }
+</style>
 <header id="fh5co-header">
 
     <div class="container-fluid">
 
         <div class="row">
             <ul class="fh5co-social">
-                <li><a href="${pageContext.request.contextPath}/main"><p>返回首页</p></a></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button></li>
             </ul>
             <div class="col-lg-12 col-md-12 text-center">
-                <h1 id="fh5co-logo">我的简历</h1>
+                <h1 id="fh5co-logo" style="color: white;">我的简历</h1>
             </div>
 
         </div>
@@ -67,7 +78,6 @@
                             src="${pageContext.request.contextPath}/static/template/image_preview/${ri.resumeId}.png" alt="Image"
                             class="img-responsive"></a>
                 </figure>
-                <span class="fh5co-meta">拳打脚踢曾庆峰</span>
                 <h2 class="fh5co-article-title">简历${ri.resumeId}号，准备就绪！</h2>
             </article>
         </c:forEach>

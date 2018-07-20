@@ -13,17 +13,31 @@
     <link href="../../../../static/template/resume2/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
+
+    <%--bootstrap--%>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
     <title>个人简历-${basicInfo.name}</title>
 </head>
 
 <body>
+
 <aside>
     <ul>
         <li>
-            <a href="javascript:void(0)" onclick="myAjax(${user.id},2)" target="_blank">保存</a>
+            <a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>
+        </li>
+        <li>
+            <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
         </li>
     </ul>
 </aside>
+
 <div class="header">
     <div class="header-content">
         <div class="touxiang">
@@ -133,5 +147,9 @@
     <div class="info">
     </div>
 </div>
+
+<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
+<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
+<script type="text/javascript" src="../../../../static/js/main.js" ></script>
 </body>
 </html>

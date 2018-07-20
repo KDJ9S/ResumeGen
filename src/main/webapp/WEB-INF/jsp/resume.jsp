@@ -31,7 +31,6 @@
 <div class="image-container set-full-height" style="background-image: url('/static/images/login.jpg')">
 
     <div align="center">
-        <h5><label style="color: white;">当前登录的账号是：${sessionScope.user.username}</label></h5>
         <h5><a href="/main" style="color: white;">返回首页</a></h5>
     </div>
 

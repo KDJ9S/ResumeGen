@@ -35,19 +35,30 @@
     <!--[if lt IE 9]>
     <script src="/static/js/template/respond.min.js"></script>
     <![endif]-->
+    <%--bootstrap--%>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 
 </head>
 <body>
+<style>
+    body{
+        background: url('/static/images/back.jpg');
+        background-size: cover;
+        min-height: 100vh;
+    }
+</style>
 <header id="fh5co-header">
 
     <div class="container-fluid">
 
         <div class="row">
             <ul class="fh5co-social">
-                <li><a href="${pageContext.request.contextPath}/main"><p>返回首页</p></a></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button></li>
             </ul>
             <div class="col-lg-12 col-md-12 text-center">
-                <h1 id="fh5co-logo">选择您的简历模版</h1>
+                <h1 id="fh5co-logo"  style="color: white;">选择您的简历模版</h1>
             </div>
 
         </div>
@@ -59,49 +70,61 @@
 
 <div class="container-fluid">
     <div class="row fh5co-post-entry">
+
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
-            <figure>
-                <a href="${pageContext.request.contextPath}/resume/resume1"><img
-                        src="${pageContext.request.contextPath}/static/template/image_preview/1.png" alt="Image"
-                        class="img-responsive"></a>
-            </figure>
-            <span class="fh5co-meta">重金悬赏曾庆峰</span>
-            <h2 class="fh5co-article-title">简历一号，准备就绪！</h2>
-            <%--<span class="fh5co-meta fh5co-date">March 6th, 2016</span>--%>
+            <div class="panel panel-default">
+                <div class="panel-heading">清新淡雅风</div>
+                <div class="panel-body">
+                    <figure>
+                        <a href="${pageContext.request.contextPath}/resume/resume1"><img
+                                src="${pageContext.request.contextPath}/static/template/image_preview/1.png" alt="Image"
+                                class="img-responsive"></a>
+                    </figure>
+                    <span class="fh5co-meta">简历一号，准备就绪！</span>
+                </div>
+            </div>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
-            <figure>
-                <a href="${pageContext.request.contextPath}/resume/resume2"><img
-                        src="${pageContext.request.contextPath}/static/template/image_preview/2.png" alt="Image"
-                        class="img-responsive"></a>
-            </figure>
-            <span class="fh5co-meta">千里缉拿曾庆峰</span>
-            <h2 class="fh5co-article-title">简历二号，准备就绪！</h2>
-            <%--<span class="fh5co-meta fh5co-date">March 6th, 2016</span>--%>
-        </article>
-
-        <div class="clearfix visible-xs-block"></div>
-        <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
-            <figure>
-                <a href="${pageContext.request.contextPath}/resume/resume3"><img
-                        src="${pageContext.request.contextPath}/static/template/image_preview/3.png" alt="Image"
-                        class="img-responsive"></a>
-            </figure>
-            <span class="fh5co-meta">皮鞭抽打曾庆峰</span>
-            <h2 class="fh5co-article-title">简历三号，准备就绪！</h2>
-            <%--<span class="fh5co-meta fh5co-date">March 6th, 2016</span>--%>
+            <div class="panel panel-default">
+                <div class="panel-heading">精致细腻风</div>
+                <div class="panel-body">
+                    <figure>
+                        <a href="${pageContext.request.contextPath}/resume/resume2"><img
+                                src="${pageContext.request.contextPath}/static/template/image_preview/2.png" alt="Image"
+                                class="img-responsive"></a>
+                    </figure>
+                    <span class="fh5co-meta">简历二号，准备就绪！</span>
+                </div>
+            </div>
         </article>
 
         <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
-            <figure>
-                <a href="${pageContext.request.contextPath}/resume/resume5"><img
-                        src="${pageContext.request.contextPath}/static/template/image_preview/5.png" alt="Image"
-                        class="img-responsive"></a>
-            </figure>
-            <span class="fh5co-meta">诵经逼疯曾庆峰</span>
-            <h2 class="fh5co-article-title">简历四号，准备就绪！</h2>
-            <%--<span class="fh5co-meta fh5co-date">March 6th, 2016</span>--%>
+            <div class="panel panel-default">
+                <div class="panel-heading">简洁明快风</div>
+                <div class="panel-body">
+                    <figure>
+                        <a href="${pageContext.request.contextPath}/resume/resume3"><img
+                                src="${pageContext.request.contextPath}/static/template/image_preview/3.png" alt="Image"
+                                class="img-responsive"></a>
+                    </figure>
+                    <span class="fh5co-meta">简历三号，准备就绪！</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
+            <div class="panel panel-default">
+                <div class="panel-heading">经典商务风</div>
+                <div class="panel-body">
+                    <figure>
+                        <a href="${pageContext.request.contextPath}/resume/resume5"><img
+                                src="${pageContext.request.contextPath}/static/template/image_preview/5.png" alt="Image"
+                                class="img-responsive"></a>
+                    </figure>
+                    <span class="fh5co-meta">简历四号，准备就绪！</span>
+                </div>
+            </div>
         </article>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
