@@ -45,6 +45,7 @@ public class NewResumeController {
                                Exp_Info exp_info, Intro_Info intro_info) {
 
         try {
+            //保存数据库的路径
             String sqlPath = null;
             //定义文件保存的本地路径
             String localPath="/Users/sugar/Documents/GitHub/ResumeGen/src/main/webapp/images/";
