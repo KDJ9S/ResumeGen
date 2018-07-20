@@ -67,17 +67,6 @@ public class UserController {
     }
 
     /**
-     * 登录失败
-     *
-     * @return
-     */
-    @RequestMapping("/fail")
-    public String test() {
-        return "fail.jsp";
-    }
-
-
-    /**
      * 访问 注册 页面
      *
      * @return

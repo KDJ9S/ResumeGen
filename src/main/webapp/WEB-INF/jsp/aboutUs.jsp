@@ -32,20 +32,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="content white"><%----%>
         <nav class="navbar navbar-default"><%----%>
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <h1>
-                            <span class="fa fa-leanpub" aria-hidden="true"></span>Best Study
-                            <label>Education & Courses</label>
-                        </h1>
-                    </a>
-                </div>
                 <!--/.navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-2" id="link-effect-2">
@@ -66,7 +52,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </nav>
                 </div>
                 <!--/.navbar-collapse-->
-                <!--/.navbar-->
             </div>
         </nav>
     </div>
@@ -108,86 +93,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- //Achievements -->
 
-
-<!-- about-team -->
-<div class="aitsresumethree" id="introUs">
-    <div class="container">
-        <div class="title-div">
-            <h3 class="tittle">
-                <span>团</span>队
-                <span>成</span>员
-            </h3>
-            <div class="tittle-style">
-
-            </div>
-        </div>
-        <div class="team-row-agileinfo">
-            <div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-                <div class="thumbnail team-agileits">
-                    <img src="/static/images/aboutUs/t1.jpg" class="img-responsive" alt="" />
-                    <div class="effectd-caption">
-                        <h4>Vaura Tegsner</h4>
-                        <p>Principal</p>
-                        <div class="social-lsicon">
-                            <a href="#" class="social-button twitter">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                            <a href="#" class="social-button facebook">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                            <a href="#" class="social-button google">
-                                <span class="fa fa-google-plus"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-                <div class="thumbnail team-agileits">
-                    <img src="/static/images/aboutUs/t2.jpg" class="img-responsive" alt="" />
-                    <div class="effectd-caption">
-                        <h4>Jark Kohnson</h4>
-                        <p>Senior Teacher</p>
-                        <div class="social-lsicon">
-                            <a href="#" class="social-button twitter">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                            <a href="#" class="social-button facebook">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                            <a href="#" class="social-button google">
-                                <span class="fa fa-google-plus"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 team-grids">
-                <div class="thumbnail team-agileits">
-                    <img src="/static/images/aboutUs/t3.jpg" class="img-responsive" alt="" />
-                    <div class="effectd-caption">
-                        <h4>Chunk Erson</h4>
-                        <p>Vice Principal</p>
-                        <div class="social-lsicon">
-                            <a href="#" class="social-button twitter">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                            <a href="#" class="social-button facebook">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                            <a href="#" class="social-button google">
-                                <span class="fa fa-google-plus"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!-- //about-team -->
-
 <!-- footer -->
 <div class="mkl_footer" id="contact">
     <div class="sub-footer" style="background-image: url('/static/images/aboutUs/beijing2.jpg')">
@@ -213,9 +118,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-xs-4 mkls_footer_grid_left">
                     <h4>联系电话:</h4>
-                    <p>唐先生：00000000000<br>
-                        顾先生：11111111111<br>
-                        冯女士：33333333333
+                    <p>顾松：111111111<br>
+                       唐载钏：2222222222 <br>
+                       冯文霓：3333333333
                     </p>
 
                 </div>
@@ -224,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="botttom-nav-allah">
                 <ul>
                     <li>
-                        <a href="/main">主页</a>
+                        <a href="/main">首页</a>
                     </li>
                     <li>
                         <a href="/aboutUs">关于我们</a>

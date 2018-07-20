@@ -19,6 +19,11 @@
 <%-- 标题 --%>
 <br><br>
 <div style="text-align: center;font-size: xx-large;color: #FFFFFF">确认您的信息</div>
+<br>
+<div align="center">
+    <h5><a href="/main" style="color: white;">返回首页</a></h5>
+</div>
+
 <div class="main">
     <!-----start-main---->
     <%-- form表单 --%>

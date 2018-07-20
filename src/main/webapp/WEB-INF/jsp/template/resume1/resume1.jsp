@@ -22,8 +22,15 @@
     <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
 
+    <%--jspdf--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <%--<script src="/static/js/html2canvas.js" />--%>
+    <%--<script src="/static/js/main.js" />--%>
 </head>
 <body>
+
+<button id="btn-html2canvas">export PDF by using jspdf + html2canvas</button>
+
 <aside>
     <ul>
         <li>
@@ -35,7 +42,7 @@
 <div class="container">
     <div class="sidebar">
         <div class="title">
-            <img src="${basicInfo.image}">
+            <img src="${basicInfo.image}" width="170px" height="200px">
             <h1>${basicInfo.name}</h1>
             <h1>${basicInfo.gender}</h1>
         </div>
