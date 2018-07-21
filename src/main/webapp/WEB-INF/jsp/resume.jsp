@@ -297,7 +297,7 @@
                                     <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next'
                                            value='Next'/>
                                     <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd'
-                                           name='finish' value='Finish' id="form"/>
+                                           name='finish' value='Finish' id="form" />
                                 </div>
 
                                 <div class="pull-left">
@@ -323,26 +323,29 @@
 
 </div>
 
-</body>
-
 <%--textarea换行问题--%>
 <script type="text/javascript">
-    $("#form").submit(function(){
-        var descrip1 = $("#textarea1").val();
-        descrip1=descrip1.replace(/\n/g,'<br />');
-        $("#textarea1").val(descrip1);
 
+    var submit = document.getElementById("form");
 
-        var descrip2 = $("#textarea2").val();
-        descrip2=descrip2.replace(/\n/g,'<br />');
-        $("#textarea2").val(descrip2);
+    submit.onclick = function() {
 
+        var descrip1 = document.getElementById("textarea1").value;
+        descrip1 = descrip1.replace('\n', '<br>');
+        document.getElementById("textarea1").value = descrip1;
 
-        var descrip3 = $("#textarea3").val();
-        descrip3=descrip3.replace(/\n/g,'<br />');
-        $("#textarea3").val(descrip3);
-    })
+        var descrip2 = document.getElementById("textarea2").value;
+        descrip2 = descrip2.replace('\n', '<br>');
+        document.getElementById("textarea2").value = descrip2;
+
+        var descrip3 = document.getElementById("textarea3").value;
+        descrip3 = descrip3.replace('\n', '<br>');
+        document.getElementById("textarea3").value = descrip3;
+    }
 </script>
+</body>
+
+
 
 <!--   Core JS Files   -->
 <script src="/static/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>

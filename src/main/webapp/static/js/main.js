@@ -1,7 +1,7 @@
 var downPdf = document.getElementById("btn-htmltopdf");
 
 downPdf.onclick = function() {
-    html2canvas(document.body, {
+    html2canvas(document.getElementById("export_content"), {
         onrendered:function(canvas) {
 
             allowTaint : true ;

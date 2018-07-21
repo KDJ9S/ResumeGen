@@ -410,76 +410,77 @@
     }
 </style>
 
-<aside>
-    <ul>
-        <li>
+<div align="center">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active">
             <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
-                <a href="javascript:void(0)" target="_blank">保存</a>
+                <a style="color: white; text-decoration: none" href="javascript:void(0)" target="_blank">保存</a>
             </button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
         </li>
     </ul>
-</aside>
+</div>
 
-<table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1">
-                <tbody>
-                <tr>
-                    <td class="hbox" align="middle"><img src="${basicInfo.image}" width="180px" height="200px"></td>
-                    <td>
-                        <table cellspacing="0" cellpadding="0" border="0" class="infr">
-                            <tbody>
-                            <tr>
-                                <td colspan="2" class="name">${basicInfo.name}</td>
-                            </tr>
-                            <tr>
-                                <td valign="top">
-                                    <img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20"
-                                         height="20">${basicInfo.tel}
-                                </td>
-                                <td valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0" class="email">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" width="25"><img class="vam"
-                                                                             src="http://img01.51jobcdn.com/im/2016/resume/y3.png"
-                                                                             width="20" height="20"></td>
-                                            <td valign="top" class="txt4">${basicInfo.email}</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" colspan="3"><p><img class="vam"
-                                                                     src="http://img01.51jobcdn.com/im/2016/resume/y4.png"
-                                                                     width="20" height="20">${basicInfo.gender}<span class="p5">|</span>${basicInfo.age}
-                                    岁<span class="p5">|</span>现居住${basicInfo.city}<span class="p5">|</span>${basicInfo.nation}族
-                                </p></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box2">
-                <tbody>
-                <tr>
-                    <td class="tba">
-                        <table cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
+<div id="export_content">
+    <table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
+        <tbody>
+        <tr>
+            <td valign="top">
+                <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1">
+                    <tbody>
+                    <tr>
+                        <td class="hbox" align="middle"><img src="${basicInfo.image}" width="180px" height="200px"></td>
+                        <td>
+                            <table cellspacing="0" cellpadding="0" border="0" class="infr">
+                                <tbody>
+                                <tr>
+                                    <td colspan="2" class="name">${basicInfo.name}</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top">
+                                        <img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20"
+                                             height="20">${basicInfo.tel}
+                                    </td>
+                                    <td valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0" class="email">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" width="25"><img class="vam"
+                                                                                 src="http://img01.51jobcdn.com/im/2016/resume/y3.png"
+                                                                                 width="20" height="20"></td>
+                                                <td valign="top" class="txt4">${basicInfo.email}</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" colspan="3"><p><img class="vam"
+                                                                         src="http://img01.51jobcdn.com/im/2016/resume/y4.png"
+                                                                         width="20" height="20">${basicInfo.gender}<span class="p5">|</span>${basicInfo.age}
+                                        岁<span class="p5">|</span>现居住${basicInfo.city}<span class="p5">|</span>${basicInfo.nation}族
+                                    </p></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box2">
+                    <tbody>
+                    <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
                                 <td valign="top" class="tb2">
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <thead style="height:0">
@@ -507,165 +508,167 @@
                                         </tbody>
                                     </table>
                                 </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
-                <tbody>
-                <tr>
-                    <td class="plate1">求职意向</td>
-                </tr>
-                <tr>
-                    <td class="tba">
-                        <table cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
-                            <tr>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="keys">求职岗位：</td>
-                                            <td valign="top" class="txt2">${intentInfo.position}
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="keys">工作地点：</td>
-                                            <td valign="top" class="txt2"><span class="tag">${intentInfo.workCity}</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="keys">工作类型：</td>
-                                            <td valign="top" class="txt2">
-                                                <span class="tag">${intentInfo.jobType}</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="keys">期望薪资：</td>
-                                            <td valign="top" class="txt2">
-                                                <span class="tag">${intentInfo.salary}</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                    <tbody>
+                    <tr>
+                        <td class="plate1">求职意向</td>
+                    </tr>
+                    <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="keys">求职岗位：</td>
+                                                <td valign="top" class="txt2">${intentInfo.position}
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="keys">工作地点：</td>
+                                                <td valign="top" class="txt2"><span class="tag">${intentInfo.workCity}</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="keys">工作类型：</td>
+                                                <td valign="top" class="txt2">
+                                                    <span class="tag">${intentInfo.jobType}</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="keys">期望薪资：</td>
+                                                <td valign="top" class="txt2">
+                                                    <span class="tag">${intentInfo.salary}</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
 
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
-            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
-                <tbody>
-                <tr>
-                    <td class="plate1">自我介绍</td>
-                </tr>
-                <tr>
-                    <td class="tba">
-                        <table cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
-                            <tr>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="txt2"><span class="tag">${introInfo.introduce}</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                    <tbody>
+                    <tr>
+                        <td class="plate1">自我介绍</td>
+                    </tr>
+                    <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="txt2"><span class="tag">${introInfo.introduce}</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
-            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
-                <tbody>
-                <tr>
-                    <td class="plate1">教育经历</td>
-                </tr>
+                <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                    <tbody>
+                    <tr>
+                        <td class="plate1">教育经历</td>
+                    </tr>
 
-                <tr>
-                    <td class="tba">
-                        <table cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
-                            <tr>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="txt2"><span class="tag">${expInfo.eduExp}</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table xmlns="" class="box">
-                <tbody>
-                <tr>
-                    <td class="plate1">项目经历</td>
-                </tr>
+                    <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="txt2"><span class="tag">${expInfo.eduExp}</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table xmlns="" class="box">
+                    <tbody>
+                    <tr>
+                        <td class="plate1">项目经历</td>
+                    </tr>
 
-                <tr>
-                    <td class="tba">
-                        <table cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
-                            <tr>
-                                <td class="tb2" valign="top">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="txt2"><span class="tag">${expInfo.projectExp}</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td class="tb2" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td valign="top" class="txt2"><span class="tag">${expInfo.projectExp}</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
-        </td>
-    </tr>
-    </tbody>
-</table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
 
 
 <script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
