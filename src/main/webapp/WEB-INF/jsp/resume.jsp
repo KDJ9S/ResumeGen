@@ -189,7 +189,7 @@
 
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
-                                                <label>上传头像</label><br>
+                                                <label>上传您的照片</label><br>
                                                 <input type="file" name="photo">
                                             </div>
                                         </div>
@@ -245,13 +245,22 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>教育经历</label>
-                                                <textarea id="textarea1" class="form-control" placeholder="" rows="9" name="eduExp"></textarea>
+                                                <textarea id="textarea1" class="form-control" placeholder="" rows="20" name="eduExp"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description"> 2015-2019.  北京科技大学 <br> 2019-2022.  北京科技大学</p>
+                                                <p class="description"> 2015-2019.  北京科技大学 <br><br> 2019-2022.  北京科技大学</p>
+                                                <label>小贴士</label>
+                                                <p class="description"> <strong>可填信息：</strong>
+                                                                    <br>教育经历起止日期/学校名称/专业名称/学位
+                                                                    <br>可填信息：成绩排名/主修课程/辅修课程
+                                                                    <br><strong>注意：</strong>
+                                                                    <br>尽量简洁，突出重点
+                                                                    <br>成绩优异的话建议写上GPA及排名等信息
+                                                                    <br>主修课程只写与申请岗位相关的即可，相关性强的写在前面
+                                                                    <br>未毕业在校生的教育经历结束日期应填写预计毕业年月</p>
                                             </div>
                                         </div>
 
@@ -259,13 +268,29 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>项目经历</label>
-                                                <textarea id="textarea2" class="form-control" placeholder="" rows="9" name="projectExp"></textarea>
+                                                <textarea id="textarea2" class="form-control" placeholder="" rows="25" name="projectExp"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description"> 2018.3-2018.7 Android项目 <br> 2018.7 Java Web项目</p>
+                                                <p class="description"> 2015.7-2017.7 学校项目 开发工程师
+                                                    <br><strong>项目描述：</strong>项目是一款地理位置新闻类App：查看当前位置新闻、失物招领信息、景点、交通信息、拼车服务、危险警报、自动识别一键报警（已集成全球200多个国家的报警电话）功能等。
+                                                    <br><strong>软件环境：</strong>Android Studio、Android手机
+                                                    <br><strong>职责描述：</strong>该项目由本人独立开发完成。<br><br>
+                                                                        2016.7-2017.7 学校项目 开发工程师
+                                                    <br><strong>项目描述：</strong>项目采用网上第三方提供商提供的API，数据共包含了图片，段子，视频，音频四种数据，内容搞笑又富含乐趣。怀着一颗模仿的心，造就了不得姐，并在此基础上进行了相关的个性化修改。(由于涉及版权等相关问题，项目不能上线)。
+                                                    <br><strong>软件环境：</strong>Android Studio、Android手机
+                                                    <br><strong>职责描述：</strong>该项目由本人独立开发完成。</p>
+                                                <label>小贴士</label>
+                                                <p class="description"> <strong>可填信息：</strong>
+                                                                    <br>工作起止日期/所在公司名称/职位/工作描述（侧重描述自己负责的工作）/工作成果
+                                                                    <br><strong>注意：</strong>
+                                                                    <br>工作经验的时间采取倒叙形式，最近经历写在前面；
+                                                                    <br>工作经验的描述与目标岗位的招聘要求尽量匹配，用词精准；
+                                                                    <br>工作成果尽量以数据来呈现，突出个人成果以及做出的贡献；
+                                                                    <br>描述尽量具体简洁。
+                                                                    <br>可对企业进行简短介绍，如：XX行业第二大XX企业，核心产品包括XX / XX行业领军企业，拥有X个分公司和X名员工 / XX领域X轮创业公司，主要产品是XXX，拥有X用户</p>
                                             </div>
                                         </div>
                                     </div>
@@ -278,13 +303,19 @@
                                         <div class="col-sm-6 col-sm-offset-1">
                                             <div class="form-group">
                                                 <label>请做一下自我评价，例如技能，业余爱好等</label>
-                                                <textarea id="textarea3" class="form-control" placeholder="" rows="9" name="introduce"></textarea>
+                                                <textarea id="textarea3" class="form-control" placeholder="" rows="20" name="introduce"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label>Example</label>
-                                                <p class="description">技能： <br>Java：熟练 <br>html：一般 <br><br>兴趣爱好： <br>打游戏</p>
+                                                <p class="description">开发语言：熟悉掌握Java、Js、Html5等语言。
+                                                                    <br>开发框架：熟悉掌握Mybatis、springMVC、Jquery、Bootstrap。
+                                                                    <br>开发工具：掌握运用Eclipse、Myeclipse、intellij idea、Webstrom、Dreamweaver等工具。
+                                                                    <br>数据库：熟悉Mysql、Oracle、Sqlserver。</p>
+                                                <label>小贴士</label>
+                                                <p class="description">自我评价应做到突出自身符合目标岗位要求的“卖点”；
+                                                                <br>避免过多使用形容词，而应该通过数据及实例来对自身价值进行深化。</p>
                                             </div>
                                         </div>
                                     </div>
