@@ -13,6 +13,11 @@
         }
     </style>
 
+    <script>
+        function testFunc(obj){
+            alert(obj.value);
+        }
+    </script>
 </head>
 
 <body>

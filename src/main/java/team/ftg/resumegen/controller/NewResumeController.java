@@ -28,7 +28,7 @@ public class NewResumeController {
         // 如果没有填写过，就到填写信息的页面
         if (newresumeService.checkStatus(user.getId())) {
 
-            mv = setUpModelAndView(user);
+            mv = setUpModelAndView4Confirm(user);
             mv.setViewName("infoConfirm.jsp");
             return mv;
         }
@@ -43,6 +43,11 @@ public class NewResumeController {
     @RequestMapping("/submit")
     public ModelAndView submit(Basic_Info basic_info, Intent_Info intent_info,
                                Exp_Info exp_info, Intro_Info intro_info) {
+
+        // 替换换行符成<br/>再存入数据库，保证html页面的换行效果
+        intro_info.setIntroduce(intro_info.getIntroduce().replaceAll("\r","<br/>"));
+        exp_info.setEduExp(exp_info.getEduExp().replaceAll("\r","<br/>"));
+        exp_info.setProjectExp(exp_info.getProjectExp().replaceAll("\r","<br/>"));
 
         try {
             //保存数据库的路径
@@ -92,6 +97,11 @@ public class NewResumeController {
     public ModelAndView confirmInfo(Basic_Info basicInfo, Exp_Info expInfo,
                                     Intent_Info intentInfo, Intro_Info introInfo) {
         ModelAndView mv = new ModelAndView();
+
+        // 替换换行符成<br/>再存入数据库，保证html页面的换行效果
+        introInfo.setIntroduce(introInfo.getIntroduce().replaceAll("\r","<br/>"));
+        expInfo.setEduExp(expInfo.getEduExp().replaceAll("\r","<br/>"));
+        expInfo.setProjectExp(expInfo.getProjectExp().replaceAll("\r","<br/>"));
 
         // 执行更新，i为影响的行数，成功应为4，因为执行了4个表的更新
         int i = newresumeService.updateAllResumeInfo(basicInfo, intentInfo, expInfo, introInfo);
@@ -166,6 +176,34 @@ public class NewResumeController {
         Intent_Info intentInfo = newresumeService.getIntentInfo(user.getId());
         Exp_Info expInfo = newresumeService.getExperienceInfo(user.getId());
         Intro_Info introInfo = newresumeService.getIntroduceInfo(user.getId());
+
+        mv.addObject("basicInfo", basicInfo);
+        mv.addObject("intentInfo", intentInfo);
+        mv.addObject("expInfo", expInfo);
+        mv.addObject("introInfo", introInfo);
+        mv.addObject("user", user);
+        return mv;
+    }
+
+    /**
+     * 为infoConfirm.jsp页面获取简历信息并添加到modelAndView中返回
+     *
+     * @param user session中用户的信息
+     * @return 添加好简历信息的modelAndView
+     */
+    private ModelAndView setUpModelAndView4Confirm(User user) {
+        ModelAndView mv = new ModelAndView();
+        Basic_Info basicInfo = newresumeService.getBasicInfo(user.getId());
+        Intent_Info intentInfo = newresumeService.getIntentInfo(user.getId());
+        Exp_Info expInfo = newresumeService.getExperienceInfo(user.getId());
+        Intro_Info introInfo = newresumeService.getIntroduceInfo(user.getId());
+
+        // 替换<br/>成空，再添加到jsp页面
+        // 为了防止jsp页面内容中显示了<br/>标签
+        introInfo.setIntroduce(introInfo.getIntroduce().replaceAll("<br/>",""));
+        expInfo.setEduExp(expInfo.getEduExp().replaceAll("<br/>",""));
+        expInfo.setProjectExp(expInfo.getProjectExp().replaceAll("<br/>",""));
+
         mv.addObject("basicInfo", basicInfo);
         mv.addObject("intentInfo", intentInfo);
         mv.addObject("expInfo", expInfo);
