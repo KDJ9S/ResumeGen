@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="../../../../static/template/resume2/style.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../../../../static/template/resume2/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
 
@@ -25,10 +25,12 @@
             </button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">
+                重新选择模板
+            </button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
+            <button id="btn-htmltopdf" type="button" class="btn btn-primary">导出为PDF</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
             <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
@@ -45,8 +47,11 @@
             <div class="contact">
                 <ul>
                     <li class="name">${basicInfo.name}</li>
-                    <li><embed src="../../../../static/template/resume2/img/cellphone.svg" />&nbsp;${basicInfo.tel}</li>
-                    <li><embed src="../../../../static/template/resume2/img/email.svg" />&nbsp;<a href="mailto:abc@123.com">${basicInfo.email}</a></li>
+                    <li>
+                        <embed src="../../../../static/template/resume2/img/cellphone.svg"/>&nbsp;${basicInfo.tel}</li>
+                    <li>
+                        <embed src="../../../../static/template/resume2/img/email.svg"/>&nbsp;<a
+                            href="mailto:abc@123.com">${basicInfo.email}</a></li>
                 </ul>
             </div>
             <div class="brief-info">
@@ -63,56 +68,8 @@
     <div class="content">
         <ul id="timeline">
             <li class="biaoti">
-                <h1>个人介绍</h1>
-                <embed src="../../../../static/template/resume2/img/edu.svg" />
-                <div class="separate-line-box"></div>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <div class="timeline-content">
-                            <p>${introInfo.introduce}</p>
-                        </div>
-                    </li>
-                    <br><br><br><br><br><br>
-
-                </ul>
-            </li>
-            <li class="biaoti">
-                <h1>教育经历</h1>
-                <embed src="../../../../static/template/resume2/img/edu.svg" />
-                <div class="separate-line-box"></div>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <div class="timeline-content">
-                            <p>${expInfo.eduExp}</p>
-                        </div>
-                    </li>
-                    <br><br><br><br><br><br>
-
-                </ul>
-            </li>
-            <li class="biaoti">
-                <h1>项目经历</h1>
-                <embed src="../../../../static/template/resume2/img/job.svg" />
-                <div class="separate-line-box"></div>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <div class="timeline-content">
-                            <p>${expInfo.projectExp}</p>
-                        </div>
-                    </li>
-                    <br><br><br><br><br><br>
-
-                </ul>
-            </li>
-            <li class="biaoti">
                 <h1>工作期望</h1>
-                <embed src="../../../../static/template/resume2/img/jiangli.svg" />
+                <embed src="../../../../static/template/resume2/img/jiangli.svg"/>
                 <div class="separate-line-box"></div>
             </li>
             <li>
@@ -135,10 +92,59 @@
                             <p>${intentInfo.workCity}</p>
                         </div>
                     </li>
-                    <br><br><br><br><br><br>
+                    <br><br>
 
                 </ul>
             </li>
+            <li class="biaoti">
+                <h1>个人介绍</h1>
+                <embed src="../../../../static/template/resume2/img/edu.svg"/>
+                <div class="separate-line-box"></div>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <p>${introInfo.introduce}</p>
+                        </div>
+                    </li>
+                    <br><br>
+
+                </ul>
+            </li>
+            <li class="biaoti">
+                <h1>教育经历</h1>
+                <embed src="../../../../static/template/resume2/img/edu.svg"/>
+                <div class="separate-line-box"></div>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <p>${expInfo.eduExp}</p>
+                        </div>
+                    </li>
+                    <br><br>
+
+                </ul>
+            </li>
+            <li class="biaoti">
+                <h1>项目经历</h1>
+                <embed src="../../../../static/template/resume2/img/job.svg"/>
+                <div class="separate-line-box"></div>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <p>${expInfo.projectExp}</p>
+                        </div>
+                    </li>
+                    <br><br>
+
+                </ul>
+            </li>
+
 
         </ul>
     </div>
@@ -149,9 +155,8 @@
 </div>
 
 
-
 <script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
 <script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+<script type="text/javascript" src="../../../../static/js/main.js"></script>
 </body>
 </html>
