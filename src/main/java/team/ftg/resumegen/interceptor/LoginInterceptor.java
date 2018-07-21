@@ -41,24 +41,5 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         return true;
         //return super.preHandle(request, response, handler);
     }
-	/*private boolean isPassUrl(String url){
-        if(!url.endsWith("/login/login")
-                && !url.endsWith("/login/chnagePassEntry")
-                && !url.endsWith("/login/change_Login")
-                && !url.endsWith("/API/Service")
-                && !url.endsWith("/API/Service2")
-                && !url.endsWith("/province.txt")
-                && !url.endsWith("/city.txt")
-                && !url.endsWith("/area.txt")
-                && !url.endsWith(".xml")
-                && !url.endsWith(".js")
-                && !url.endsWith(".css") && !url.endsWith(".png")
-                && !url.endsWith(".CSS") && !url.endsWith(".CSS")
-                && !url.endsWith(".jpg") && !url.endsWith(".gif")
-                && !url.endsWith(".JPG") && !url.endsWith(".GIF")){
-            return true;
-        }
-        return false;
-    }*/
 
 }
