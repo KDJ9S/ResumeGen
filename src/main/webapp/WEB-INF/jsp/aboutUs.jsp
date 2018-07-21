@@ -24,6 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -58,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 
-<div class="about-sec" id="about">
+<div class="about-sec" id="about" style="background-image: url('/static/images/aboutUs/backUs2.jpg');">
     <div class="container">
         <div class="title-div">
             <h3 class="tittle">
@@ -118,9 +119,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-xs-4 mkls_footer_grid_left">
                     <h4>联系电话:</h4>
-                    <p>顾松：111111111<br>
-                       唐载钏：2222222222 <br>
-                       冯文霓：3333333333
+                    <p>顾松：13209766666<br>
+                       唐载钏：13722222222<br>
+                       冯文霓：15109711234
                     </p>
 
                 </div>
