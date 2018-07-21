@@ -78,7 +78,7 @@
                             src="${pageContext.request.contextPath}/static/template/image_preview/${ri.resumeId}.png" alt="Image"
                             class="img-responsive"></a>
                 </figure>
-                <h2 class="fh5co-article-title">简历${ri.resumeId}号，准备就绪！</h2>
+                <h4 class="fh5co-article-title" style="color: white;">简历${ri.resumeId}号，准备就绪！</h4>
             </article>
         </c:forEach>
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>

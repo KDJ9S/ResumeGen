@@ -35,7 +35,6 @@
             <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
                 <a href="javascript:void(0)" target="_blank">保存</a>
             </button>
-            <%--<a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>--%>
         </li>
         <li>
             <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>

@@ -24,24 +24,26 @@
 </head>
 <body>
 
-<aside>
-    <ul>
-        <li>
+<div style="text-align: center">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active">
             <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
                 <a style="color: white; text-decoration: none" href="javascript:void(0)" target="_blank">保存</a>
             </button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
-        </li>
-        <li>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
             <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
         </li>
     </ul>
-</aside>
+</div>
+
+
 <div id="export_content">
     <div id="con">
         <div id="left">
