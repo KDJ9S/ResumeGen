@@ -32,7 +32,13 @@
 <aside>
     <ul>
         <li>
-            <a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
+                <a href="javascript:void(0)" target="_blank">保存</a>
+            </button>
+            <%--<a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>--%>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
         </li>
         <li>
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
@@ -91,7 +97,7 @@
 
                 </ul>
             </li>
-            <br><br><br><br><br><br><br><br>
+            <br><br><br><br>
             <li>
                 <dt><i class="icon-bookmark"></i>Project Experience&nbsp;-&nbsp;项目经历</dt>
                 <h3>描述</h3>
@@ -104,7 +110,7 @@
             </li>
         </ul>
         <p>&nbsp;</p>
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
     </div>
 </div>
 <footer>

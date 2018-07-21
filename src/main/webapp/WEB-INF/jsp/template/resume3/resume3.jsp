@@ -413,7 +413,12 @@
 <aside>
     <ul>
         <li>
-            <a href="javascript:void(0)" onclick="myAjax(${user.id},3)" target="_blank">保存</a> <br>
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
+                <a href="javascript:void(0)" target="_blank">保存</a>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
         </li>
         <li>
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
