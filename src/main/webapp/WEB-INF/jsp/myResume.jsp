@@ -45,7 +45,7 @@
 <body>
 <style>
     body{
-        background: url('/static/images/back.jpg');
+        background: url('${pageContext.request.contextPath}/static/images/back.jpg');
         background-size: cover;
         min-height: 100vh;
     }
@@ -56,7 +56,7 @@
 
         <div class="row">
             <ul class="fh5co-social">
-                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button></li>
             </ul>
             <div class="col-lg-12 col-md-12 text-center">
                 <h1 id="fh5co-logo" style="color: white;">我的简历</h1>

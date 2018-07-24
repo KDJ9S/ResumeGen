@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8" >
     <title>个人简历</title>
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/animation.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-codes.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-embedded.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-ie7.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/fontello-ie7-codes.css">
-    <link rel="stylesheet" href="../../../../static/template/resume1/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/animation.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello-codes.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello-embedded.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello-ie7.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/style.css">
     <%-- jquery --%>
-    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/template/js4ajax/mAjax.js"></script>
     <%--bootstrap--%>
     <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
     <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
@@ -24,18 +24,18 @@
 <aside>
     <ul>
         <li>
-            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},1)">
                 <a href="javascript:void(0)" target="_blank">保存</a>
             </button>
         </li>
         <li>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/selectTemplateOnline'">重新选择模板</button>
         </li>
         <li>
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
         </li>
         <li>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
         </li>
     </ul>
 </aside>
@@ -107,9 +107,9 @@
 <footer>
 </footer>
 
-<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
-<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/html2canvas.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jspdf.debug.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js" ></script>
 
 
 </body>

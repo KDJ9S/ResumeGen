@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
@@ -22,33 +23,28 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700'
           rel='stylesheet' type='text/css'>
     <!-- Animate -->
-    <link rel="stylesheet" href="/static/css/template/animate.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/animate.css"/>">
     <!-- Icomoon -->
-    <link rel="stylesheet" href="/static/css/template/icomoon.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/icomoon.css"/>">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/static/css/template/bootstrap.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/bootstrap.css"/>">
 
-    <link rel="stylesheet" href="/static/css/template/style.css">
-
-
+    <link rel="stylesheet" href="<c:url value="/static/css/template/style.css"/>">
     <!-- Modernizr JS -->
-    <script src="/static/js/template/modernizr-2.6.2.min.js"></script>
+    <script src="<c:url value="/static/js/template/modernizr-2.6.2.min.js"/>"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="/static/js/template/respond.min.js"></script>
-
-    <%--bootstrap--%>
+    <!--bootstrap-->
     <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
     <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <![endif]-->
-
 
 </head>
 <body>
 <style>
     body{
-        background: url('/static/images/back.jpg');
+        background: url('${pageContext.request.contextPath}/static/images/back.jpg');
         background-size: cover;
         min-height: 100vh;
     }
@@ -60,7 +56,7 @@
         <div class="row">
             <ul class="fh5co-social">
                 <li style="text-align: center">
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
                 </li>
             </ul>
             <div  class="col-lg-12 col-md-12 text-center">
@@ -83,7 +79,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template01.docx"><img src="/static/images/template/pic_1.jpg"
+                        <a href="<c:url value="/download?filename=template01.docx"/>"><img src="<c:url value="/static/images/template/pic_1.jpg"/>"
                                                                           alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
@@ -98,7 +94,7 @@
                 <div class="panel-heading">绿色活泼风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template02.doc"><img src="/static/images/template/pic_2.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template02.doc"/>"><img src="<c:url value="/static/images/template/pic_2.jpg"/>" alt="Image"
                                                                          class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：投资银行 &amp; 专业：财务管理（会计） </span>
@@ -113,7 +109,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template03.docx"><img src="/static/images/template/pic_3.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template03.docx"/>"><img src="<c:url value="/static/images/template/pic_3.jpg"/>" alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：电子商务 &amp; 专业：不限 </span>
@@ -127,7 +123,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template04.doc"><img src="/static/images/template/pic_4.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template04.doc"/>"><img src="<c:url value="/static/images/template/pic_4.jpg"/>" alt="Image"
                                                                          class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：应届学生 &amp; 专业：不限</span>
@@ -142,7 +138,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template05.docx"><img src="/static/images/template/pic_5.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template05.docx"/>"><img src="<c:url value="/static/images/template/pic_5.jpg"/>" alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限</span>
@@ -156,7 +152,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template06.docx"><img src="/static/images/template/pic_6.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template06.docx"/>"><img src="<c:url value="/static/images/template/pic_6.jpg"/>" alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限 </span>
@@ -170,7 +166,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template07.docx"><img src="/static/images/template/pic_7.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template07.docx"/>"><img src="<c:url value="/static/images/template/pic_7.jpg"/>" alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：行政内勤 &amp; 专业：不限 </span>
@@ -184,7 +180,7 @@
                 <div class="panel-heading">简洁蓝色风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="/download?filename=template08.docx"><img src="/static/images/template/pic_8.jpg" alt="Image"
+                        <a href="<c:url value="/download?filename=template08.docx"/>"><img src="<c:url value="/static/images/template/pic_8.jpg"/>" alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">意向职位：不限 &amp; 专业：不限</span>
@@ -205,15 +201,15 @@
 
 
 <!-- jQuery -->
-<script src="/static/js/template/jquery.min.js"></script>
+<script src="<c:url value="/static/js/template/jquery.min.js"/>"></script>
 <!-- jQuery Easing -->
-<script src="/static/js/template/jquery.easing.1.3.js"></script>
+<script src="<c:url value="/static/js/template/jquery.easing.1.3.js"/>"></script>
 <!-- Bootstrap -->
-<script src="/static/js/template/bootstrap.min.js"></script>
+<script src="<c:url value="/static/js/template/bootstrap.min.js"/>"></script>
 <!-- Waypoints -->
-<script src="/static/js/template/jquery.waypoints.min.js"></script>
+<script src="<c:url value="/static/js/template/jquery.waypoints.min.js"/>"></script>
 <!-- Main JS -->
-<script src="/static/js/template/main.js"></script>
+<script src="<c:url value="/static/js/template/main.js"/>"></script>
 
 </body>
 </html>

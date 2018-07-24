@@ -12,13 +12,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- stylesheets -->
-    <link rel="stylesheet" href="/static/css/font-awesome.css">
-    <link rel="stylesheet" href="/static/css/loginstyle.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font-awesome.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/loginstyle.css">
     <!-- google fonts  -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <%-- jquery --%>
-    <script type="text/javascript" src="../../static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
     <%-- login ajax --%>
     <script>
         function login() {
@@ -27,7 +27,7 @@
 
                     contentType: 'application/json; charset=utf-8',
 
-                    url: '/checkLogin',
+                    url: '/ResumeGen/checkLogin',
 
                     dataType: 'json',
 
@@ -36,7 +36,7 @@
 
                     success: function (data) {
                         if (data.flag === "success") { // 登陆成功，跳转到main页面
-                            location.href = "/main";
+                            location.href = "/ResumeGen/main";
                         } else if (data.flag === "failure") { //登陆失败，提示
                             var errorMessageDiv = document.getElementById("errorMessageDiv");
                             if (!errorMessageDiv.hasChildNodes()) {
@@ -60,20 +60,20 @@
 </head>
 <body>
 <div class="agile-login">
-    <h1>Winter Login Form</h1>
+    <h1>个人简历生成系统</h1>
     <div class="wrapper">
-        <h2>Sign In</h2>
+        <h2>您好，请登录</h2>
         <div class="w3ls-form">
             <%-- 让form表单提交时执行js函数，而不是直接提交到一个url --%>
             <form action="javascript:login()" method="post">
-                <label>Username</label>
-                <input id="username" type="text" name="username" placeholder="Username" required/>
-                <label>Password</label>
-                <input id="password" type="password" name="password" placeholder="Password" required/>
+                <label>用户名 </label>
+                <input id="username" type="text" autofocus="autofocus" name="username" placeholder="账号" required/>
+                <label>密码</label>
+                <input id="password" type="password" name="password" placeholder="密码" required/>
                 <%-- 输入错误提示占位 --%>
                 <div id="errorMessageDiv"></div>
                 <input type="submit" value="登录"/>
-                <input type="button" value="注册" onclick="window.location.href='/register'">
+                <input type="button" value="注册" onclick="window.location.href='/ResumeGen/register'">
             </form>
         </div>
     </div>

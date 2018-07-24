@@ -1,10 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="../../static/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="${pageContext.request.contextPath}/static/css/style.css" rel='stylesheet' type='text/css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <style type="text/css">
@@ -13,11 +14,6 @@
         }
     </style>
 
-    <script>
-        function testFunc(obj){
-            alert(obj.value);
-        }
-    </script>
 </head>
 
 <body>
@@ -26,7 +22,7 @@
 <div style="text-align: center;font-size: xx-large;color: #FFFFFF">确认您的信息</div>
 <br>
 <div align="center">
-    <h5><a href="/main" style="color: white;">返回首页</a></h5>
+    <h5><a href="<c:url value="/main"/>" style="color: white;">返回首页</a></h5>
 </div>
 
 <div class="main">

@@ -1,21 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kdj9s
-  Date: 2018/7/15
-  Time: 下午6:42
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <title></title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../../../static/template/resume5/css/resume.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
-
+    <link href="${pageContext.request.contextPath}//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/static/template/resume5/css/resume.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/template/js4ajax/mAjax.js"></script>
 
     <%--bootstrap--%>
     <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
@@ -27,18 +18,18 @@
 <div style="text-align: center">
     <ul class="nav nav-pills">
         <li role="presentation" class="active">
-            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},4)">
                 <a style="color: white; text-decoration: none" href="javascript:void(0)" target="_blank">保存</a>
             </button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/selectTemplateOnline'">重新选择模板</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
         </li>
     </ul>
 </div>
@@ -99,12 +90,11 @@
     </div>
 </div>
 
-
-
-<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
-<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/html2canvas.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jspdf.debug.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js" ></script>
 
 </body>
 
 </html>
+<%@ page contentType="text/html;charset=UTF-8" %>

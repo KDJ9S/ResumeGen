@@ -19,8 +19,12 @@ import java.util.Map;
 @SessionAttributes("user")
 public class UserController {
 
+    private final UserService userService;
+
     @Autowired
-    private UserService userService;
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     /**
      * 访问 登录 页面

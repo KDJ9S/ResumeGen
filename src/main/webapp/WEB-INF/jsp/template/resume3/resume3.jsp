@@ -1,12 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
 
-    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/template/js4ajax/mAjax.js"></script>
 
 
     <%--bootstrap--%>
@@ -418,13 +416,13 @@
             </button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">重新选择模板</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/selectTemplateOnline'">重新选择模板</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
             <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
         </li>
     </ul>
 </div>
@@ -671,8 +669,12 @@
 </div>
 
 
-<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
-<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/html2canvas.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jspdf.debug.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js" ></script>
 </body>
 </html>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page isELIgnored="false" %>
+
+

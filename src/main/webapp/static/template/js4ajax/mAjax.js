@@ -4,7 +4,7 @@ function myAjax(userId,resumeId) {
 
             contentType: 'application/json; charset=utf-8',
 
-            url: '/saveMyResume',
+            url: '/ResumeGen/saveMyResume',
 
             dataType: 'json',
 

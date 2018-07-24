@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="org.springframework.web.context.request.SessionScope" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
@@ -7,31 +8,31 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-icon.png"/>
-    <link rel="icon" type="image/png" href="/static/assets/img/favicon.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="<c:url value="/static/assets/img/apple-icon.png"/>"/>
+    <link rel="icon" type="image/png" href="<c:url value="/static/assets/img/favicon.png"/>"/>
     <title>Paper Bootstrap Wizard by Creative Tim</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
 
     <!-- CSS Files -->
-    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/static/assets/css/paper-bootstrap-wizard.css" rel="stylesheet"/>
+    <link href="<c:url value="/static/assets/css/bootstrap.min.css"/>" rel="stylesheet"/>
+    <link href="<c:url value="/static/assets/css/paper-bootstrap-wizard.css"/>" rel="stylesheet"/>
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="/static/assets/css/demo.css" rel="stylesheet"/>
+    <link href="<c:url value="/static/assets/css/demo.css"/>" rel="stylesheet"/>
 
     <!-- Fonts and Icons -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="/static/assets/css/themify-icons.css" rel="stylesheet">
+    <link href="<c:url value="/static/assets/css/themify-icons.css"/>" rel="stylesheet">
 </head>
 <body>
 
-<div class="image-container set-full-height" style="background-image: url('/static/images/login.jpg')">
+<div class="image-container set-full-height" style="background-image: url('${pageContext.request.contextPath}/static/images/login.jpg')">
 
     <div align="center">
-        <h5><a href="/main" style="color: white;">返回首页</a></h5>
+        <h5><a href="<c:url value="/main"/>" style="color: white;">返回首页</a></h5>
     </div>
 
     <!--   Big container   -->
@@ -42,7 +43,7 @@
                 <!--      Wizard container        -->
                 <div class="wizard-container">
                     <div class="card wizard-card" data-color="green" id="wizard">
-                        <form action="/submit" method="post" enctype="multipart/form-data">
+                        <form action="<c:url value="/submit"/>" method="post" enctype="multipart/form-data">
                             <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
 
                             <div class="wizard-header">
@@ -379,14 +380,14 @@
 
 
 <!--   Core JS Files   -->
-<script src="/static/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-<script src="/static/assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/static/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+<script src="<c:url value="/static/assets/js/jquery-2.2.4.min.js"/>" type="text/javascript"></script>
+<script src="<c:url value="/static/assets/js/bootstrap.min.js"/>" type="text/javascript"></script>
+<script src="<c:url value="/static/assets/js/jquery.bootstrap.wizard.js"/>" type="text/javascript"></script>
 
 <!--  Plugin for the Wizard -->
-<script src="/static/assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+<script src="<c:url value="/static/assets/js/paper-bootstrap-wizard.js"/>" type="text/javascript"></script>
 
 <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-<script src="/static/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="<c:url value="/static/assets/js/jquery.validate.min.js"/>" type="text/javascript"></script>
 
 </html>

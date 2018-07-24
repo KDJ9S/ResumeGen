@@ -24,17 +24,20 @@
     <!--数据库连接池-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--连接池的基本属性-->
-        <property name="driverClass" value="${driver}"/>
-        <property name="jdbcUrl" value="${url}"/>
-        <property name="user" value="${username}"/>
-        <property name="password" value="${password}"/>
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
 
+        <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+        <property name="acquireIncrement" value="5"/>
         <!--私有属性-->
         <property name="maxPoolSize" value="30"/>
         <property name="minPoolSize" value="10"/>
         <property name="autoCommitOnClose" value="false"/>
-        <property name="checkoutTimeout" value="1000"/>
+        <property name="checkoutTimeout" value="5000"/>
         <property name="acquireRetryAttempts" value="2"/>
+        <property name="initialPoolSize" value="20"/>
     </bean>
 
     <!--配置SqlSessionFactory对象-->

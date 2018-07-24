@@ -34,7 +34,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             if(loginUser == null){
                 //無session則是未登录狀態
                 System.out.println(">>>未登录，請重新登录<<<");
-                response.sendRedirect("../login");
+                response.sendRedirect("/ResumeGen/login");
                 return false;
             }
         }

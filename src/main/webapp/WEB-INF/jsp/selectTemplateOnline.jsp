@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -20,17 +21,17 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700'
           rel='stylesheet' type='text/css'>
     <!-- Animate -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/template/animate.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/animate.css"/>">
     <!-- Icomoon -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/template/icomoon.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/icomoon.css"/>">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/template/bootstrap.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/bootstrap.css"/>">
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/template/style.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/template/style.css"/>">
 
 
     <!-- Modernizr JS -->
-    <script src="${pageContext.request.contextPath}/static/js/template/modernizr-2.6.2.min.js"></script>
+    <script src="<c:url value="/static/js/template/modernizr-2.6.2.min.js"/>"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="/static/js/template/respond.min.js"></script>
@@ -44,7 +45,7 @@
 <body>
 <style>
     body{
-        background: url('/static/images/back.jpg');
+        background: url('${pageContext.request.contextPath}/static/images/back.jpg');
         background-size: cover;
         min-height: 100vh;
     }
@@ -55,7 +56,7 @@
 
         <div class="row">
             <ul class="fh5co-social">
-                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button></li>
             </ul>
             <div class="col-lg-12 col-md-12 text-center">
                 <h1 id="fh5co-logo"  style="color: white;">选择您的简历模版</h1>
@@ -76,8 +77,8 @@
                 <div class="panel-heading">清新淡雅风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="${pageContext.request.contextPath}/resume/resume1"><img
-                                src="${pageContext.request.contextPath}/static/template/image_preview/1.png" alt="Image"
+                        <a href="<c:url value="/resume/resume1"/>"><img
+                                src="<c:url value="/static/template/image_preview/1.png"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历一号，准备就绪！</span>
@@ -90,8 +91,8 @@
                 <div class="panel-heading">精致细腻风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="${pageContext.request.contextPath}/resume/resume2"><img
-                                src="${pageContext.request.contextPath}/static/template/image_preview/2.png" alt="Image"
+                        <a href="<c:url value="/resume/resume2"/>"><img
+                                src="<c:url value="/static/template/image_preview/2.png"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历二号，准备就绪！</span>
@@ -104,8 +105,8 @@
                 <div class="panel-heading">简洁明快风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="${pageContext.request.contextPath}/resume/resume3"><img
-                                src="${pageContext.request.contextPath}/static/template/image_preview/3.png" alt="Image"
+                        <a href="<c:url value="/resume/resume3"/>"><img
+                                src="<c:url value="/static/template/image_preview/3.png"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历三号，准备就绪！</span>
@@ -118,8 +119,8 @@
                 <div class="panel-heading">经典商务风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="${pageContext.request.contextPath}/resume/resume5"><img
-                                src="${pageContext.request.contextPath}/static/template/image_preview/5.png" alt="Image"
+                        <a href="<c:url value="/resume/resume5"/>"><img
+                                src="<c:url value="/static/template/image_preview/5.png"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历四号，准备就绪！</span>
@@ -140,15 +141,15 @@
 
 
 <!-- jQuery -->
-<script src="${pageContext.request.contextPath}/static/js/template/jquery.min.js"></script>
+<script src="<c:url value="/static/js/template/jquery.min.js"/>"></script>
 <!-- jQuery Easing -->
-<script src="${pageContext.request.contextPath}/static/js/template/jquery.easing.1.3.js"></script>
+<script src="<c:url value="/static/js/template/jquery.easing.1.3.js"/>"></script>
 <!-- Bootstrap -->
-<script src="${pageContext.request.contextPath}/static/js/template/bootstrap.min.js"></script>
+<script src="<c:url value="/static/js/template/bootstrap.min.js"/>"></script>
 <!-- Waypoints -->
-<script src="${pageContext.request.contextPath}/static/js/template/jquery.waypoints.min.js"></script>
+<script src="<c:url value="/static/js/template/jquery.waypoints.min.js"/>"></script>
 <!-- Main JS -->
-<script src="${pageContext.request.contextPath}/static/js/template/main.js"></script>
+<script src="<c:url value="/static/js/template/main.js"/>"></script>
 
 </body>
 </html>

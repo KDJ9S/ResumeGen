@@ -1,11 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="../../../../static/template/resume2/style.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../../../../static/template/js4ajax/mAjax.js"></script>
+    <link href="${pageContext.request.contextPath}/static/template/resume2/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/template/js4ajax/mAjax.js"></script>
 
     <%--bootstrap--%>
     <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
@@ -20,12 +19,12 @@
 <div align="center">
     <ul class="nav nav-pills">
         <li role="presentation" class="active">
-            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},3)">
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},2)">
                 <a style="color: white; text-decoration: none" href="javascript:void(0)" target="_blank">保存</a>
             </button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/selectTemplateOnline'">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/selectTemplateOnline'">
                 重新选择模板
             </button>
         </li>&nbsp;&nbsp;
@@ -33,7 +32,7 @@
             <button id="btn-htmltopdf" type="button" class="btn btn-primary">导出为PDF</button>
         </li>&nbsp;&nbsp;
         <li role="presentation">
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/main'">返回首页</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
         </li>
     </ul>
 </div>
@@ -48,9 +47,9 @@
                 <ul>
                     <li class="name">${basicInfo.name}</li>
                     <li>
-                        <embed src="../../../../static/template/resume2/img/cellphone.svg"/>&nbsp;${basicInfo.tel}</li>
+                        <embed src="${pageContext.request.contextPath}/static/template/resume2/img/cellphone.svg"/>&nbsp;${basicInfo.tel}</li>
                     <li>
-                        <embed src="../../../../static/template/resume2/img/email.svg"/>&nbsp;<a
+                        <embed src="${pageContext.request.contextPath}/static/template/resume2/img/email.svg"/>&nbsp;<a
                             href="mailto:abc@123.com">${basicInfo.email}</a></li>
                 </ul>
             </div>
@@ -69,7 +68,7 @@
         <ul id="timeline">
             <li class="biaoti">
                 <h1>工作期望</h1>
-                <embed src="../../../../static/template/resume2/img/jiangli.svg"/>
+                <embed src="${pageContext.request.contextPath}/static/template/resume2/img/jiangli.svg"/>
                 <div class="separate-line-box"></div>
             </li>
             <li>
@@ -98,7 +97,7 @@
             </li>
             <li class="biaoti">
                 <h1>个人介绍</h1>
-                <embed src="../../../../static/template/resume2/img/edu.svg"/>
+                <embed src="${pageContext.request.contextPath}/static/template/resume2/img/edu.svg"/>
                 <div class="separate-line-box"></div>
             </li>
             <li>
@@ -114,7 +113,7 @@
             </li>
             <li class="biaoti">
                 <h1>教育经历</h1>
-                <embed src="../../../../static/template/resume2/img/edu.svg"/>
+                <embed src="${pageContext.request.contextPath}/static/template/resume2/img/edu.svg"/>
                 <div class="separate-line-box"></div>
             </li>
             <li>
@@ -130,7 +129,7 @@
             </li>
             <li class="biaoti">
                 <h1>项目经历</h1>
-                <embed src="../../../../static/template/resume2/img/job.svg"/>
+                <embed src="${pageContext.request.contextPath}/static/template/resume2/img/job.svg"/>
                 <div class="separate-line-box"></div>
             </li>
             <li>
@@ -155,8 +154,10 @@
 </div>
 
 
-<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
-<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/html2canvas.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jspdf.debug.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js"></script>
 </body>
 </html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+

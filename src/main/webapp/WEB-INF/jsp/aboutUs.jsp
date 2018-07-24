@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <html>
 <head>
@@ -16,15 +17,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!-- //meta-tags -->
-    <link href="/static/css/aboutUs/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/static/css/aboutUs/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<c:url value="/static/css/aboutUs/bootstrap.css"/>" rel="stylesheet" type="text/css" media="all" />
+    <link href="<c:url value="/static/css/aboutUs/style.css"/>" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome -->
-    <link href="/static/css/aboutUs/font-awesome.css" rel="stylesheet">
+    <link href="<c:url value="/static/css/aboutUs/font-awesome.css"/>" rel="stylesheet">
     <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link href="<c:url value="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"/>"
           rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="<c:url value="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"/>" rel="stylesheet">
+    <link href="<c:url value="/static/assets/css/bootstrap.min.css"/>" rel="stylesheet"/>
 </head>
 <body>
 
@@ -38,10 +39,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <nav class="link-effect-2" id="link-effect-2">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="/main" class="effect-3">首页</a>
+                                <a href="<c:url value="/main"/>" class="effect-3">首页</a>
                             </li>
                             <li class="active">
-                                <a href="/aboutUs" class="effect-3">关于我们</a>
+                                <a href="<c:url value="/aboutUs"/>" class="effect-3">关于我们</a>
                             </li>
                             <li>
                                 <a href="#introUs" class="effect-3">团队成员</a>
@@ -83,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <!-- Stats-->
             <div class="col-md-6 about2-info">
-                <img src="/static/images/aboutUs/graduate.png" alt="" />
+                <img src="<c:url value="/static/images/aboutUs/graduate.png"/>" alt="" />
             </div>
             <!-- //Stats -->
             <div class="clearfix"> </div>
@@ -166,16 +167,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- js files -->
 <!-- js -->
-<script src="/static/js/aboutUs/jquery-2.1.4.min.js"></script>
+<script src="<c:url value="/static/js/aboutUs/jquery-2.1.4.min.js"/>"></script>
 <!-- bootstrap -->
-<script src="/static/js/aboutUs/bootstrap.js"></script>
+<script src="<c:url value="/static/js/aboutUs/bootstrap.js"/>"></script>
 <!-- stats numscroller-js-file -->
-<script src="/static/js/aboutUs/numscroller-1.0.js"></script>
+<script src="<c:url value="/static/js/aboutUs/numscroller-1.0.js"/>"></script>
 <!-- //stats numscroller-js-file -->
 <!-- smooth scrolling -->
-<script src="/static/js/aboutUs/SmoothScroll.min.js"></script>
-<script src="/static/js/aboutUs/move-top.js"></script>
-<script src="/static/js/aboutUs/easing.js"></script>
+<script src="<c:url value="/static/js/aboutUs/SmoothScroll.min.js"/>"></script>
+<script src="<c:url value="/static/js/aboutUs/move-top.js"/>"></script>
+<script src="<c:url value="/static/js/aboutUs/easing.js"/>"></script>
 <!-- here stars scrolling icon -->
 <script>
     $(document).ready(function () {

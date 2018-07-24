@@ -18,7 +18,8 @@
     <link href="<c:url value="//fonts.googleapis.com/css?family=Open+Sans"/>" rel="stylesheet">
     <link href="<c:url value="//fonts.googleapis.com/css?family=Raleway:400,500,600,700"/>" rel="stylesheet">
     <%-- jquery --%>
-    <script type="text/javascript" src="../../static/js/jquery-3.3.1.js"></script>
+    <%--<script type="text/javascript" src="../../static/js/jquery-3.3.1.js"></script>--%>
+    <script type="text/javascript" src="<c:url value="/static/js/jquery-3.3.1.js"/>"></script>
     <%-- 用户名查重 --%>
     <script>
         function validate(obj) {
@@ -27,7 +28,7 @@
 
                     contentType: 'application/json; charset=utf-8',
 
-                    url: '/checkExistence',
+                    url: '/ResumeGen/checkExistence',
 
                     dataType: 'json',
 
@@ -80,7 +81,7 @@
 
                         contentType: 'application/json; charset=utf-8',
 
-                        url: '/doRegister',
+                        url: '/ResumeGen/doRegister',
 
                         dataType: 'json',
 
@@ -89,7 +90,7 @@
 
                         success: function (data) {
                             if (data.flag === "success") { // 注册成功，跳转到main页面
-                                location.href = "/main";
+                                location.href = "/ResumeGen/main";
                             } else if (data.flag === "failure") { //注册失败，提示
                                 alert("注册失败，请重试");
                             }
@@ -109,18 +110,18 @@
 </head>
 <body>
 <div class="agile-login">
-    <h1>Winter Login Form</h1>
+    <h1>个人简历生成系统</h1>
     <div class="wrapper">
-        <h2>Sign Up</h2>
+        <h2>注册</h2>
         <div class="w3ls-form">
             <%-- action执行doRegister函数 --%>
             <form action="javascript:doRegister()" autocomplete="off" method="post">
-                <label>Username</label>
-                <input id="username" autofocus="autofocus" autocomplete="off" onkeyup="validate(this)" type="text"
+                <label>用户名</label>
+                <input id="username" autofocus="autofocus" onkeyup="validate(this)" type="text"
                        name="username" required/>
                 <%-- 数据库查重提示占位 --%>
                 <div id="existenceDiv"></div>
-                <label>Password</label>
+                <label>密码</label>
                 <input id="password" type="password" autocomplete="new-password" name="password" required/>
                 <a href="<c:url value="/login"/>" class="pass">已有账号？马上登录</a>
                 <input type="submit" id="register" value="注册"/>

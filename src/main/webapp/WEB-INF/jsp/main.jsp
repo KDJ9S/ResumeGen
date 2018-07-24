@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -13,17 +14,17 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--mobile apps-->
     <!--Custom Theme files -->
-    <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="/static/css/mainstyle.css" type="text/css" rel="stylesheet" media="all">
-    <link rel="stylesheet" type="text/css" href="/static/css/component.css" />
-    <link rel="stylesheet" href="/static/css/swipebox.css">
+    <link href="<c:url value="/static/css/bootstrap.css"/>" type="text/css" rel="stylesheet" media="all">
+    <link href="<c:url value="/static/css/mainstyle.css"/>" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/static/css/component.css"/>" />
+    <link rel="stylesheet" href="<c:url value="/static/css/swipebox.css"/>">
 
     <!-- //Custom Theme files -->
     <!-- js -->
-    <script src="/static/js/modernizr.custom.js"></script>
-    <script src="/static/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/static/js/move-top.js"></script>
-    <script type="text/javascript" src="/static/js/easing.js"></script>
+    <script src="<c:url value="/static/js/modernizr.custom.js"/>"></script>
+    <%--<script src="/static/js/jquery-1.11.1.min.js"></script>--%>
+    <script type="text/javascript" src="<c:url value="/static/js/aboutUs/move-top.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/easing.js"/>"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){
@@ -33,7 +34,7 @@
         });
     </script>
     <!-- //js --><!-- swipe box js -->
-    <script src="/static/js/jquery.swipebox.min.js"></script>
+    <script src="<c:url value="/static/js/jquery.swipebox.min.js"/>"></script>
     <script type="text/javascript">
         jQuery(function($) {
             $(".swipebox").swipebox();
@@ -70,7 +71,7 @@
                 <div class="collapse navbar-collapse navbar-right" id="navbar">
                     <div class="top-nav">
 
-                        <a href="/main" class="hover-effect scroll">
+                        <a href="<c:url value="/main"/>" class="hover-effect scroll">
 								<span>
 									<span>首页</span>
 									<span>首页</span>
@@ -78,7 +79,7 @@
 								</span>
                         </a>
 
-                        <a href="/resume" class="hover-effect scroll">
+                        <a href="<c:url value="/resume"/>" class="hover-effect scroll">
 								<span>
 									<span>在线简历</span>
 									<span>在线简历</span>
@@ -86,21 +87,21 @@
 								</span>
                         </a>
 
-                        <a href="/template" class="hover-effect scroll">
+                        <a href="<c:url value="/template"/>" class="hover-effect scroll">
 								<span>
 									<span>简历模板</span>
 									<span>简历模板</span>
 									<span></span>
 								</span>
                         </a>
-                        <a href="${pageContext.request.contextPath}/myResume" class="hover-effect scroll">
+                        <a href="<c:url value="/myResume"/>" class="hover-effect scroll">
 								<span>
 									<span>我的简历</span>
 									<span>我的简历</span>
 									<span></span>
 								</span>
                         </a>
-                        <a href="/aboutUs" class="hover-effect scroll">
+                        <a href="<c:url value="/aboutUs"/>" class="hover-effect scroll">
 								<span>
 									<span>关于网站</span>
 									<span>关于网站</span>
@@ -110,7 +111,7 @@
 
                         <div class="more">
                             <label style="color: white" >当前登录的账号是：${sessionScope.user.username}</label>
-                            <a href="/outLogin" >退出登录</a>
+                            <a href="<c:url value="/outLogin"/>" >退出登录</a>
                         </div>
 
                     </div>
@@ -125,7 +126,7 @@
     <div class="clearfix"></div>
     <div class="banner-w3-info">
         <div class="logo">
-            <a class="link link--surinami" href="/resume"><span data-letters-l="制作您" data-letters-r="的简历">制作您的简历</span></a>
+            <a class="link link--surinami" href="<c:url value="/resume"/>"><span data-letters-l="制作您" data-letters-r="的简历">制作您的简历</span></a>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <div class="more">
@@ -158,7 +159,7 @@
     });
 </script>
 <!-- //for bootstrap working -->
-<script src="/static/js/bootstrap.js"></script>
+<script src="<c:url value="/static/js/bootstrap.js"/>"></script>
 
 
 <!-- //for bootstrap working -->
