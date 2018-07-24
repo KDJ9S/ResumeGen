@@ -112,7 +112,7 @@
 <div class="agile-login">
     <h1>个人简历生成系统</h1>
     <div class="wrapper">
-        <h2>注册</h2>
+        <h2>请注册</h2>
         <div class="w3ls-form">
             <%-- action执行doRegister函数 --%>
             <form action="javascript:doRegister()" autocomplete="off" method="post">

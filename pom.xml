@@ -57,6 +57,9 @@
 
 
         <!--数据库相关-->
+        <!--had to downgrade from 8.x.x to 5.x.x to get it working-->
+        <!--got me there 4 like 5 hrs u motherfucker-->
+        <!--iv had enough with this shit-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

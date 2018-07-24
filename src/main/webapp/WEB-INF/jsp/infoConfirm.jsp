@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>确认信息</title>
     <meta charset="utf-8">
     <link href="${pageContext.request.contextPath}/static/css/style.css" rel='stylesheet' type='text/css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">

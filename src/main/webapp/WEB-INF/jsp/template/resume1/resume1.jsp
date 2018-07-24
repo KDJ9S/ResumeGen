@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" >
-    <title>个人简历</title>
+    <title>简历一号</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/animation.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/template/resume1/css/fontello-codes.css">

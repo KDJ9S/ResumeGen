@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>个人简历生成系统-主页</title>
     <!--mobile apps-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -128,7 +128,8 @@
         <div class="logo">
             <a class="link link--surinami" href="<c:url value="/resume"/>"><span data-letters-l="制作您" data-letters-r="的简历">制作您的简历</span></a>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward.
+            How much you can take, and keep moving foward. </p>
         <div class="more">
             <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read More<span class="glyphicon glyphicon-arrow-right"></span></a>
         </div>

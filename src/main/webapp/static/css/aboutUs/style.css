@@ -900,12 +900,12 @@ h3.tittle span {
 
 .nbs-flexisel-nav-left {
     left: 0;
-    background: url(../images/right.png) no-repeat 10px 11px #37BF91;
+    background: url(../../images/aboutUs/right.png) no-repeat 10px 11px #37BF91;
 }
 
 .nbs-flexisel-nav-right {
     right: 0;
-    background: url(../images/left.png) no-repeat 14px 12px #37BF91;
+    background: url(../../images/aboutUs/left.png) no-repeat 14px 12px #37BF91;
 }
 
 
@@ -918,7 +918,7 @@ h3.tittle span {
 /* middle section */
 
 .middle-sec-agile {
-    background: url(../images/bg4.jpg) no-repeat center;
+    background: url(../../images/aboutUs/bg4.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1010,7 +1010,7 @@ a.button-style:hover {
 /*-- footer --*/
 
 .mkl_footer {
-    background: url(../images/bg.jpg) no-repeat center;
+    background: url(../../images/aboutUs/bg.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

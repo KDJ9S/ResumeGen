@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <html>
 <head>
-    <title>Learn About Us</title>
+    <title>关于我们</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Soft Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 
-<div class="about-sec" id="about" style="background-image: url('/static/images/aboutUs/backUs2.jpg');">
+<div class="about-sec" id="about" style="background-image: url('${pageContext.request.contextPath}/static/images/aboutUs/backUs2.jpg');">
     <div class="container">
         <div class="title-div">
             <h3 class="tittle">
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- footer -->
 <div class="mkl_footer" id="contact">
-    <div class="sub-footer" style="background-image: url('/static/images/aboutUs/beijing2.jpg')">
+    <div class="sub-footer" style="background-image: url('${pageContext.request.contextPath}/static/images/aboutUs/beijing2.jpg')">
         <div class="container">
             <div class="mkls_footer_grid">
                 <div class="col-xs-4 mkls_footer_grid_left">
@@ -131,10 +131,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="botttom-nav-allah">
                 <ul>
                     <li>
-                        <a href="/main">首页</a>
+                        <a href="<c:url value="/main"/>">首页</a>
                     </li>
                     <li>
-                        <a href="/aboutUs">关于我们</a>
+                        <a href="<c:url value="/aboutUs"/>">关于我们</a>
                     </li>
                     <li>
                         <a href="#contact">联系我们</a>

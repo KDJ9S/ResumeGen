@@ -11,7 +11,7 @@
     <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 
-    <title>个人简历-${basicInfo.name}</title>
+    <title>简历二号</title>
 </head>
 
 <body>

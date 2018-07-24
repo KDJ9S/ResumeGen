@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <!-- Meta tags -->
-    <title>Winter Login Form a Simple Login form Responsive Widget :: w3layouts</title>
+    <title>个人简历生成系统-登录</title>
     <meta name="keywords" content="Winter Login Form Responsive widget, Flat Web Templates, Android Compatible web template,
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
     <meta charset="utf-8">
