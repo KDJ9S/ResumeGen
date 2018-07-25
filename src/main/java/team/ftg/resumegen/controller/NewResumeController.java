@@ -146,11 +146,11 @@ public class NewResumeController {
     }
 
     @RequestMapping("/resume/resume4")
-    public ModelAndView resumeTemplate5(User user) {
+    public ModelAndView resumeTemplate4(User user) {
 
         ModelAndView mv = setUpModelAndView(user);
 
-        mv.setViewName("template/resume4/resume4.jsp");
+        mv.setViewName("/template/resume4/resume4.jsp");
         return mv;
     }
 
