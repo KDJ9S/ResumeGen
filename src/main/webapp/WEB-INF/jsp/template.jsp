@@ -83,7 +83,7 @@
                                                                           alt="Image"
                                                                           class="img-responsive"></a>
                     </figure>
-                    <span class="fh5co-meta">意向职位：市场营销 &amp; 专业：产品运营 </span>
+                    <span class="fh5co-meta">意向职位：市场营销 &amp; 专业：运营</span>
                     <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                         <a href="<c:url value="/download?filename=template02.doc"/>"><img src="<c:url value="/static/images/template/pic_2.jpg"/>" alt="Image"
                                                                          class="img-responsive"></a>
                     </figure>
-                    <span class="fh5co-meta">意向职位：投资银行 &amp; 专业：财务管理 </span>
+                    <span class="fh5co-meta">意向职位：投资银行 &amp; 专业：财务</span>
                     <span class="fh5co-meta fh5co-date">July 16th, 2018</span>
                 </div>
             </div>

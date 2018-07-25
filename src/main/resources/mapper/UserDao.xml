@@ -15,9 +15,9 @@
         from dual where not exists (select * from User where username=#{username})
     </insert>
 
-    <!-- 查询 我的简历 -->
+    <!-- 查询 我的简历 按简历id升序排 -->
     <select id="getMyResume" parameterType="int" resultType="Resume_id">
-        select resume_id from user_resume where user_id = #{user_id}
+        select resume_id from user_resume where user_id = #{user_id} order by resume_id
     </select>
 
     <!-- 保存至 我的简历 -->
