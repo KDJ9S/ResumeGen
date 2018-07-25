@@ -78,7 +78,7 @@
                 <div class="panel-body">
                     <figure>
                         <a href="<c:url value="/resume/resume1"/>"><img
-                                src="<c:url value="/static/template/image_preview/1.png"/>" alt="Image"
+                                src="<c:url value="/static/template/image_preview/1.jpg"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历一号，准备就绪！</span>
@@ -92,7 +92,7 @@
                 <div class="panel-body">
                     <figure>
                         <a href="<c:url value="/resume/resume2"/>"><img
-                                src="<c:url value="/static/template/image_preview/2.png"/>" alt="Image"
+                                src="<c:url value="/static/template/image_preview/2.jpg"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历二号，准备就绪！</span>
@@ -106,7 +106,7 @@
                 <div class="panel-body">
                     <figure>
                         <a href="<c:url value="/resume/resume3"/>"><img
-                                src="<c:url value="/static/template/image_preview/3.png"/>" alt="Image"
+                                src="<c:url value="/static/template/image_preview/3.jpg"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历三号，准备就绪！</span>
@@ -120,7 +120,7 @@
                 <div class="panel-body">
                     <figure>
                         <a href="<c:url value="/resume/resume4"/>"><img
-                                src="<c:url value="/static/template/image_preview/4.png"/>" alt="Image"
+                                src="<c:url value="/static/template/image_preview/4.jpg"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历四号，准备就绪！</span>
