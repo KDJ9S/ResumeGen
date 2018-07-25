@@ -1,87 +1,100 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<%--弃用了--%>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Resume</title>
-    <link rel="stylesheet" href="../../../../static/template/resume4/css/Resume.css">
+    <meta charset="utf-8"/>
+    <title>简历四号</title>
+    <link href="${pageContext.request.contextPath}//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/static/template/resume4/css/resume.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/template/js4ajax/mAjax.js"></script>
 
+    <%--bootstrap--%>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <body>
 
-<button id="btn-htmltopdf">export PDF by using jspdf + html2canvas</button>
-<aside>
-    <ul>
-        <li>
-            <a href="javascript:void(0)" onclick="myAjax(${user.id},5)" target="_blank">保存</a>
+<div style="text-align: center">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active">
+            <button type="button" class="btn btn-primary" onclick="myAjax(${user.id},4)">
+                <a style="color: white; text-decoration: none" href="javascript:void(0)" target="_blank">保存</a>
+            </button>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/selectTemplateOnline'">重新选择模板</button>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
+            <button id="btn-htmltopdf" type="button" class="btn btn-primary" >导出为PDF</button>
+        </li>&nbsp;&nbsp;
+        <li role="presentation">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/ResumeGen/main'">返回首页</button>
         </li>
     </ul>
-</aside>
-
-<div id="index"><h1>个人简历</h1></div>
-<div id="person">
-    <h3 class="heading">个人信息</h3>
-    <table>
-        <tr>
-            <td><h5>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.name}</h5></td>
-            <td><h5>&nbsp&nbsp&nbsp&nbsp性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.gender}</h5></td>
-        </tr>
-        <tr>
-            <td><h5>年&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp龄：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.age}</h5></td>
-            <td><h5>&nbsp&nbsp&nbsp&nbsp民&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp族：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.nation}</h5></td>
-        </tr>
-        <tr>
-            <td><h5>所在城市：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.city}</h5></td>
-            <td><h5>&nbsp&nbsp&nbsp&nbsp电&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp话：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.tel}</h5></td>
-        </tr>
-        <tr>
-            <td><h5>邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.email}</h5></td>
-            <td><h5>&nbsp&nbsp&nbsp&nbsp学&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp校：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.school}</h5></td>
-        </tr>
-        <tr>
-            <td><h5>专&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.major}</h5></td>
-            <td><h5>&nbsp&nbsp&nbsp&nbsp学&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp历：</h5></td>
-            <td><h5 class="cla1" align="center">${basicInfo.education}</h5></td>
-        </tr>
-    </table>
-
-</div>
-<div>
-    <h3 class="heading">求职意向</h3>
-    <span style="font-weight:bold;font-size: 17px;">求职岗位：<span style="font-weight: normal">&nbsp;${intentInfo.position}</span></span>
-    <span style="font-weight:bold;font-size: 17px;">工作城市：<span style="font-weight: normal">&nbsp;${intentInfo.workCity}</span></span>
-    <span style="font-weight:bold;font-size: 17px;">工作类型：<span style="font-weight: normal">&nbsp;${intentInfo.jobType}</span></span>
-    <span style="font-weight:bold;font-size: 17px;">期望薪资：<span style="font-weight: normal">&nbsp;${intentInfo.salary}</span></span>
-</div>
-<div>
-    <h3 class="heading">自我介绍</h3>
-    <p>${introInfo.introduce}</p>
-</div>
-<div>
-    <h3 class="heading">教育经历</h3>
-    <p>${expInfo.eduExp}</p>
-</div>
-<div>
-    <h3 class="heading">项目经历</h3>
-    <p>${expInfo.projectExp}</p>
 </div>
 
 
-<script type="text/javascript" src="../../../../static/js/html2canvas.js"></script>
-<script type="text/javascript" src="../../../../static/js/jsPdf.debug.js"></script>
-<script type="text/javascript" src="../../../../static/js/main.js" ></script>
+<div id="export_content">
+    <div id="con">
+        <div id="left">
+            <img src="${basicInfo.image}" width="180px" height="200px">
+            <dl>
+                <dt><i class="fa fa-mars" aria-hidden="true"></i>&nbsp;性别：${basicInfo.gender}</dt>
+                </br>
+                <dt><i class="fa fa-table" aria-hidden="true"></i>&nbsp;年龄：${basicInfo.age}</dt>
+                </br>
+                <dt><i class="fa fa-group" aria-hidden="true"></i>&nbsp;民族：${basicInfo.nation}</dt>
+                </br>
+                <dt><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;所在地：${basicInfo.city}</dt>
+                </br>
+                <dt><i class="fa fa-tty" aria-hidden="true"></i>&nbsp;电话：${basicInfo.tel}</dt>
+                </br>
+                <dt><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;电子邮件：${basicInfo.email} </dt>
+                </br>
+                <dt><i class="fa fa-language" aria-hidden="true"></i>&nbsp;毕业院校： ${basicInfo.school}</dt>
+                </br>
+                <dt><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;专业： ${basicInfo.major}</dt>
+                </br>
+                <dt><i class="fa fa-book" aria-hidden="true"></i>&nbsp;学历： ${basicInfo.education}</dt>
+                </br>
+            </dl>
+        </div>
+        <div id="right">
+            <h2>${basicInfo.name}</h2><br/>
+
+            <h3 class="t3"><i class="fa fa-handshake-o" aria-hidden="true"></i>求职意向</h3>
+            <HR style="FILTER: alpha(opacity=50,finishopacity=0,style=3)" width="80%" color=lightskyblue SIZE=2>
+            <br/>
+            <p>求职岗位： ${intentInfo.position}</p>
+            <p>工作城市： ${intentInfo.workCity}</p>
+            <p>工作类型： ${intentInfo.jobType}</p>
+            <p>期望薪资： ${intentInfo.salary}</p>
+
+            <h3 class="t3"><i class="fa fa-user-circle" aria-hidden="true"></i>自我评价</h3>
+            <HR style="FILTER: alpha(opacity=50,finishopacity=0,style=3)" width="80%" color=lightskyblue SIZE=2>
+            <br/>
+            <p>${introInfo.introduce}</p>
+
+            <h3 class="t3"><i class="fa fa-building" aria-hidden="true"></i>教育经历</h3>
+            <HR style="FILTER: alpha(opacity=50,finishopacity=0,style=3)" width="80%" color=lightskyblue SIZE=2>
+            <br/>
+            <p>${expInfo.eduExp}</p>
+
+            <h3 class="t3"><i class="fa fa-microchip" aria-hidden="true"></i>项目经历</h3>
+            <HR style="FILTER: alpha(opacity=50,finishopacity=0,style=3)" width="80%" color=lightskyblue SIZE=2>
+            <br/>
+            <p>${expInfo.projectExp}</p>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/html2canvas.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jspdf.debug.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js" ></script>
 
 </body>
+
 </html>
+<%@ page contentType="text/html;charset=UTF-8" %>

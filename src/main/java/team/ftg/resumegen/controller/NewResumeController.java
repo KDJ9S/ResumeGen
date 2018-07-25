@@ -4,14 +4,12 @@ package team.ftg.resumegen.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import team.ftg.resumegen.entity.*;
 import team.ftg.resumegen.service.NewresumeService;
 
 import java.io.File;
-import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -148,19 +146,11 @@ public class NewResumeController {
     }
 
     @RequestMapping("/resume/resume4")
-    public ModelAndView resumeTemplate4(User user) {
-        ModelAndView mv = setUpModelAndView(user);
-
-        mv.setViewName("/template/resume4/resume4.jsp");
-        return mv;
-    }
-
-    @RequestMapping("/resume/resume5")
     public ModelAndView resumeTemplate5(User user) {
 
         ModelAndView mv = setUpModelAndView(user);
 
-        mv.setViewName("/template/resume5/resume5.jsp");
+        mv.setViewName("template/resume4/resume4.jsp");
         return mv;
     }
 

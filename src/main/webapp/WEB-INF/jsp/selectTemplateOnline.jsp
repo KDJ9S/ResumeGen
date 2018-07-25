@@ -119,8 +119,8 @@
                 <div class="panel-heading">经典商务风</div>
                 <div class="panel-body">
                     <figure>
-                        <a href="<c:url value="/resume/resume5"/>"><img
-                                src="<c:url value="/static/template/image_preview/5.png"/>" alt="Image"
+                        <a href="<c:url value="/resume/resume4"/>"><img
+                                src="<c:url value="/static/template/image_preview/4.png"/>" alt="Image"
                                 class="img-responsive"></a>
                     </figure>
                     <span class="fh5co-meta">简历四号，准备就绪！</span>
